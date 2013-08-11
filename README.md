@@ -9,3 +9,6 @@ Aphaea
 
 ### Requires
 - [Hades](https://github.com/sentfanwyaerda/Hades) (as platform, with [PHP](http://php.net/) and modules: [Morpheus](https://github.com/sentfanwyaerda/Morpheus), .. )
+
+depending on your peripherals and sensors you might need:
+- [pywws](https://github.com/jim-easterbrook/pywws) *(for USB Wireless WeatherStations)*
