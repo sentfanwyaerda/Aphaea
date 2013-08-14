@@ -1,0 +1,78 @@
+<html><body onload="build_weather_code()">
+
+<script language="JavaScript">
+function build_weather_code(){
+	//alert("change!");
+	ws = document.forms['weather-select'];
+	ws.code.value = "" + ws.a.value + ws.b.value + ws.c.value + ws.d.value + ws.e.value + ws.f.value;
+	
+	document.getElementById("localimg").src = "./" + ws.code.value + ".png";
+	document.getElementById("remoteimg").src = ws.remote.value + ws.code.value + ".png";
+}
+</script>
+<table>
+<form name="weather-select">
+<tr><td align="right"><img src="" id="localimg" border="1" style="border: 1px solid white;" /></td><td align="left"><img src="" id="remoteimg" border="1" style="border: 1px solid gold;" /></td></tr>
+
+
+<tr><td>Code:</td><td>
+	<input type="text" readonly="true" name="code" maxlength="6" style="width: 80px;" />
+</td></tr>
+
+<tr><td>Visibility:		</td><td>
+<select name="a" onChange="build_weather_code()">
+	<option value="1">1- Sun</option>
+	<option value="2">2- Moon</option>
+	<option value="3" selected="true">3- Other</option>
+</select></td><tr>
+
+<tr><td>Cloud Size:		</td><td>
+<select name="b" onChange="build_weather_code()">
+	<option value="0" selected="true">0- None</option>
+	<option value="1">1- Small</option>
+	<option value="2">2- Medium</option>
+	<option value="3">3- Large</option>
+</select></td><tr>
+
+<tr><td>Rain (Regen):		</td><td>
+<select name="c" onChange="build_weather_code()">
+	<option value="0" selected="true">0- None</option>
+	<option value="1">1- Small</option>
+	<option value="2">2- Medium</option>
+	<option value="3">3- Large</option>
+</select></td><tr>
+
+<tr><td>Hail (Hagel):		</td><td>
+<select name="d" onChange="build_weather_code()">
+	<option value="0" selected="true">0- None</option>
+	<option value="1">1- Small</option>
+	<option value="2">2- Medium</option>
+	<option value="3">3- Large</option>
+</select></td><tr>
+
+<tr><td>Snow (Sneeuw):</td><td>
+<select name="e" onChange="build_weather_code()">
+	<option value="0" selected="true">0- None</option>
+	<option value="1">1- Small</option>
+	<option value="2">2- Medium</option>
+	<option value="3">3- Large</option>
+</select></td><tr>
+
+<tr><td>Category:</td><td>
+<select name="f" onChange="build_weather_code()">
+	<option value="0" selected="true">0- None</option>
+	<option value="1">1- Lighting</option>
+	<option value="2">2- ?</option>
+	<option value="3">3- Fogg (Mist)</option>
+	<option value="4">4- Storm (Windstoten)</option>
+	<option value="5">5- ?</option>
+	<option value="6">6- Smog</option>
+</select></td><tr>
+
+<tr><td>Remote Directory:</td><td>
+	<input type="text" name="remote" value="http://img.meteogroup.com/typo3conf/ext/mg_locationweather/res/images/32px/" />
+</td></tr>
+</form>
+</table>
+
+</body></html>
