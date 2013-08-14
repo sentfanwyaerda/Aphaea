@@ -9,6 +9,7 @@ Aphaea
 
 ### Requires
 - [Hades](https://github.com/sentfanwyaerda/Hades) (as platform, with [PHP](http://php.net/) and modules: [Morpheus](https://github.com/sentfanwyaerda/Morpheus), .. )
+- [php-moon-phase](http://github.com/solarissmoke/php-moon-phase) (a class to calculate the phases of the moon)
 
 depending on your peripherals and sensors you might need:
 - [pywws](https://github.com/jim-easterbrook/pywws) *(for USB Wireless WeatherStations)*
