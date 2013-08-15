@@ -1,0 +1,32 @@
+<html>
+<title></title>
+<script>
+function update_icon(){
+iform = document.forms['icon'];
+document.getElementById('icon').src = iform.icontheme.value + iform.iconslider.value + '.png';
+}
+</script>
+<style>
+body { background-color: #111; }
+.icon {width: 128px; margin: 0; padding: 0;}
+.illusive { opacity:0.9; filter:alpha(opacity=90); }
+.magic { opacity:0.4; filter:alpha(opacity=40); }
+</style>
+<body onload="update_icon()">
+<table>
+<form name="icon">
+<tr><td>
+<select name="icontheme" id="icontheme" class="magic icon">
+	<option value="../icons/weather-kidaubis/" selected="true">Weather Kidaubis</option>
+	<option value="../icons/weezle-d3stroy/" selected="true">Weezle</option>
+</select><br/>
+<input type="range" name="iconslider" id="iconslider" onClick="update_icon()" onChange="update_icon()" min="1" max="12" class="magic icon" />
+</td></tr>
+</form>
+<tr><td>
+<img src="" id="icon" class="illusive icon" style="height: 128px;"/>
+</td></tr>
+<table>
+
+</body>
+</html>

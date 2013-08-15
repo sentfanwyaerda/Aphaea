@@ -1,65 +1,115 @@
 <html><body onload="build_weather_code()">
-
+<style>
+td input[type="checkbox"], td input[type="radio"], td input[type="range"], td input.float { float: left; vertical-align: inline; }
+.inline { float: left; margin: -4px; padding-bottom: -2px; }
+.td { vertical-align: middle; }
+input[type="range"], select { width: 100%; padding: 0; margin: 0; }
+</style>
 <script language="JavaScript">
-function build_weather_code(){
-	//alert("change!");
+function build_weather_code(mode=false){
 	ws = document.forms['weather-select'];
-	ws.code.value = "" + ws.a.value + ws.b.value + ws.c.value + ws.d.value + ws.e.value + ws.f.value;
+	achecked = 1; fchecked = 0;
+    for (var i = 0; i < ws.a.length; i++) {
+		if(ws.a[i].checked){ achecked = i; break; }
+    }
+    for (var i = 0; i < ws.f.length; i++) {
+		if(ws.f[i].checked){ fchecked = i; break; }
+    }
+	if(ws.fixes.checked){
+		/*fix*/ if(achecked == 2 && ws.b.value < 2 && ws.f[fchecked].value < 2){ ws.b.value = 2; }
+		/*fix*/ if(ws.b.value == 3){
+			ws.a[achecked].checked = false;
+			achecked = 2;
+			ws.a[2].checked = true; 
+		}
+		/*fix*/ if(ws.b.value == 0){ //#exception 300204 "hail storm"
+			ws.c.value = 0;
+			ws.d.value = 0;
+			ws.e.value = 0;
+		}
+		/*fix*/ if(ws.f[fchecked].value == 1 && ws.b.value == 0){
+			if(mode == 'b'){ ws.b.value = 2;} else { ws.f[fchecked].checked = false; fchecked = 0; ws.f[0].checked = true; }
+		}
+	}
 	
+	ws.code.value = "" + ws.a[achecked].value + ws.b.value + ws.c.value + ws.d.value + ws.e.value + ws.f[fchecked].value;
+	
+	document.getElementById("largeimg").src = "./" + ws.code.value + ".png";
 	document.getElementById("localimg").src = "./" + ws.code.value + ".png";
-	document.getElementById("remoteimg").src = ws.remote.value + ws.code.value + ".png";
+	document.getElementById("windimg").src = "../compass/" + ws.w.value + ".png"; build_wind_direction();
+	if(ws.useremote.checked){
+		document.getElementById("remoteimg").src = ws.remote.value + ws.code.value + ".png";
+	}
+}
+function rebuild_weather_code(){
+	ws = document.forms['weather-select'];
+	//alert(ws.code.value);
+	//#ws.a[].value = ws.code.value[0];
+	ws.b.value = ws.code.value[1];
+	ws.c.value = ws.code.value[2];
+	ws.d.value = ws.code.value[3];
+	ws.e.value = ws.code.value[4];
+	//#ws.f[].value = ws.code.value[5];
+	build_weather_code();
+}
+function build_wind_direction(){
+	ws = document.forms['weather-select'];
+	if( ws.w.value == -2){ ws.direction.value = "~"; ws.dircode.value = "ANY"; }
+	else{
+		if( ws.w.value == -1){ ws.direction.value = "_"; ws.dircode.value = ''; }
+		else{
+			dir = -1* (180 - (360 * (ws.w.value / 16) ));
+			/*fix*/ if(dir == -180){ dir = 180; }
+			if(dir == 90 || dir == -90){ pole = ''; } else{ if(dir > 90 || dir < -90){ pole = 'S'; } else { pole = 'N'; } }
+			if(dir == 0 || dir == 180){ side = ''; } else{ if(dir > 0){ side = 'E'; } else { side = 'W'; } }
+			if( Math.floor(dir / 45) == Math.round(dir / 45) ){
+				ssp = ''; subpole = '';
+			} else {
+				ssp = Math.round(dir / 45); subpole = '';
+				if(ssp == 1 || ssp == 0){ subpole = 'N'; }
+				if(ssp == 2 || ssp == 3){ subpole = 'E'; }
+				if(ssp == 4 || ssp == -3){ subpole = 'Z'; }
+				if(ssp == -1 || ssp == -2){ subpole = 'W'; }
+			}
+			//ws.debug.value = dir + "&deg;N = " + pole + subpole + side;
+			ws.dircode.value = pole + subpole + side;
+			ws.direction.value = dir; 
+		}
+	}
 }
 </script>
 <table>
 <form name="weather-select">
-<tr><td align="right"><img src="" id="localimg" border="1" style="border: 1px solid white;" /></td><td align="left"><img src="" id="remoteimg" border="1" style="border: 1px solid gold;" /></td></tr>
+<tr><td style="vertical-align: bottom;">
+<!-- <input type="text" name="debug" /><br/> -->
+Code: <input type="text" name="code" maxlength="6" style="width: 55px;" onChange="rebuild_weather_code()" /><input type="text" name="dircode" readonly="true" maxlength="3" style="width: 38px;" /><br/><img src="" id="localimg" border="1" style="border: 1px solid white;" width="32" height="32" /><img src="" id="windimg" border="1" style="border: 1px solid white;" width="32" height="32" /></td><td><center>
+	<img src="" id="largeimg" border="1" style="border: 1px solid white;" width="64" height="64" />
+</center></td></tr>
 
+<tr><td>Visibility:</td><td style="vertical-align: inline;">
+<input type="radio" name="a" value="1" id="a1" onChange="build_weather_code()" checked="true"/><label for="a1"><img src="./100000.png" class="inline" /></label>
+<input type="radio" name="a" value="2" id="a2" onChange="build_weather_code()" /><label for="a2"><img src="./200000.png" class="inline" /></label>
+<input type="radio" name="a" value="3" id="a3" onChange="build_weather_code()" /><label for="a3"><img src="./330000.png" class="inline" /></label>
+</td><tr>
 
-<tr><td>Code:</td><td>
-	<input type="text" readonly="true" name="code" maxlength="6" style="width: 80px;" />
-</td></tr>
+<tr><td>Cloud Size:</td><td>
+<input type="range" name="b" min="0" max="3" step="1" onChange="build_weather_code('b')" onClick="build_weather_code()" />
+</td><tr>
 
-<tr><td>Visibility:		</td><td>
-<select name="a" onChange="build_weather_code()">
-	<option value="1">1- Sun</option>
-	<option value="2">2- Moon</option>
-	<option value="3" selected="true">3- Other</option>
-</select></td><tr>
+<tr><td>Rain<!--(Regen)-->:</td><td>
+<input type="range" name="c" min="0" max="3" step="1" onChange="build_weather_code()" onClick="build_weather_code()" />
+</td><tr>
 
-<tr><td>Cloud Size:		</td><td>
-<select name="b" onChange="build_weather_code()">
-	<option value="0" selected="true">0- None</option>
-	<option value="1">1- Small</option>
-	<option value="2">2- Medium</option>
-	<option value="3">3- Large</option>
-</select></td><tr>
+<tr><td>Snow<!--(Sneeuw)-->:</td><td>
+<input type="range" name="d" min="0" max="3" step="1" onChange="build_weather_code()" onClick="build_weather_code()" />
+</td><tr>
 
-<tr><td>Rain (Regen):		</td><td>
-<select name="c" onChange="build_weather_code()">
-	<option value="0" selected="true">0- None</option>
-	<option value="1">1- Small</option>
-	<option value="2">2- Medium</option>
-	<option value="3">3- Large</option>
-</select></td><tr>
+<tr><td>Hail<!--(Hagel)-->:</td><td>
+<input type="range" name="e" min="0" max="3" step="1" onChange="build_weather_code()" onClick="build_weather_code()" />
+</td><tr>
 
-<tr><td>Hail (Hagel):		</td><td>
-<select name="d" onChange="build_weather_code()">
-	<option value="0" selected="true">0- None</option>
-	<option value="1">1- Small</option>
-	<option value="2">2- Medium</option>
-	<option value="3">3- Large</option>
-</select></td><tr>
-
-<tr><td>Snow (Sneeuw):</td><td>
-<select name="e" onChange="build_weather_code()">
-	<option value="0" selected="true">0- None</option>
-	<option value="1">1- Small</option>
-	<option value="2">2- Medium</option>
-	<option value="3">3- Large</option>
-</select></td><tr>
-
-<tr><td>Category:</td><td>
-<select name="f" onChange="build_weather_code()">
+<tr><td rowspan="2" style="vertical-align: top;">Category:</td><td>
+<!-- <select name="f" onChange="build_weather_code()">
 	<option value="0" selected="true">0- None</option>
 	<option value="1">1- Lighting</option>
 	<option value="2">2- ?</option>
@@ -67,12 +117,34 @@ function build_weather_code(){
 	<option value="4">4- Storm (Windstoten)</option>
 	<option value="5">5- ?</option>
 	<option value="6">6- Smog</option>
-</select></td><tr>
+</select> -->
+<input type="radio" name="f" value="0" id="f0" onChange="build_weather_code('f')" checked="true" /><label for="f0"><img src="./100000.png" class="inline" /><img src="./200000.png" class="inline" /><img src="./320000.png" class="inline" /></label></td></tr><tr><td>
+<input type="radio" name="f" value="1" id="f1" onChange="build_weather_code('f')" /><label for="f1"><img src="./330001.png" class="inline" /></label>
+<input type="radio" name="f" value="2" id="f2" onChange="build_weather_code('f')" /><label for="f2"><img src="./300002.png" class="inline" /></label>
+<input type="radio" name="f" value="3" id="f3" onChange="build_weather_code('f')" /><label for="f3"><img src="./300003.png" class="inline" /></label></td></tr><tr><td style="vertical-align: bottom; border: 1px solid #BBB; color: gray;"><input type="checkbox" name="fixes" value="yes" id="fixes" onChange="build_weather_code()" checked="true" style="margin: -4px 4px -1px 4px; padding: 4px;" /><small><label for="fixes">apply fixes</label></small></td><td>
+<input type="radio" name="f" value="4" id="f4" onChange="build_weather_code('f')" /><label for="f4"><img src="./300004.png" class="inline" /></label>
+<input type="radio" name="f" value="5" id="f5" onChange="build_weather_code('f')" /><label for="f5"><img src="./300005.png" class="inline" /></label>
+<input type="radio" name="f" value="6" id="f6" onChange="build_weather_code('f')" /><label for="f6"><img src="./300006.png" class="inline" /></label>
+</td><tr>
 
-<tr><td>Remote Directory:</td><td>
-	<input type="text" name="remote" value="http://img.meteogroup.com/typo3conf/ext/mg_locationweather/res/images/32px/" />
+<tr><td>Wind<!--(Wind)-->: <input type="text" name="direction" maxlength="3" readonly="true" style="width: 45px; text-align: right;" />&deg;</td><td>
+<input type="range" name="w" min="-2" max="15" step="1" onChange="build_weather_code()" onClick="build_weather_code()" />
+</td><tr>
+
+<tr><td style="border-top: 1px solid gold; border-left: 1px solid gold;"><label for="rd">Remote:</label></td><td style="border-top: 1px solid gold; border-right: 1px solid gold;"> <img src="300002.png" id="remoteimg" class="inline"/></td></tr>
+<tr><td colspan="2" style="border-bottom: 1px solid gold; border-left: 1px solid gold; border-right: 1px solid gold;" wrap="no">
+	<input type="text" name="remote" value="http://img.meteogroup.com/typo3conf/ext/mg_locationweather/res/images/32px/" onChange="build_weather_code()" style="width: 260px;" class="float"/><input type="checkbox" name="useremote" value="yes" id="rd" onChange="build_weather_code()" style="margin: 0; padding: 0;" />
 </td></tr>
 </form>
 </table>
+
+<!--
+<select name="e" onChange="build_weather_code()">
+	<option value="0" selected="true">0- None</option>
+	<option value="1">1- Small</option>
+	<option value="2">2- Medium</option>
+	<option value="3">3- Large</option>
+</select>
+-->
 
 </body></html>
