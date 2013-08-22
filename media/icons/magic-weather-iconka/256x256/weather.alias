@@ -1,0 +1,8 @@
+[
+{"code":320000,"src":"cloudiness.png","tag":["clouds"]},
+{"code":300003,"src":"fog.png","tag":["fog"]},
+{"code":322000,"src":"rain.png","tag":["rain"]},
+{"code":320200,"src":"snow.png","tag":["snow"]},
+{"code":100000,"src":"sun.png","tag":["sun"]},
+{"code":300001,"src":"thunderstorm.png","tag":["thunder"]}
+]

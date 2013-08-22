@@ -12,7 +12,12 @@ class SunAlmanak {
 		$this->longitude = ini_get("date.default_longitude");
 		$this->latitude = ini_get("date.default_latitude");
 		$this->zenith = array('sunrise' => ini_get("date.sunrise_zenith"), 'sunset' => ini_get("date.sunset_zenith") );
-		#$this->zenith = array('sunrise' => 90.0, 'sunset' => 90.0 );
+		$this->zenith = array('sunrise' => (90+50/60), 'sunset' => (90+50/60) );
+		
+		# normal zenith:		90+50/60;
+		# civil zenith: 		96;
+		# nautical zenith:		102;
+		# astronomical zenith:	108;
 		
 		$this->twilight = NULL; #(civil|nautical|astronomical|)
 		$this->today = $this->daystart($this->today);

@@ -12,7 +12,7 @@ $sa->set_location("51&deg;50'N, 5&deg;52'E"); #Nijmegen
 #$sa->set_location("51&deg; 31' NB, 0&deg; 7' WL"); #Londen
 #$sa->set_location(0.0,0.0);
 
-$sa->set_twilight('civil');
+$sa->set_twilight(NULL); #civil|nautical|astronomical
 
 print_r($sa);
 foreach(array('daystart'=>"Daystart:",'sunrise'=>"Sunrise:",'sunset'=>"Sunset: ",'daylength'=>"Daylength:",'noon'=>"Noon:   ") as $key=>$value){

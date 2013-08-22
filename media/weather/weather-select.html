@@ -34,8 +34,8 @@ function build_weather_code(mode=false){
 	
 	ws.code.value = "" + ws.a[achecked].value + ws.b.value + ws.c.value + ws.d.value + ws.e.value + ws.f[fchecked].value;
 	
-	document.getElementById("largeimg").src = "./" + ws.code.value + ".png";
-	document.getElementById("localimg").src = "./" + ws.code.value + ".png";
+	document.getElementById("largeimg").src = "./64px/" + ws.code.value + ".png";
+	document.getElementById("localimg").src = "./" + ws.size.value + "/" + ws.code.value + ".png";
 	document.getElementById("windimg").src = "../compass/" + ws.w.value + ".png"; build_wind_direction();
 	if(ws.useremote.checked){
 		document.getElementById("remoteimg").src = ws.remote.value + ws.code.value + ".png";
@@ -82,30 +82,33 @@ function build_wind_direction(){
 <form name="weather-select">
 <tr><td style="vertical-align: bottom;">
 <!-- <input type="text" name="debug" /><br/> -->
-Code: <input type="text" name="code" maxlength="6" style="width: 55px;" onChange="rebuild_weather_code()" /><input type="text" name="dircode" readonly="true" maxlength="3" style="width: 38px;" /><br/><img src="" id="localimg" border="1" style="border: 1px solid white;" width="32" height="32" /><img src="" id="windimg" border="1" style="border: 1px solid white;" width="32" height="32" /></td><td><center>
+Code: <input type="text" name="code" maxlength="6" style="width: 55px;" onChange="rebuild_weather_code()" /><br/>
+	<span style="display: inline-block; width: 64px;"><img src="" id="localimg" border="1" style="border: 1px solid white; min-width: 32px; max-width: 64px; min-height: 32px; max-height: 64px;" /></span><img src="" id="windimg" border="1" style="border: 1px solid white;" width="32" height="32" /><br/>
+	<span style="display: inline-block; width: 58px;"><select name="size" onChange="build_weather_code()" style="width: 52px;"><option value="32px">32px</option><option value="64px">64px</option></select></span><input type="text" name="dircode" readonly="true" maxlength="3" style="width: 45px;" />
+</td><td><center>
 	<img src="" id="largeimg" border="1" style="border: 1px solid white;" width="64" height="64" />
 </center></td></tr>
 
 <tr><td>Visibility:</td><td style="vertical-align: inline;">
-<input type="radio" name="a" value="1" id="a1" onChange="build_weather_code()" checked="true"/><label for="a1"><img src="./100000.png" class="inline" /></label>
-<input type="radio" name="a" value="2" id="a2" onChange="build_weather_code()" /><label for="a2"><img src="./200000.png" class="inline" /></label>
-<input type="radio" name="a" value="3" id="a3" onChange="build_weather_code()" /><label for="a3"><img src="./330000.png" class="inline" /></label>
+<input type="radio" name="a" value="1" id="a1" onChange="build_weather_code()" checked="true"/><label for="a1"><img src="./32px/100000.png" class="inline" /></label>
+<input type="radio" name="a" value="2" id="a2" onChange="build_weather_code()" /><label for="a2"><img src="./32px/200000.png" class="inline" /></label>
+<input type="radio" name="a" value="3" id="a3" onChange="build_weather_code()" /><label for="a3"><img src="./32px/330000.png" class="inline" /></label>
 </td><tr>
 
 <tr><td>Cloud Size:</td><td>
-<input type="range" name="b" min="0" max="3" step="1" onChange="build_weather_code('b')" onClick="build_weather_code()" />
+<input type="range" name="b" min="0" max="3" step="1" value="0" onChange="build_weather_code('b')" onClick="build_weather_code()" />
 </td><tr>
 
 <tr><td>Rain<!--(Regen)-->:</td><td>
-<input type="range" name="c" min="0" max="3" step="1" onChange="build_weather_code()" onClick="build_weather_code()" />
+<input type="range" name="c" min="0" max="3" step="1" value="0" onChange="build_weather_code()" onClick="build_weather_code()" />
 </td><tr>
 
 <tr><td>Snow<!--(Sneeuw)-->:</td><td>
-<input type="range" name="d" min="0" max="3" step="1" onChange="build_weather_code()" onClick="build_weather_code()" />
+<input type="range" name="d" min="0" max="3" step="1" value="0" onChange="build_weather_code()" onClick="build_weather_code()" />
 </td><tr>
 
 <tr><td>Hail<!--(Hagel)-->:</td><td>
-<input type="range" name="e" min="0" max="3" step="1" onChange="build_weather_code()" onClick="build_weather_code()" />
+<input type="range" name="e" min="0" max="3" step="1" value="0" onChange="build_weather_code()" onClick="build_weather_code()" />
 </td><tr>
 
 <tr><td rowspan="2" style="vertical-align: top;">Category:</td><td>
@@ -118,20 +121,20 @@ Code: <input type="text" name="code" maxlength="6" style="width: 55px;" onChange
 	<option value="5">5- ?</option>
 	<option value="6">6- Smog</option>
 </select> -->
-<input type="radio" name="f" value="0" id="f0" onChange="build_weather_code('f')" checked="true" /><label for="f0"><img src="./100000.png" class="inline" /><img src="./200000.png" class="inline" /><img src="./320000.png" class="inline" /></label></td></tr><tr><td>
-<input type="radio" name="f" value="1" id="f1" onChange="build_weather_code('f')" /><label for="f1"><img src="./330001.png" class="inline" /></label>
-<input type="radio" name="f" value="2" id="f2" onChange="build_weather_code('f')" /><label for="f2"><img src="./300002.png" class="inline" /></label>
-<input type="radio" name="f" value="3" id="f3" onChange="build_weather_code('f')" /><label for="f3"><img src="./300003.png" class="inline" /></label></td></tr><tr><td style="vertical-align: bottom; border: 1px solid #BBB; color: gray;"><input type="checkbox" name="fixes" value="yes" id="fixes" onChange="build_weather_code()" checked="true" style="margin: -4px 4px -1px 4px; padding: 4px;" /><small><label for="fixes">apply fixes</label></small></td><td>
-<input type="radio" name="f" value="4" id="f4" onChange="build_weather_code('f')" /><label for="f4"><img src="./300004.png" class="inline" /></label>
-<input type="radio" name="f" value="5" id="f5" onChange="build_weather_code('f')" /><label for="f5"><img src="./300005.png" class="inline" /></label>
-<input type="radio" name="f" value="6" id="f6" onChange="build_weather_code('f')" /><label for="f6"><img src="./300006.png" class="inline" /></label>
+<input type="radio" name="f" value="0" id="f0" onChange="build_weather_code('f')" checked="true" /><label for="f0"><img src="./32px/100000.png" class="inline" /><img src="./32px/200000.png" class="inline" /><img src="./32px/320000.png" class="inline" /></label></td></tr><tr><td>
+<input type="radio" name="f" value="1" id="f1" onChange="build_weather_code('f')" /><label for="f1"><img src="./32px/330001.png" class="inline" /></label>
+<input type="radio" name="f" value="2" id="f2" onChange="build_weather_code('f')" /><label for="f2"><img src="./32px/300002.png" class="inline" /></label>
+<input type="radio" name="f" value="3" id="f3" onChange="build_weather_code('f')" /><label for="f3"><img src="./32px/300003.png" class="inline" /></label></td></tr><tr><td style="vertical-align: bottom; border: 1px solid #BBB; color: gray;"><input type="checkbox" name="fixes" value="yes" id="fixes" onChange="build_weather_code()" checked="true" style="margin: -4px 4px -1px 4px; padding: 4px;" /><small><label for="fixes">apply fixes</label></small></td><td>
+<input type="radio" name="f" value="4" id="f4" onChange="build_weather_code('f')" /><label for="f4"><img src="./32px/300004.png" class="inline" /></label>
+<input type="radio" name="f" value="5" id="f5" onChange="build_weather_code('f')" /><label for="f5"><img src="./32px/300005.png" class="inline" /></label>
+<input type="radio" name="f" value="6" id="f6" onChange="build_weather_code('f')" /><label for="f6"><img src="./32px/300006.png" class="inline" /></label>
 </td><tr>
 
 <tr><td>Wind<!--(Wind)-->: <input type="text" name="direction" maxlength="3" readonly="true" style="width: 45px; text-align: right;" />&deg;</td><td>
 <input type="range" name="w" min="-2" max="15" step="1" onChange="build_weather_code()" onClick="build_weather_code()" />
 </td><tr>
 
-<tr><td style="border-top: 1px solid gold; border-left: 1px solid gold;"><label for="rd">Remote:</label></td><td style="border-top: 1px solid gold; border-right: 1px solid gold;"> <img src="300002.png" id="remoteimg" class="inline"/></td></tr>
+<tr><td style="border-top: 1px solid gold; border-left: 1px solid gold;"><label for="rd">Remote:</label></td><td style="border-top: 1px solid gold; border-right: 1px solid gold;"> <img src="./32px/300002.png" id="remoteimg" class="inline" style="min-width: 32px; max-width: 64px; min-height: 32px; max-height: 64px;"/></td></tr>
 <tr><td colspan="2" style="border-bottom: 1px solid gold; border-left: 1px solid gold; border-right: 1px solid gold;" wrap="no">
 	<input type="text" name="remote" value="http://img.meteogroup.com/typo3conf/ext/mg_locationweather/res/images/32px/" onChange="build_weather_code()" style="width: 260px;" class="float"/><input type="checkbox" name="useremote" value="yes" id="rd" onChange="build_weather_code()" style="margin: 0; padding: 0;" />
 </td></tr>
