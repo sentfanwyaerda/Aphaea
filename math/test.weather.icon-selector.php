@@ -3,6 +3,8 @@ require_once(dirname(__FILE__)."/weather.php");
 
 /* #TESTING# */
 $library = array(); #dirname(dirname(__FILE__));
+$library[] = './../media/icons/climacons/';
+$library[] = './../media/icons/compass/';
 $library[] = './../media/icons/weather/32px/';
 $library[] = './../media/icons/weather/64px/';
 $library[] = './../media/icons/weezle-d3stroy';

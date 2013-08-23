@@ -1,61 +1,180 @@
 <html>
-<title></title>
+<title>Aphaea - Header</title>
+<!-- <base href="../../" /> -->
 <script src="../js/zepto.min.js"></script>
 <script language="JavaScript">
 var iconset = [];
-function read_json(url, iconset) {
+var markset = [];
+//var base = '../../';
+function read_json(url, set) {
+	//alert(url);
 	$.getJSON(url, function(data) {
 		var i = 0;
-		iconset.length = 0; //empty it out
+		set.length = 0; //empty it out
 		$.each(data, function(index,item) {
 			i++;
-			iconset[i] = item["src"];
+			set[i] = item["src"];
 		});
+		update_mark();
 		update_icon();
 	});
 }
 function change_iconset(){
-	iform = document.forms['icon'];
-	//load json: weather.alias
+	//alert('change iconset');
+	iform = document.forms['controlpanel'];
 	read_json(iform.icontheme.value + "weather.alias", iconset);
 }
+function change_markset(){
+	//alert('change markset');
+	iform = document.forms['controlpanel'];
+	read_json(iform.marktheme.value + "weather.alias", markset);
+}
+function update_mark(){
+	//alert('update mark');
+	iform = document.forms['controlpanel'];	
+	if(markset.length == 0){ change_markset(); }
+	document.getElementById('markslider').max = markset.length -1;
+	document.getElementById('mark').src = iform.marktheme.value + markset[iform.markslider.value];
+}
 function update_icon(){
-	iform = document.forms['icon'];
-	
+	//alert('update icon');
+	iform = document.forms['controlpanel'];	
 	if(iconset.length == 0){ change_iconset(); }
-
-	//alert( json + " := " + json.length + " (" + iform.iconslider.value + ") : " + iconset.length + "=" + iconset[iform.iconslider.value]);
 	document.getElementById('iconslider').max = iconset.length -1;
-	
 	document.getElementById('icon').src = iform.icontheme.value + iconset[iform.iconslider.value];
+}
+function change_background(obj, color){
+	if((color * 1) < 16){
+		var c = 0;
+		c = ((color * 16) + (color * 1));
+		color = "rgb("+ c +","+ c +","+ c + ")";
+	}
+	//alert(color);
+	obj.style.background = color;
+}
+function show_hide(id){
+	//alert("show or hide: " + id);
+	if(document.getElementById(id).style.visibility == 'hidden'){
+		document.getElementById(id).style.visibility = 'visible';
+		document.getElementById(id).style.display = 'block';
+	}
+	else{
+		document.getElementById(id).style.visibility = 'hidden';
+		document.getElementById(id).style.display = 'none';
+	}
+}
+function change_mark_size(size){
+	document.getElementById('mark').style.width = size;
+	document.getElementById('mark').style.height = size;
+}
+function change_icon_size(size){
+	document.getElementById('icon').style.width = size;
+	document.getElementById('icon').style.height = size;
 }
 </script>
 <style>
-body { background-color: #111; }
-.icon { margin: 0; padding: 0; }
-.128px { weight: 128px; }
-.illusive { opacity:0.9; filter:alpha(opacity=90); }
-.magic { opacity:0.4; filter:alpha(opacity=40); }
+body, form { background-color: #111; margin: 0; padding: 0; }
+a { color: #933; text-decoration: none; }
+a:hover { color: #B99; text-decoration: underline; }
+#controlpanel, div.controlpanel { background-color: rgba(128,128,128,0.5); border-bottom: 1px solid rgba(66,66,66, 0.9); height: 40px; padding-top: 4px; box-shadow: 1px 1px 5px #333; z-index: 4; }
+#controlpanelbutton { float: right; background-color: rgba(128,128,128,0.8); border: 1px solid rgba(66,66,66, 0.9); border-top: 1px solid rgba(128,128,128,0.2); margin: -1px 10px 0px 10px; width: 108px; text-align: center; padding: 3px 10px 3px 10px; border-radius: 0 0 20px 20px; box-shadow: 0px 2px 4px #333; z-index: 3; }
+.panel-item { display: table-inline; float: left; height: 36px; }
+.right { float: right; }
+.panel-item, .bottom { vertical-align: bottom; }
+.panel-item.top, .top { vertical-align: top; }
+.panel-item.divider { width: 1px; height: 36px; background-color: rgba(128,128,128,0.3); margin-right: 8px; box-shadow: 1px 1px 5px #FFF; }
+.icon, .mark{ margin: 0; padding: 0; }
+.w32px { width: 32px; }
+.w64px { width: 64px; }
+.w96px { width: 96px; }
+.w128px { width: 128px; }
+.w192px { width: 192px; }
+.w256px { width: 256px; }
+.illusive, img { opacity:0.9; filter:alpha(opacity=90); }
+.magic { opacity:0.7; filter:alpha(opacity=70); }
+.disabled { opacity:0.4; filter:alpha(opacity=40); }
+.bulliton { margin-left: 8px; display: block; height: 16px; }
+.bulliton, .controlpanel select, .controlpanel input { font-size: 8pt; text-shadow: 1px 1px 3px #BBB; color: #336; }
+.checkbox, .radio { display: inline-block; margin-left: 4px; margin-top: 4px;}
+input[type="checkbox"], input[type="radio"] { margin: 0; padding: 0; }
+.capped { margin-top: -4px; }
+.bufferright { padding-right: 8px; }
+.bulliton a , .bulliton a:hover { font-weight: bold; text-shadow: 1px 1px 3px #336; color: #BBB; }
 </style>
-<body onload="change_iconset()">
-<table>
-<form name="icon">
-<tr><td>
-<select name="icontheme" id="icontheme" class="magic icon 128px" onChange="change_iconset();"  onClick="update_icon()">
+<body onload="change_markset();change_iconset();change_background(document.body, 11);change_mark_size(document.getElementById('marksize').value);change_icon_size(document.getElementById('iconsize').value);" id="body"><!-- show_hide('controlpanel') -->
+<div class="controlpanel" id="controlpanel">
+<form name="controlpanel">
+<div class="panel-item bottom" style="position: relative; z-index: 10; top: 0px;"><span class="magic bulliton w128px"><strong>Mark</strong> Iconpack:</span>
+<select name="marktheme" id="marktheme" class="magic mark icon w128px" onChange="change_markset();"  onClick="update_mark()">
+	<!-- <option value="../icons/compass/">Compass (32px)</option> -->
+	<option value="../icons/climacons/">Climacons (SVG)</option>
+	<option value="../icons/magic-weather-iconka/48x48/">Magic Weather Iconka (48px)</option>
+	<option value="../icons/magic-weather-iconka/128x128/" style="font-weight: bold;">Magic Weather Iconka (128px)</option>
+	<option value="../icons/magic-weather-iconka/256x256/" style="font-weight: bold;">Magic Weather Iconka (256px)</option>
+	<option value="../icons/weezle-d3stroy/" style="font-weight: bold;">Weezle</option>
+	<option value="../icons/weather/32px/">Weather (32px)</option>
+	<option value="../icons/weather/64px/">Weather (64px)</option>
+	<option value="../icons/weather-kidaubis/" selected="true" style="font-weight: bold;">Weather Kidaubis</option>
+	<option value="../icons/weather-umutavci/">Weather Umutavci</option>
+</select>
+<span class="bulliton w128px" style="height: 96px;"></span><input type="range" name="markslider" id="markslider" onClick="update_mark()" onChange="update_mark()" min="1" max="12" value="1" class="magic icon w128px" />
+</div>
+<div class="panel-item capped bufferright"><span class="magic bulliton checkbox">Size of <strong>Mark</strong>: &nbsp;</span>
+<select name="marksize" id="marksize" class="magic icon w64px" onChange="change_mark_size(this.value)">
+	<option value="auto">original</option>
+	<option value="32px">32px</option>
+	<option value="48px">48px</option>
+	<option value="64px">64px</option>
+	<option value="96px">96px</option>
+	<option value="128px" style="font-weight: bold;" selected="true">128px</option>
+	<option value="192px">192px</option>
+	<option value="256px">256px</option>
+</select>
+<br/>
+<div style="float: left; "><input type="checkbox" class="magic checkbox" id="use_weather_mark" checked="true"/></div><label for="use_weather_mark" class="magic bulliton checkbox">use weather to change <strong>Mark</strong></label>
+</div>
+<div class="panel-item divider"></div>
+<div class="panel-item bottom"><span class="magic bulliton w128px"><strong>Default</strong> Iconpack:</span>
+<select name="icontheme" id="icontheme" class="magic icon w128px" onChange="change_iconset();"  onClick="update_icon()">
+	<option value="../icons/compass/">Compass (32px)</option>
+	<option value="../icons/climacons/">Climacons (SVG)</option>
 	<option value="../icons/magic-weather-iconka/48x48/">Magic Weather Iconka (48px)</option>
 	<option value="../icons/magic-weather-iconka/128x128/">Magic Weather Iconka (128px)</option>
 	<option value="../icons/magic-weather-iconka/256x256/">Magic Weather Iconka (256px)</option>
-	<option value="../icons/weezle-d3stroy/">Weezle</option>
+	<option value="../icons/weezle-d3stroy/" style="font-weight: bold;">Weezle</option>
+	<option value="../icons/weather/32px/" style="font-weight: bold;">Weather (32px)</option>
+	<option value="../icons/weather/64px/" style="font-weight: bold;">Weather (64px)</option>
 	<option value="../icons/weather-kidaubis/" selected="true">Weather Kidaubis</option>
-	<option value="../icons/weather-umutavci/">Weather Umutavci</option>
-</select><br/>
-<input type="range" name="iconslider" id="iconslider" onClick="update_icon()" onChange="update_icon()" min="1" max="12" value="1" class="magic icon 128px" />
-</td></tr>
-</form>
-<tr><td>
+	<option value="../icons/weather-umutavci/" style="font-weight: bold;">Weather Umutavci</option>
+</select>
+</div>
+<div class="panel-item bufferright">
 <img src="" id="icon" class="illusive icon"/>
-</td></tr>
-<table>
+</div>
+<div class="panel-item bottom bufferright">
+<select name="iconsize" id="iconsize" class="magic icon w64px" onChange="change_icon_size(this.value)">
+	<option value="auto">original</option>
+	<option value="24px">24px</option>
+	<option value="32px" style="font-weight: bold;" selected="true">32px</option>
+	<option value="48px">48px</option>
+	<option value="64px">64px</option> <!--
+	<option value="128px">128px</option>
+	<option value="256px">256px</option> -->
+</select><br/>
+<input type="range" name="iconslider" id="iconslider" onClick="update_icon()" onChange="update_icon()" min="1" max="12" value="1" class="magic icon w64px" />
+</div>
+<div class="panel-item divider"></div>
+<div class="panel-item right"><span class="magic bulliton w128px">Background color:</span>
+<input type="range" id="colorselector" onChange="change_background(document.body, this.value)" onClick="change_background(document.body, this.value)" min="0" max="15" value="11" class="magic icon w128px" />
+</div>
+<div class="panel-item divider right"></div>
+</form>
+</div>
+<div id="controlpanelbutton" class="bulliton"><a href="#" onClick="show_hide('controlpanel')">up and down</a></div>
+
+<div id="aphaea-mark">
+<label for="markslider"><img src="" id="mark" class="illusive mark"/></label>
+</div>
 
 </body>
 </html>
