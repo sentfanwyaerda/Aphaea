@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE aphaea 
+    PUBLIC "-//Aphaea//EN" 
+    "https://raw.github.com/sentfanwyaerda/Aphaea/master/Aphaea.dtd"
+[
+	<!ENTITY deg "&#176;">
+]>
+<aphaea xmlns="https://github.com/sentfanwyaerda/Aphaea" xmlns:aphaea="#system" xmlns:weather="#" xmlns:wind="#" xmlns:rain="#" xmlns:sun="#" xmlns:moon="#" xmlns:air="#">
+	<aphaea:static for="language" xml:lang="nl" />
+	<aphaea:static for="timezone" offset="+02:00" zone="Europe/Amsterdam" dst="yes" />
+	<aphaea:static for="location" type="coordinate" coordinate="51&deg;50'N, 5&deg;52'E">Nijmegen</aphaea:static>
+	
+	<aphaea:static for="temperature" type="scale" scale="Celcius" short="&deg;C" notation="postfix" />
+	<aphaea:static for="wind:power" scale="Beaufort" short="bft" notation="postfix" />
+	<aphaea:static for="wind:direction" id="N" degrees="0" code="8">N</aphaea:static>
+	<aphaea:static for="wind:direction" degrees="22.5" code="9">NNO</aphaea:static>
+	<aphaea:static for="wind:direction" degrees="45" code="10">NO</aphaea:static>
+	<aphaea:static for="wind:direction" degrees="67.5" code="11">ONO</aphaea:static>
+	<aphaea:static for="wind:direction" id="E" degrees="90" code="12">O</aphaea:static>
+	<aphaea:static for="wind:direction" degrees="112.5" code="13">OZO</aphaea:static>
+	<aphaea:static for="wind:direction" degrees="135" code="14">ZO</aphaea:static>
+	<aphaea:static for="wind:direction" degrees="157.5" code="15">ZZO</aphaea:static>
+	<aphaea:static for="wind:direction" id="S" degrees="180" code="0">Z</aphaea:static>
+	<aphaea:static for="wind:direction" degrees="202.5" code="1">ZZW</aphaea:static>
+	<aphaea:static for="wind:direction" degrees="225" code="2">ZW</aphaea:static>
+	<aphaea:static for="wind:direction" degrees="247.5" code="3">WZW</aphaea:static>
+	<aphaea:static for="wind:direction" id="W" degrees="270" code="4">W</aphaea:static>
+	<aphaea:static for="wind:direction" degrees="292.5" code="5">WNW</aphaea:static>
+	<aphaea:static for="wind:direction" degrees="315" code="6">NW</aphaea:static>
+	<aphaea:static for="wind:direction" degrees="337.5" code="7">NNW</aphaea:static>
+	<aphaea:static for="wind:direction" id="ALL" code="-2">ALL</aphaea:static>
+	<aphaea:static for="wind:direction" id="NONE" code="-1">NONE</aphaea:static>
+	<aphaea:static for="rain:amount" type="scale" scale="mm" short="mm" notation="postfix" />
+	<aphaea:static for="rain:propability propability" type="scale" scale="double" notation="none" min="0.0" max="1.0"><calculate from="double" to="percent" short="%" notation="postfix" math="*100" round="0" /></aphaea:static>
+	<aphaea:static for="air:pressure pressure" scale="hPa" short="hPa" notation="postfix" />
+	<aphaea:static for="sun:hours" scale="hours" short="h" notation="postfix" min="0" max="24"><calculate from="hours" to="seconds" short="s" notation="postfix" math="*60*60" round="0" /><calculate from="hours" to="minutes" short="m" notation="postfix" math="*60" round="0"/><calculate from="hours" to="days" short="d" notation="prefix" math="/24" max="1" min="0" /><calculate from="days" to="hours" math="*24" /><calculate from="minutes" to="hours" math="/60" /><calculate from="seconds" to="hours" math="/3600" /></aphaea:static>
+	<aphaea:static for="elevation elevation.min elevation.max" type="scale" scale="degree" short="&deg;" notation="postfix" min="-90" max="90" />
+	<aphaea:static for="sound:level levels.min levels.max levels.avg" type="scale" scale="decibel" short="db" notation="postfix" />
+	<aphaea:static for="sound:frequency" type="scale" scale="hertz" short="Hz" notation="postfix" min="20" max="20000" />
+	
+	<!-- Aphaea record starts here -->
+	<aphaea:records type="weather-forcast" start="2013-08-22" end="2013-08-28">
+		<entry date="2013-08-21" moon:phase="full" weather:code="121000" />
+		<entry date="2013-08-22">
+			<phase type="night">
+				<weather code="2000000" description="helder" temperature="13" wind:direction="OZO" wind:power="1" rain:amount="0" rain:propability="0.04"/>
+			</phase>
+			<phase type="day">
+				<weather code="1100000" description="half bewolkt" temperature="24" wind:direction="ZW" wind:power="2" rain:amount="0.1" rain:propability="0.50"/>
+			</phase>
+			<weather sun:hours="6.0" air:pressure="1020" code="321000" />
+			<sun rise="06:29" set="20:49" elevation.max="" type="calculated"/>
+			<moon phase="" illumination="" rise="" set="" elevation.max="" type="calculated" />
+			<air CO="" NO2="" NH4="" O3="" levels="" />
+			<sound levels.min="" levels.max="" levels.avg="" />
+		</entry>
+		<entry date="2013-08-23">
+			<phase type="night">
+				<weather code="320000" description="zwaar bewolkt" temperature="15" wind:direction="NNO" wind:power="1" rain:amount="0.1" rain:propability="0.45"/>
+			</phase>
+			<phase type="day">
+				<weather code="110000" description="half bewolkt" temperature="24" wind:direction="O" wind:power="2" rain:amount="0" rain:propability="0.1"/>
+			</phase>
+			<weather sun:hours="7" />
+			<sun rise="06:31" set="20:47" type="calculated"/>
+		</entry>
+		<entry date="2013-08-24">
+			<phase type="night">
+				<weather code="210000" description="licht bewolkt" temperature="15" wind:direction="O" wind:power="2" rain:amount="0" rain:propability="0.1"/>
+			</phase>
+			<phase type="day">
+				<weather code="120000" description="half bewolkt" temperature="26" wind:direction="O" wind:power="3" rain:amount="0" rain:propability="0.15"/>
+			</phase>
+			<weather sun:hours="6" />
+			<sun rise="06:33" set="20:45" type="calculated"/>
+		</entry>
+		<entry date="2013-08-25">
+			<phase type="night">
+				<weather code="221000" description="zwaar bewolkt, regenbui" temperature="16" wind:direction="ONO" wind:power="2" rain:amount="1" rain:propability="0.50"/>
+			</phase>
+			<phase type="day">
+				<weather code="122000" description="zwaar bewolkt, zware regenbui" temperature="23" wind:direction="ONO" wind:power="3" rain:amount="2" rain:propability="0.80"/>
+			</phase>
+			<weather sun:hours="3" />
+			<sun rise="06:34" set="20:43" type="calculated"/>
+		</entry>
+		<entry date="2013-08-26">
+			<phase type="night">
+				<weather code="211000" description="licht bewolkt, regenbui" temperature="14" wind:direction="NO" wind:power="2" rain:amount="0.1" rain:propability="0.45"/>
+			</phase>
+			<phase type="day">
+				<weather code="110000" description="licht bewolkt" temperature="23" wind:direction="NO" wind:power="3" rain:amount="0" rain:propability="0.15"/>
+			</phase>
+			<weather sun:hours="10" />
+			<sun rise="6:36" set="20:40" type="calculated"/>
+		</entry>
+		<entry date="2013-08-27">
+			<phase type="night">
+				<weather code="200000" description="helder" temperature="12" wind:direction="NO" wind:power="2" rain:amount="0" rain:propability="0.15"/>
+			</phase>
+			<phase type="day">
+				<weather code="110000" description="licht bewolkt" temperature="23" wind:direction="NNO" wind:power="2" rain:amount="0" rain:propability="0.15"/>
+			</phase>
+			<weather sun:hours="10" />
+			<sun rise="6:38" set="20:38" type="calculated"/>
+		</entry>
+		<entry date="2013-08-28">
+			<phase type="night">
+				<weather code="210000" description="half bewolkt" temperature="12" wind:direction="NNO" wind:power="1" rain:amount="0" rain:propability="0.15"/>
+			</phase>
+			<phase type="day">
+				<weather code="120000" description="zwaar bewolkt" temperature="21" wind:direction="NW" wind:power="2" rain:amount="0.1" rain:propability="0.35"/>
+			</phase>
+			<weather sun:hours="4" />
+			<sun rise="06:39" set="20:36" type="calculated"/>
+		</entry>
+	</aphaea:records>
+</aphaea>

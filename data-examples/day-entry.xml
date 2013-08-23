@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE aphaea 
+    PUBLIC "-//Aphaea//EN" 
+    "https://raw.github.com/sentfanwyaerda/Aphaea/master/Aphaea.dtd"
+[
+	<!ENTITY deg "&#176;">
+]>
+<aphaea:entry date="2013-08-28" xmlns="https://github.com/sentfanwyaerda/Aphaea" xmlns:aphaea="#system" xmlns:weather="#" xmlns:wind="#" xmlns:rain="#" xmlns:sun="#" xmlns:moon="#" xmlns:air="#">
+	<phase type="night">
+		<weather code="210000" description="half bewolkt" temperature="12" wind:direction="NNO" wind:power="1" rain:amount="0" rain:propability="0.15"/>
+	</phase>
+	<phase type="day">
+		<weather code="120000" description="zwaar bewolkt" temperature="21" wind:direction="NW" wind:power="2" rain:amount="0.1" rain:propability="0.35"/>
+	</phase>
+	<weather sun:hours="4" />
+	<sun rise="06:39" set="20:36" type="calculated"/>
+</aphaea:entry>

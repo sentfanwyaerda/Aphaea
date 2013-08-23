@@ -3,8 +3,8 @@ require_once(dirname(__FILE__)."/weather.php");
 
 /* #TESTING# */
 $library = array(); #dirname(dirname(__FILE__));
-$library[] = './../media/weather/32px/';
-$library[] = './../media/weather/64px/';
+$library[] = './../media/icons/weather/32px/';
+$library[] = './../media/icons/weather/64px/';
 $library[] = './../media/icons/weezle-d3stroy';
 $library[] = './../media/icons/magic-weather-iconka/48x48'; #/48x48 /128x128 /256x256
 $library[] = './../media/icons/magic-weather-iconka/128x128'; #/48x48 /128x128 /256x256

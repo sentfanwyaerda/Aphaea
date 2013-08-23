@@ -1,0 +1,41 @@
+<!DOCTYPE aphaea [
+	<!ELEMENT aphaea (aphaea:static*, aphaea:records)>
+	<!ELEMENT aphaea:static (empty | #PCDATA | calculate)>
+	<!ATTLIST aphaea:static
+		for #required
+	>
+	<!ELEMENT calculate empty>
+	<!ATTLIST calculate
+		from #required
+		to #required
+		math #required
+	>
+	
+	<!ENTITY entry "(empty | phase*, weather, sun?, moon?, air?, sound?)">
+	
+	<!ELEMENT aphaea:records (entry*)>
+	<!ELEMENT entry &entry;>
+	<!ELEMENT aphaea:entry &entry;>
+	<!ATTLIST entry
+		date #required
+	>
+	<!ATTLIST aphaea:entry
+		date #required
+	>
+	<!ELEMENT phase &entry;>
+	<!ATTLIST phase
+		type (day|night) #required
+	>
+	<!ELEMENT weather empty>
+	<!ELEMENT sun empty>
+	<!ATTLIST sun
+		rise #required
+		set #required
+	>
+	<!ELEMENT moon empty>
+	<!ATTLIST moon
+		phase #required
+	>
+	<!ELEMENT air empty>
+	<!ELEMENT sound empty>
+]>

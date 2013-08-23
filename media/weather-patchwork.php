@@ -32,7 +32,7 @@ print "<tr>\n"; for($z=0;$z<$width;$z++){ print "\t<th>".($z < 16 ? '0' : NULL).
 foreach($db as $item){
 	if(substr(basename($item), 0, 1) != substr(basename($previous), 0, 1) && preg_match("#^weather/#i", $item) || $item{0} != $previous{0} ){ print "</tr>\n<tr>\n"; $i=0; }
 	print "\t";
-	if(file_exists("./".$item.".png")){ print '<td class="color-white border-weather">'.'<img src="'.$local.$item.'.png" border="1" style="border: 1px solid white;" alt="'.preg_replace("#^(.*)[/]([^/]+)$#", "\\2", $item).'" title="'.preg_replace("#^(.*)[/]([^/]+)$#", "\\2", $item).'" />'; $counter++; }
+	if(file_exists("./icons/".$item.".png")){ print '<td class="color-white border-weather">'.'<img src="icons/'.$local.$item.'.png" border="1" style="border: 1px solid white;" alt="'.preg_replace("#^(.*)[/]([^/]+)$#", "\\2", $item).'" title="'.preg_replace("#^(.*)[/]([^/]+)$#", "\\2", $item).'" />'; $counter++; }
 	else { print '<td class="color-'.substr(basename($item), 0, 1).' border-'.substr(basename($item), 1, 1).' empty">'.substr($item, -6); }
 	if($with_remote === TRUE) print '<img src="'.$remote.basename($item).'.png" border="1" style="border: 1px solid gold;" />';
 	print '</td>'."\n";

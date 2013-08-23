@@ -1,30 +1,59 @@
 <html>
 <title></title>
-<script>
+<script src="../js/zepto.min.js"></script>
+<script language="JavaScript">
+var iconset = [];
+function read_json(url, iconset) {
+	$.getJSON(url, function(data) {
+		var i = 0;
+		iconset.length = 0; //empty it out
+		$.each(data, function(index,item) {
+			i++;
+			iconset[i] = item["src"];
+		});
+		update_icon();
+	});
+}
+function change_iconset(){
+	iform = document.forms['icon'];
+	//load json: weather.alias
+	read_json(iform.icontheme.value + "weather.alias", iconset);
+}
 function update_icon(){
-iform = document.forms['icon'];
-document.getElementById('icon').src = iform.icontheme.value + iform.iconslider.value + '.png';
+	iform = document.forms['icon'];
+	
+	if(iconset.length == 0){ change_iconset(); }
+
+	//alert( json + " := " + json.length + " (" + iform.iconslider.value + ") : " + iconset.length + "=" + iconset[iform.iconslider.value]);
+	document.getElementById('iconslider').max = iconset.length -1;
+	
+	document.getElementById('icon').src = iform.icontheme.value + iconset[iform.iconslider.value];
 }
 </script>
 <style>
 body { background-color: #111; }
-.icon {width: 128px; margin: 0; padding: 0;}
+.icon { margin: 0; padding: 0; }
+.128px { weight: 128px; }
 .illusive { opacity:0.9; filter:alpha(opacity=90); }
 .magic { opacity:0.4; filter:alpha(opacity=40); }
 </style>
-<body onload="update_icon()">
+<body onload="change_iconset()">
 <table>
 <form name="icon">
 <tr><td>
-<select name="icontheme" id="icontheme" class="magic icon">
+<select name="icontheme" id="icontheme" class="magic icon 128px" onChange="change_iconset();"  onClick="update_icon()">
+	<option value="../icons/magic-weather-iconka/48x48/">Magic Weather Iconka (48px)</option>
+	<option value="../icons/magic-weather-iconka/128x128/">Magic Weather Iconka (128px)</option>
+	<option value="../icons/magic-weather-iconka/256x256/">Magic Weather Iconka (256px)</option>
+	<option value="../icons/weezle-d3stroy/">Weezle</option>
 	<option value="../icons/weather-kidaubis/" selected="true">Weather Kidaubis</option>
-	<option value="../icons/weezle-d3stroy/" selected="true">Weezle</option>
+	<option value="../icons/weather-umutavci/">Weather Umutavci</option>
 </select><br/>
-<input type="range" name="iconslider" id="iconslider" onClick="update_icon()" onChange="update_icon()" min="1" max="12" class="magic icon" />
+<input type="range" name="iconslider" id="iconslider" onClick="update_icon()" onChange="update_icon()" min="1" max="12" value="1" class="magic icon 128px" />
 </td></tr>
 </form>
 <tr><td>
-<img src="" id="icon" class="illusive icon" style="height: 128px;"/>
+<img src="" id="icon" class="illusive icon"/>
 </td></tr>
 <table>
 

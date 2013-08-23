@@ -8,7 +8,7 @@ Aphaea
 *Aphaea* will be installed in the ``/application/`` directory within your [Hades](https://github.com/sentfanwyaerda/Hades) installation and configured as such. Use the [Morpheus](https://github.com/sentfanwyaerda/Morpheus)-module for data and page mapping.
 
 ### Nifty toolset:
-- [Weather Select](./media/weather/weather-select.html) &ndash; to test the availability of the standard weather icon set.
+- [Weather Select](./media/icons/weather/weather-select.html) &ndash; to test the availability of the standard weather icon set.
 - [Weather Patchwork](./media/weather-patchwork.php) &ndash; all default weather icons available in one pragmatic "periodic" table.
 - [Icon Selector](./math/test.weather.icon-selector.php) &ndash; it reads the ``weather.alias`` of each icon pack and calculates the best match to the current weather code.
 
