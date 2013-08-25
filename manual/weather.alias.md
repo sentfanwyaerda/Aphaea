@@ -10,18 +10,26 @@ weather.alias
 
 ###Weather code
 Describing weather is a complex process. Multiple variables define the <u>visual expression</u>: cloudiness, during day or night, the amount of rain, snow or hail, and all kinds of extra's.
-**Pattern:** ``[1-3][0-3]{4}[0-9a-f]`` or ``[0](000-360)(0,1,3)[c]`` (in case of 'compass' files)
+
+**Pattern:** ``[1-3][0-3]{4}[0-9a-f]`` or ``[0](000-360)(0,1,3)[c]`` *(in case of 'compass' files)*
 
 ####Athmospheric body
-- 1: Sun &ndash;
-- 2: Moon &ndash;
-- 3: Cloudy / Unknown / Not visible &ndash;
+The first character is for depicting an athmospheric body. *Is the moon visible? Or the sun during the day?*
+- 1: Sun &ndash; ..
+- 2: Moon &ndash; ..
+- 3: Cloudy / Unknown / Not visible &ndash; ..
+
+Non-visibility through clouds is a mixture of cloudiness and the state of an athmospheric body. For example: You can see the sun (or moon) when, there are no clouds, or minimal clouds, upto medium clouds. With Heavy clouds the visibility of the athmospheric body is blocked. When cloudy, the cloudiness could be medium or even heavy. Thus, making the folowing initial two characters very common: 10, 11, 12, 20, 21, 22, 32, 33. 30 will indicate the priority to the special marker.
 
 ####Level of cloudiness and amount of rain, snow and/or hail
+The second character is for the level of cloudiness.
 - 0: None
 - 1: Minimal
 - 2: Medium
 - 3: Heavy
+
+The third character dipicts *rain*, the fourth *snow* and the fifth *hail*. Rain/Snow/Hail implicates at least a minimal amount of clouds. Combinations of Rain with Snow with Hail are rare (giving only one of them be not-none), but not unpossible, but always of equal intensity.
+
 *note:* The weather code is based upon the image names of the 'weather' icon-pack. While its '3' value might been used to indicate 'minimal' levels ("now and then"), turning '1' into 'medium' and '2' into 'heavy'.
 
 ####With special markers
