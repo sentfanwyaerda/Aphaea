@@ -10,7 +10,7 @@ Aphaea
 ### Nifty toolset:
 - [Weather Select](./media/icons/weather/weather-select.html) &ndash; to test the availability of the standard weather icon set.
 - [Weather Patchwork](./media/weather-patchwork.php) &ndash; all default weather icons available in one pragmatic "periodic" table.
-- [Icon Selector](./math/test.weather.icon-selector.php) &ndash; it reads the ``weather.alias`` of each icon pack and calculates the best match to the current weather code.
+- [Icon Selector](./library/math/test.weather.icon-selector.php) &ndash; it reads the ``weather.alias`` of each icon pack and calculates the best match to the current weather code.
 
 ### Requires
 - [Hades](https://github.com/sentfanwyaerda/Hades) (as platform, with [PHP](http://php.net/) and modules: [Morpheus](https://github.com/sentfanwyaerda/Morpheus), .. )

@@ -6,6 +6,22 @@
 var iconset = [];
 var markset = [];
 //var base = '../../';
+
+function load_iconpacks(obj, name){
+	//obj = document.getElementById('icontheme')
+	//name = 'icon'
+	$.getJSON('../icons/iconpacks.json', function(data){
+		var options = '';
+		$.each(data, function(index,item){
+			$.each(item["src"], function(srci, srcv){
+				options = options + '<option value="../icons/' + srcv + '/" ' + ($.inArray(name, item["advice"]) > -1 ? ' style="font-weight: bold;"' : '') + '>' + item["name"] + (item["src"].length > 1 ? ' (' + item["size"][srci] + ')' : '') + '</option>';
+				/* style="font-weight: bold;" */
+			});
+		});
+		obj.innerHTML = options;
+	});
+}
+
 function read_json(url, set) {
 	//alert(url);
 	$.getJSON(url, function(data) {
@@ -101,21 +117,13 @@ input[type="checkbox"], input[type="radio"] { margin: 0; padding: 0; }
 .bufferright { padding-right: 8px; }
 .bulliton a , .bulliton a:hover { font-weight: bold; text-shadow: 1px 1px 3px #336; color: #BBB; }
 </style>
-<body onload="change_markset();change_iconset();change_background(document.body, 11);change_mark_size(document.getElementById('marksize').value);change_icon_size(document.getElementById('iconsize').value);" id="body"><!-- show_hide('controlpanel') -->
+<body onload="load_iconpacks(document.getElementById('icontheme'), 'icon');load_iconpacks(document.getElementById('marktheme'), 'mark');change_markset();change_iconset();change_background(document.body, 11);change_mark_size(document.getElementById('marksize').value);change_icon_size(document.getElementById('iconsize').value);" id="body"><!-- show_hide('controlpanel') -->
 <div class="controlpanel" id="controlpanel">
 <form name="controlpanel">
 <div class="panel-item bottom" style="position: relative; z-index: 10; top: 0px;"><span class="magic bulliton w128px"><strong>Mark</strong> Iconpack:</span>
 <select name="marktheme" id="marktheme" class="magic mark icon w128px" onChange="change_markset();"  onClick="update_mark()">
-	<!-- <option value="../icons/compass/">Compass (32px)</option> -->
-	<option value="../icons/climacons/">Climacons (SVG)</option>
-	<option value="../icons/magic-weather-iconka/48x48/">Magic Weather Iconka (48px)</option>
 	<option value="../icons/magic-weather-iconka/128x128/" style="font-weight: bold;">Magic Weather Iconka (128px)</option>
-	<option value="../icons/magic-weather-iconka/256x256/" style="font-weight: bold;">Magic Weather Iconka (256px)</option>
-	<option value="../icons/weezle-d3stroy/" style="font-weight: bold;">Weezle</option>
-	<option value="../icons/weather/32px/">Weather (32px)</option>
 	<option value="../icons/weather/64px/">Weather (64px)</option>
-	<option value="../icons/weather-kidaubis/" selected="true" style="font-weight: bold;">Weather Kidaubis</option>
-	<option value="../icons/weather-umutavci/">Weather Umutavci</option>
 </select>
 <span class="bulliton w128px" style="height: 96px;"></span><input type="range" name="markslider" id="markslider" onClick="update_mark()" onChange="update_mark()" min="1" max="12" value="1" class="magic icon w128px" />
 </div>
@@ -136,16 +144,7 @@ input[type="checkbox"], input[type="radio"] { margin: 0; padding: 0; }
 <div class="panel-item divider"></div>
 <div class="panel-item bottom"><span class="magic bulliton w128px"><strong>Default</strong> Iconpack:</span>
 <select name="icontheme" id="icontheme" class="magic icon w128px" onChange="change_iconset();"  onClick="update_icon()">
-	<option value="../icons/compass/">Compass (32px)</option>
-	<option value="../icons/climacons/">Climacons (SVG)</option>
-	<option value="../icons/magic-weather-iconka/48x48/">Magic Weather Iconka (48px)</option>
-	<option value="../icons/magic-weather-iconka/128x128/">Magic Weather Iconka (128px)</option>
-	<option value="../icons/magic-weather-iconka/256x256/">Magic Weather Iconka (256px)</option>
-	<option value="../icons/weezle-d3stroy/" style="font-weight: bold;">Weezle</option>
-	<option value="../icons/weather/32px/" style="font-weight: bold;">Weather (32px)</option>
 	<option value="../icons/weather/64px/" style="font-weight: bold;">Weather (64px)</option>
-	<option value="../icons/weather-kidaubis/" selected="true">Weather Kidaubis</option>
-	<option value="../icons/weather-umutavci/" style="font-weight: bold;">Weather Umutavci</option>
 </select>
 </div>
 <div class="panel-item bufferright">
@@ -165,7 +164,10 @@ input[type="checkbox"], input[type="radio"] { margin: 0; padding: 0; }
 </div>
 <div class="panel-item divider"></div>
 <div class="panel-item right"><span class="magic bulliton w128px">Background color:</span>
-<input type="range" id="colorselector" onChange="change_background(document.body, this.value)" onClick="change_background(document.body, this.value)" min="0" max="15" value="11" class="magic icon w128px" />
+<input type="range" id="colorselector" onChange="change_background(document.body, this.value)" onClick="change_background(document.body, this.value)" min="0" max="15" value="15" class="magic icon w128px" />
+</div>
+<div class="panel-item right"><span class="magic bulliton w128px">Controlpanel color:</span>
+<input type="range" id="colorselector" onChange="change_background(document.getElementById('controlpanel'), this.value)" onClick="change_background(document.getElementById('controlpanel'), this.value)" min="0" max="15" value="8" class="magic icon w128px" />
 </div>
 <div class="panel-item divider right"></div>
 </form>

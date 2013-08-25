@@ -77,6 +77,15 @@ function build_wind_direction(){
 		}
 	}
 }
+function change_background(obj, color){
+	if((color * 1) < 16){
+		var c = 0;
+		c = ((color * 16) + (color * 1));
+		color = "rgb("+ c +","+ c +","+ c + ")";
+	}
+	//alert(color);
+	obj.style.background = color;
+}
 </script>
 <table>
 <form name="weather-select">
@@ -137,6 +146,9 @@ Code: <input type="text" name="code" maxlength="6" style="width: 55px;" onChange
 <tr><td style="border-top: 1px solid gold; border-left: 1px solid gold;"><label for="rd">Remote:</label></td><td style="border-top: 1px solid gold; border-right: 1px solid gold;"> <img src="./32px/300002.png" id="remoteimg" class="inline" style="min-width: 32px; max-width: 64px; min-height: 32px; max-height: 64px;"/></td></tr>
 <tr><td colspan="2" style="border-bottom: 1px solid gold; border-left: 1px solid gold; border-right: 1px solid gold;" wrap="no">
 	<input type="text" name="remote" value="http://img.meteogroup.com/typo3conf/ext/mg_locationweather/res/images/32px/" onChange="build_weather_code()" style="width: 260px;" class="float"/><input type="checkbox" name="useremote" value="yes" id="rd" onChange="build_weather_code()" style="margin: 0; padding: 0;" />
+</td></tr>
+<tr><td><small>Background color:</small></td><td>
+<input type="range" id="colorselector" onChange="change_background(document.body, this.value)" onClick="change_background(document.body, this.value)" min="0" max="15" value="11" class="magic icon w128px" />
 </td></tr>
 </form>
 </table>

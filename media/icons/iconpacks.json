@@ -1,0 +1,11 @@
+[
+{"src": ["climacons"], "name": "Climacons", "type": ["SVG"], "size": ["100px"], "url": "http://adamwhitcroft.com/climacons/", "advice": [], "category": "weather"},
+{"src": ["compass"], "name": "Compass", "type": ["PNG"], "size": ["32px"], "url": "", "advice": ["icon"], "category": "compass"},
+{"src": ["magic-weather-iconka/48x48","magic-weather-iconka/128x128","magic-weather-iconka/256x256"], "name": "Magic Iconka", "type": ["PNG"], "size": ["48px","128px","256px"], "url": "http://iconka.com/2011/06/09/741", "advice": ["mark"], "category": "weather"},
+{"src": ["meteocons"], "name": "Meteocons", "type": ["SVG"], "size": ["512px"], "url": "http://www.alessioatzeni.com/meteocons/", "advice": [], "category": "weather"},
+{"src": ["weather/32px","weather/64px"], "name": "Weather", "type": ["PNG"], "size": ["32px","64px"], "url": "http://img.meteogroup.com/typo3conf/ext/mg_locationweather/res/images/32px/", "advice": ["icon"], "category": "weather"},
+{"src": ["weather-icons-d3stroy"], "name": "D3stroy", "type": ["PNG"], "size": ["128px"], "url": "http://d3stroy.deviantart.com/art/Weather-Icons-I-32934189", "advice": [], "category": "weather"},
+{"src": ["weather-kidaubis"], "name": "Kidaubis", "type": ["PNG"], "size": ["128px"], "url": "http://kidaubis.deviantart.com/art/Weather-icons-by-kidaubis-96067476", "advice": ["mark"], "category": "weather"},
+{"src": ["weather-umutavci"], "name": "Umutavci", "type": ["PNG"], "size": ["80px"], "url": "http://umutavci.deviantart.com/art/weather-icon-set-165476034", "advice": ["mark","icon"], "category": "weather"},
+{"src": ["weezle-d3stroy"], "name": "Weezle", "type": ["PNG"], "size": ["256px"], "url": "http://d3stroy.deviantart.com/art/Weezle-Weather-Icons-187306753", "advice": ["mark","icon"], "category": "weather"}
+]

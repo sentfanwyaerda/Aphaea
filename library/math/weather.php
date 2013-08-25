@@ -3,6 +3,7 @@ require_once('php-sun-almanak.php');
 require_once('php-moon-phase/moon-phase.php');
 class weather {
 	var $debug = NULL;
+	
 
 	# Data Input
 
@@ -17,6 +18,7 @@ class weather {
 			$this->icon_set_alias = json_decode( file_get_contents($directory.'/weather.alias') );
 		} else { return /*error*/ FALSE; }
 	}
+	private $last_icon = FALSE;
 	/*URI*/ function get_icon_url($wcode=NULL){
 		if($wcode == NULL){ $wcode = $this->_calculate_current_weather_code(); }
 		$match = array();
@@ -26,7 +28,12 @@ class weather {
 		}}
 		#/*debug*/ print_r($match);
 		/*debug*/ foreach($match as $i=>$value){ $this->debug .= $wcode."\t".$this->icon_set_alias[$i]->code."\t(".$value.")%\t".$this->icon_set_alias[$i]->src."\n"; }
-		return /*get first: best result*/ $this->icon_set_alias[ $this->_get_maximum( $match , FALSE) ]->src;
+		$maximum = $this->_get_maximum( $match , FALSE);
+		$this->last_icon = array("id" => $maximum, "score" => $match[$maximum]);
+		return /*get first: best result*/ $this->icon_set_alias[ $maximum ]->src;
+	}
+	function get_last_icon_score(){
+		return (isset($this->last_icon["score"]) ? $this->last_icon["score"] : FALSE);
 	}
 	private /*string [1-3][0-3]{4}[0-9] */ function _calculate_current_weather_code(){ return '121001'; }
 	private /*double*/ function _calculate_weather_code_match($a, $b){
