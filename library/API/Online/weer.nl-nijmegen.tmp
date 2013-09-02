@@ -1,0 +1,958 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<!--
+	created by MeteoGroup and MeteoGraphics
+
+	This website is powered by TYPO3 - inspiring people to share!
+	TYPO3 is a free open source Content Management Framework initially created by Kasper Skaarhoj and licensed under GNU/GPL.
+	TYPO3 is copyright 1998-2012 of Kasper Skaarhoj. Extensions are copyright of their respective owners.
+	Information and contribution at http://typo3.com/ and http://typo3.org/
+-->
+		<base href="http://www.weer.nl/" />
+		<link rel="shortcut icon" href="http://www.weer.nl/fileadmin/templates/images/favicon.ico" type="image/x-ico; charset=binary" />
+		<link rel="icon" href="http://www.weer.nl/fileadmin/templates/images/favicon.ico" type="image/x-ico; charset=binary" />
+		<link rel="stylesheet" type="text/css" href="typo3temp/stylesheet_1f444c98dd.1342595996.css" media="all" />
+		<link rel="stylesheet" type="text/css" href="fileadmin/templates/styles/tt_news.1363096106.css" media="all" />
+		<script src="typo3temp/javascript_4d1bbec654.1378080063.js" type="text/javascript"></script>
+		<link rel="stylesheet" type="text/css" href="http://img.meteogroup.com/fileadmin/templates/styles/meteogroup-screen-v34.css" media="all" />
+		<script type="text/javascript" src="http://img.meteogroup.com/fileadmin/templates/scripts/md5.min.js"></script>
+		<link rel="search" type="application/opensearchdescription+xml" href="http://www.weer.nl/fileadmin/search/weer_nl_actueel_en_verwacht_weer.xml" title="weer.nl Actueel en verwacht weer" />
+		<link rel="alternate" title="Weer.nl" href="http://www.weer.nl/rss.xml" type="application/rss+xml" />
+		<script type="text/javascript" src="http://images.webads.nl/stir/an/WEER.NL.js"></script>
+		<script src="http://img.meteogroup.com/fileadmin/templates/scripts/jquery-1.7.1.min.js" type="text/javascript"></script>
+		<script src="http://img.meteogroup.com/fileadmin/templates/scripts/jquery-ui-1.8.custom.min.js" type="text/javascript"></script>
+		<script src="/fileadmin/flowplayer/flowplayer-3.2.6.min.js" type="text/javascript"></script>
+		<link rel="apple-touch-icon" type="image/png" href="http://img.meteogroup.com/fileadmin/images/weatherpro/apple-touch-icon.png"/>
+		<script type="text/javascript">var adnxsId = 540836;</script>
+		<script type="text/javascript" src="http://smartbase.cdnservices.net/megatag.js"></script>
+		<meta name="msApplication-ID"content="MeteoGroup.WeatherPro"/>
+		<meta name="msApplication-PackageFamilyName"content="MeteoGroup.WeatherPro_8qzpxy5cyyx3j"/>
+		<meta name="google-site-verification" content="7vHiU5qlyNx_5t7OLMWfgPOJVprDXM-PwweaedcbNa8" />
+		<meta name="google-site-verification" content="3Eze9vYTRgBMh2owoRCK59MdnyQrY9dmIxUpDwdejPU" />
+		<script type="text/javascript">
+	/*<![CDATA[*/
+<!--
+
+var superchallengeAlreadyProcessed = 0;
+					function superchallenge_pass(form,passwordId,userId,formId) {
+
+					  if (superchallengeAlreadyProcessed) return true;
+
+					  superchallengeAlreadyProcessed = 1;
+
+						if (passwordId  &&  passwordId  &&  formId){
+				      var objUser = document.getElementById(userId);
+              var objPass = document.getElementById(passwordId);
+				      var objForm = document.getElementById(formId);
+					  }
+						else{
+					    var objUser = form.user;
+              var objPass = form.pass;
+					    var objForm = form;
+					  }
+
+						if (objPass) {
+
+							var enc_pass = MD5(objPass.value);
+							var str = objUser.value+":"+enc_pass+":"+objForm.challenge.value;
+
+							objPass.value = MD5(str);
+
+							return true;
+						} else {
+							return false;
+						}
+					}
+// -->
+	/*]]>*/
+</script>
+		<title>Weer: Weer per plaats - het weer voor Nijmegen, Nederland</title>
+		<meta name="keywords" content="Nijmegen, Nederland, weer, verwachting, temperatuur, wind, weertoestand, vakantieplaats, wereldwijd, actueel, weer per plaats, lokaal weer, wereldweer" />
+		<meta name="description" content="Weersverwachting en actuele waarnemingen voor Nijmegen en omliggende weerstations. Wordt uurlijks geactualiseerd." />
+		<meta name="robots" content="index,follow" />
+		<link rel="canonical" href="http://www.weer.nl/wereldweer/actueel-en-verwacht-weer/stad/31X2902/nijmegen.html" />
+	</head>
+	<body onload="T3_onloadWrapper();">
+		<div id="upper_header">
+			<div>
+				<script type="text/javascript">adnxs.megatag.load({ size: '728x90', weer: 'GOEDWEER', promoSizes: ['1x1', '468x60' ]});</script>
+			</div>
+		</div>
+		<div id="body_wrapper">
+			<div id="header">
+				<div id="header_left_area"><a href="http://www.weer.nl" title="www.weer.nl" style="background-position: -560px -535px;">&nbsp;</a></div>
+				<div id="header_middle_area">
+					<ul class="left">
+						<li><a href="http://www.weer.nl/weer.html" title="Weer" class="active">Weer</a></li>
+						<li><a href="http://www.meteogroup.nl" title="Zakelijke diensten" >Zakelijke diensten</a></li>
+						<li style="border: none"><a href="http://www.weer.nl/over-meteoconsult.html" title="Over Meteo Consult" >Over Meteo Consult</a></li>
+					</ul>
+				</div>
+				<div id="header_right_area"></div>
+				<div id="header_searchbox">
+					<div class="header_searchbox2">
+						<script type="text/javascript" charset="UTF-8">
+			<!--
+			var aktiv1 = window.setInterval("validateInput(document.getElementById('location_search_form1') )",1000);
+
+		var xmlDoc = null ;
+		var lastInput = "";
+		var lastResponseLength = -1;
+
+		function checkForRequest(strValue){
+			var doRequest = 0;
+
+			if (strValue!=""  &&  strValue!=lastInput){
+				if (lastResponseLength==0  &&  strValue.length>lastInput.length  &&  strValue.substring(0,lastInput.length) == lastInput){
+					// do not query because shorter string already had no result
+					lastResponseLength = 0;
+				}
+				else{
+					doRequest = 1;
+					lastInput = strValue;
+				}
+
+
+			}
+
+			return doRequest;
+		}
+
+
+
+		function validateInput(objCitySearchForm){
+			try{
+				var strValue = document.getElementById('geoSearchMini').value;
+				if (lastInput=="") lastInput = strValue;
+
+				var checkResult = checkForRequest(strValue);
+
+				if (checkResult==1){
+					var lang = objCitySearchForm.lang.value;
+					var langi = objCitySearchForm.langi.value;
+					var link = objCitySearchForm.link.value;
+					var form = objCitySearchForm.form.value;
+					var lb = objCitySearchForm.lb.value;
+					var width = document.getElementById('autolist').style.width;
+					var setfav = objCitySearchForm.setfav.value;
+
+					getAutoList(lang, langi, strValue, link, form, lb, width, setfav);
+				}
+				else{
+					if (strValue=="") document.getElementById('autolist').style.display = 'none';
+				}
+			} catch (objException) { ; }
+
+		}
+
+
+		/// Tries to get auto-complete list for city search
+		function getAutoList(strLanguage, langi, strFindme, link, form, lb, width, setfav){
+			try{
+				if(strFindme.length > 3  &&  strFindme.length < 16){
+					if (typeof window.ActiveXObject != 'undefined'){
+						xmlDoc = new ActiveXObject("Microsoft.XMLHTTP");
+						xmlDoc.onreadystatechange = process ;
+					}else{
+						xmlDoc = new XMLHttpRequest();
+						xmlDoc.onload = process ;
+					}
+
+					xmlDoc.open( "GET", "/meteo/geosearch/findlocation.php?lang="+strLanguage+"&langi="+langi+"&findme="+encodeURIComponent(strFindme)+"&link="+link+"&type=ajax"+"&form="+form+"&lb="+lb+form+"&width="+width+"&setfav="+setfav, true );
+					xmlDoc.send( null );
+				}
+				else{
+					document.getElementById('autolist').style.display = 'none';
+				}
+			} catch (objException){ document.getElementById('autolist').style.display = 'none'; }
+		}
+
+		/// Writes results into the document
+		function process(){
+			try{
+				if (xmlDoc.readyState != 4  ||  xmlDoc.status=="404") return;
+
+				lastResponseLength = xmlDoc.responseText.length;
+
+				if (lastResponseLength>0  &&  xmlDoc.responseText.indexOf("STATUS_OK")!=-1){
+					document.getElementById('autolist').style.display = 'block';
+					document.getElementById("autolist").innerHTML = xmlDoc.responseText;
+				}
+				else document.getElementById('autolist').style.display = 'none';
+
+			} catch (objException) { ; }
+		}
+
+		function closeAutoList(){
+      document.getElementById('autolist').style.display = 'none';
+		}
+
+
+
+
+
+
+//-->
+</script>
+						<form action="wereldweer/zoekresultaten.html" method="post" style="background-position: -748px -531px;" id="location_search_form1">
+							<div id="searchLoupe" onclick="document.getElementById('location_search_form1').submit();"></div>
+							<div><input type="text" onclick="this.value='';" value="plaats of postcode" name="tx_citysearchgeodb_pi2[sword]" autocomplete="off" id="geoSearchMini" /><br/><input type="hidden" name="link" value="aHR0cDovL3d3dy53ZWVyLm5sL3dlcmVsZHdlZXIvYWN0dWVlbC1lbi12ZXJ3YWNodC13ZWVyL3N0YWQvLS0tLWNpZC0tLS0vLS0tLWNuYW1lLS0tLS5odG1s" /><input type="hidden" name="lang" value="nl" /><input type="hidden" name="langi" value="31" /><input type="hidden" name="form" value="location_search_form1" /><input type="hidden" name="lb" value="a%3A4%3A%7Bs%3A4%3A%22more%22%3Bs%3A15%3A%22Meer+resultaten%22%3Bs%3A4%3A%22save%22%3Bs%3A32%3A%22Stel+deze+plaats+in+als+favoriet%22%3Bs%3A8%3A%22set_city%22%3Bs%3A37%3A%22Deze+plaats+is+ingesteld+als+favoriet%22%3Bs%3A5%3A%22close%22%3Bs%3A7%3A%22sluiten%22%3B%7D" /><input type="hidden" name="setfav" value="1" />
+								<div id="autolist" style="border:gray 1px solid;position:absolute; background-color:#DBE8F2;margin-top:1px;z-index:10000;display:none;width:350px"></div>
+							</div>
+						</form>
+					</div>
+					<script type="text/javascript" charset="UTF-8">
+		<!--
+
+		// given e.g.: var1=12345; var2=3456; favvars=perma.49X123-last.49X456
+		function setFavCookie(cid){
+			var currenct = new Date();
+			var expires = new Date("December 01, "+ (currenct.getFullYear()+1) +" 00:00:00");
+
+			var cookieVal = "favvars=perma."+cid;
+
+			var lastCity = getLastVisitedCityFromCookie();
+			if (lastCity != "") cookieVal += "-last."+lastCity;
+
+			document.cookie = cookieVal+"; path=/; expires=" + expires.toGMTString();
+
+			alert ("Deze plaats is ingesteld als favoriet");
+		}
+
+		function getLastVisitedCityFromCookie(){
+			returnVal = "";
+
+			var cookieBlocks = document.cookie.split(";");
+
+			for (var i=0;i<cookieBlocks.length;i++){
+				var cookieParts = cookieBlocks[i].split("=");
+
+				if (mcw_trim(cookieParts[0]) == "favvars"){
+					var values_str = mcw_trim(cookieParts[1]);
+
+					var cities = values_str.split("-");
+
+					for (var j=0;j<cities.length;j++){
+						var cityParts = cities[j].split(".");
+						if (mcw_trim(cityParts[0])=="last"){
+							returnVal = mcw_trim(cityParts[1]);
+						}
+					}
+				}
+			}
+
+			return(returnVal);
+		}
+
+
+		function mcw_trim (string) {
+			return string.replace (/^\s+/, "").replace (/\s+$/, "");
+		}
+
+		//--></script>
+				</div>
+			</div>
+			<div id="lower_header">
+				<div id="lower_header_left_area">
+					<div title='Powered by MeteoGroup' style='height:30px; background:url("http://img.meteogroup.com/fileadmin/templates/images/css-sprite-v9.png") no-repeat scroll 0 0 transparent; background-position: 0px -50px;'>&nbsp;</div>
+				</div>
+				<h1 id="lower_header_middle_area">Actueel en verwacht weer</h1>
+				<div id="lower_header_right_area">Advertentie</div>
+			</div>
+			<div id="content">
+				<div id="content_left_area">
+					<div id="content_login">
+						<div class="tx-newloginbox-pi1">
+							<div class="content_login2">
+								<form id="loginTeaser" action="mijn-weer.html" method="post" onsubmit="superchallenge_pass(this,'loginPassword','loginUser','loginTeaser');">
+									<div class="header">Mijn weer</div>
+									<div><input type="submit" value="" id="login" title="Inloggen" /><input type="button" id="info" title="Info" onclick="window.location.href='/mijn-weer.html';" /></div>
+									<ul>
+										<li class="loginInput1"><input class="inputField" type="text" id="loginUser" name="user" value="Gebruikersnaam" onfocus="this.value=''" /></li>
+										<li class="loginInput2"><input class="inputField" type="password" id="loginPassword" name="pass" value="" onfocus="this.value=''" autocomplete="on" /></li>
+									</ul>
+									<div><input type="hidden" name="logintype" value="login" /><input type="hidden" name="pid" value="6056" /><input type="hidden" name="redirect_url" value="" /><input type="hidden" name="challenge" value="8f3c980c16b2bc6b2b37e223bbbc9c96" /></div>
+								</form>
+							</div>
+						</div>
+					</div>
+					<div id="content_menu">
+						<div class="tx-mgmenu-pi1">
+							<h1 onclick="javascript:document.getElementById('cat0').style.display=document.getElementById('cat0').style.display=='none'?'block':'none'">Populair</h1>
+							<ul id="cat0" style="display:block;">
+								<li class="menu"><a href="weer.html" title="Populair: Weer">Weer</a></li>
+								<li class="menu"></li>
+								<li class="menu"><a href="neerslagradar/nederland.html" title="Populair: Neerslagradar">Neerslagradar</a></li>
+								<li class="menu"><a href="nederland/nederland.html" title="Populair: Nederland">Nederland</a></li>
+								<li class="menu"><a href="weerpresentatie.html" title="Populair: Weerpresentatie">Weerpresentatie</a></li>
+								<li class="menu"><a href="wereldweer/plaatsverwachting.html" title="Populair: Plaatsverwachting">Plaatsverwachting</a></li>
+								<li class="menu"><a href="weer-in-het-nieuws.html" title="Populair: Weer in het Nieuws">Weer in het Nieuws</a></li>
+								<li class="menu"><a href="weerfotos.html" title="Populair: Weerfoto's">Weerfoto's</a></li>
+								<li class="menu"><a href="verkeersinformatie.html" title="Populair: Verkeersinformatie">Verkeersinformatie</a></li>
+								<li class="menu"><a href="wereldweer/actueel-en-verwacht-weer.html" title="Populair: Vakantieweer">Vakantieweer</a></li>
+								<li class="menu"><a href="uv-index.html" title="Populair: UV-index">UV-index</a></li>
+								<li class="menu"><a href="hooikoorts.html" title="Populair: Hooikoorts">Hooikoorts</a></li>
+								<li class="menu"><a href="30-daagse-verwachting.html" title="Populair: 30-daagse verwachting">30-daagse verwachting</a></li>
+								<li class="menu"><a href="bbq-weer.html" title="Populair: BBQ-weer">BBQ-weer</a></li>
+							</ul>
+							<ul class="footer">
+								<li></li>
+							</ul>
+							<h1 onclick="javascript:document.getElementById('cat1').style.display=document.getElementById('cat1').style.display=='none'?'block':'none'">Uitgebreid weer</h1>
+							<ul id="cat1" style="display:block;">
+								<li class="menu"><a href="telefonisch-consult.html" title="Uitgebreid weer: Telefonisch consult">Telefonisch consult</a></li>
+								<li class="menu"><a href="10-minuten-waarnemingen.html" title="Uitgebreid weer: 10 minuten waarnemingen">10 minuten waarnemingen</a></li>
+								<li class="menu"><a href="producten-en-diensten/routeplanner-met-weer.html" title="Uitgebreid weer: Routeplanner met weer">Routeplanner met weer</a></li>
+								<li class="menu"><a href="pluimverwachtingen.html" title="Uitgebreid weer: Pluimverwachtingen">Pluimverwachtingen</a></li>
+								<li class="menu"><a href="weerkaarten/eenvoudig.html" title="Uitgebreid weer: Weerkaarten">Weerkaarten</a></li>
+								<li class="menu"><a href="satellietbeelden/infrarood.html" title="Uitgebreid weer: Satellietbeelden">Satellietbeelden</a></li>
+								<li class="menu"><a href="wereldweer/wereld.html" title="Uitgebreid weer: Wereldweer">Wereldweer</a></li>
+								<li>
+									<ul>
+										<li class="current"><a href="wereldweer/actueel-en-verwacht-weer.html" title="Uitgebreid weer: Wereldweer: Actueel en verwacht weer">Actueel en verwacht weer</a></li>
+									</ul>
+								</li>
+								<li>
+									<ul>
+										<li class="menu"><a href="wereldweer/plaatsverwachting.html" title="Uitgebreid weer: Wereldweer: Plaatsverwachting">Plaatsverwachting</a></li>
+									</ul>
+								</li>
+								<li>
+									<ul>
+										<li class="menu"><a href="weerkaarten/eenvoudig.html" title="Uitgebreid weer: Wereldweer: Weerkaarten">Weerkaarten</a></li>
+									</ul>
+								</li>
+								<li>
+									<ul>
+										<li class="menu"><a href="wereldweer/satellietbeelden.html" title="Uitgebreid weer: Wereldweer: Satellietbeelden">Satellietbeelden</a></li>
+									</ul>
+								</li>
+								<li>
+									<ul>
+										<li class="menu"><a href="wereldweer/klimaat.html" title="Uitgebreid weer: Wereldweer: Klimaat">Klimaat</a></li>
+									</ul>
+								</li>
+								<li>
+									<ul>
+										<li class="menu"><a href="wereldweer/wereld.html" title="Uitgebreid weer: Wereldweer: Vakantieweer">Vakantieweer</a></li>
+									</ul>
+								</li>
+								<li>
+									<ul>
+										<li class="menu"><a href="wereldweer/waarnemingen.html" title="Uitgebreid weer: Wereldweer: Waarnemingen">Waarnemingen</a></li>
+									</ul>
+								</li>
+								<li>
+									<ul>
+										<li class="menu"><a href="wereldweer/stedenlijst.html" title="Uitgebreid weer: Wereldweer: Stedenlijst">Stedenlijst</a></li>
+									</ul>
+								</li>
+								<li class="menu"><a href="tropische-stormen.html" title="Uitgebreid weer: Tropische stormen">Tropische stormen</a></li>
+								<li class="menu"><a href="omreken-eenheden.html" title="Uitgebreid weer: Omreken eenheden">Omreken eenheden</a></li>
+								<li class="menu"><a href="wandelweer.html" title="Uitgebreid weer: Wandelweer">Wandelweer</a></li>
+								<li class="menu"><a href="media-archief.html" title="Uitgebreid weer: Media Archief">Media Archief</a></li>
+							</ul>
+							<ul class="footer">
+								<li></li>
+							</ul>
+							<h1 onclick="javascript:document.getElementById('cat2').style.display=document.getElementById('cat2').style.display=='none'?'block':'none'">TV, mobiel, web, print</h1>
+							<ul id="cat2" style="display:block;">
+								<li class="menu"><a href="producten-en-diensten/app-mobiel-sms.html" title="TV, mobiel, web, print: App, mobiel, sms">App, mobiel, sms</a></li>
+								<li class="menu"><a href="producten-en-diensten/0900-weerlijnen/telefoon.html" title="TV, mobiel, web, print: 0900 weerlijnen">0900 weerlijnen</a></li>
+								<li class="menu"><a href="producten-en-diensten/weer-verkeer-op-uw-site/weer-verkeer-op-uw-site.html" title="TV, mobiel, web, print: Weer, Verkeer op uw site">Weer, Verkeer op uw site</a></li>
+								<li class="menu"><a href="producten-en-diensten/narrow-casting.html" title="TV, mobiel, web, print: Narrow casting">Narrow casting</a></li>
+								<li class="menu"><a href="producten-en-diensten/google-earth.html" title="TV, mobiel, web, print: Google Earth">Google Earth</a></li>
+								<li class="menu"><a href="producten-en-diensten/weer-en-verkeer-tv.html" title="TV, mobiel, web, print: Weer en Verkeer TV">Weer en Verkeer TV</a></li>
+								<li class="menu"><a href="producten-en-diensten/boeken-en-multimedia.html" title="TV, mobiel, web, print: Boeken en Multimedia">Boeken en Multimedia</a></li>
+								<li class="menu"><a href="producten-en-diensten/het-weer-magazine.html" title="TV, mobiel, web, print: Het Weer! Magazine">Het Weer! Magazine</a></li>
+							</ul>
+							<ul class="footer">
+								<li></li>
+							</ul>
+							<h1 onclick="javascript:document.getElementById('cat3').style.display=document.getElementById('cat3').style.display=='none'?'block':'none'">Sprekers, workshops</h1>
+							<ul id="cat3" style="display:block;">
+								<li class="menu"><a href="producten-en-diensten/cursussen/cursussen.html" title="Sprekers, workshops: Cursussen">Cursussen</a></li>
+								<li class="menu"><a href="producten-en-diensten/workshops/workshops.html" title="Sprekers, workshops: Workshops">Workshops</a></li>
+								<li class="menu"><a href="producten-en-diensten/sprekers-lezingen.html" title="Sprekers, workshops: Sprekers, lezingen">Sprekers, lezingen</a></li>
+								<li class="menu"><a href="producten-en-diensten/bedrijfsuitjes.html" title="Sprekers, workshops: Bedrijfsuitjes">Bedrijfsuitjes</a></li>
+								<li class="menu"><a href="nl/home/zakelijke-diensten/onderwijs/recensies.html" title="Sprekers, workshops: Recensies">Recensies</a></li>
+								<li class="menu"></li>
+							</ul>
+							<ul class="footer">
+								<li></li>
+							</ul>
+						</div>
+					</div>
+					<div id="content_ads"></div>
+				</div>
+				<div id="content_middle_area" class="content_middle_area">
+					<div id="content_middle_upper_area" class="content_middle_upper_area">
+						<!--TYPO3SEARCH_begin-->
+						<ul class="one_super_big_to_one_small_rows">
+							<li class="one_super_big_to_one_small_rows_first">
+								<div class="tx-mgflashweathermap-pi1"></div>
+								<div class="tx-mglocationweather-pi1">
+									<table cellspacing="0" cellpadding="0">
+										<tr>
+											<td class="head">
+												<div class="head">
+													<p class="head_city">Nijmegen</p>
+													<p class="head_station"><a href="wereldweer/waarnemingen/hobsid/6375.html" title="Volkel">Volkel</a></p>
+												</div>
+												<p class="head_ww"><img src="http://img.meteogroup.com/typo3conf/ext/mg_locationweather/res/images/64px/320000.png" alt="zwaar bewolkt 2013-09-02 10:50:00" title="zwaar bewolkt 2013-09-02 10:50:00" /></p>
+												<p class="head_tt2" title="19&deg;C">19&deg;C</p>
+												<div class="head_wind"><img src="http://img.meteogroup.com/typo3conf/ext/mg_locationweather/res/images/wind32px/11.png" alt="WZW" title="WZW" />
+													<p class="head_ff2" title="4 bft">4 bft</p>
+												</div>
+												<p class="head_ppp2" title="1024hPa">1024hPa</p>
+											</td>
+										</tr>
+									</table>
+									<table class="head" cellspacing="0" cellpadding="0">
+										<tbody>
+											<tr>
+												<td class="weekdayfirst"></td>
+												<td class="weekday">
+													<p class="weekday" title="ma"><a href="wereldweer/actueel-en-verwacht-weer/stad/31X2902/nijmegen/vandaag.html" title="ma 02.09.2013">ma</a></p>
+													<p class="day" title="02.09.2013"><a href="wereldweer/actueel-en-verwacht-weer/stad/31X2902/nijmegen/vandaag.html" title="ma 02.09.2013">02.09.2013</a></p>
+												</td>
+												<td class="weekday">
+													<p class="weekday" title="di"><a href="wereldweer/actueel-en-verwacht-weer/stad/31X2902/nijmegen/morgen.html" title="di 03.09.2013">di</a></p>
+													<p class="day" title="03.09.2013"><a href="wereldweer/actueel-en-verwacht-weer/stad/31X2902/nijmegen/morgen.html" title="di 03.09.2013">03.09.2013</a></p>
+												</td>
+												<td class="weekday">
+													<p class="weekday" title="wo"><a href="wereldweer/actueel-en-verwacht-weer/stad/31X2902/nijmegen/overmorgen.html" title="wo 04.09.2013">wo</a></p>
+													<p class="day" title="04.09.2013"><a href="wereldweer/actueel-en-verwacht-weer/stad/31X2902/nijmegen/overmorgen.html" title="wo 04.09.2013">04.09.2013</a></p>
+												</td>
+												<td class="weekday">
+													<p class="weekday" title="do">do</p>
+													<p class="day" title="05.09.2013">05.09.2013</p>
+												</td>
+												<td class="weekday">
+													<p class="weekday" title="vr">vr</p>
+													<p class="day" title="06.09.2013">06.09.2013</p>
+												</td>
+												<td class="weekday">
+													<p class="weekday" title="za">za</p>
+													<p class="day" title="07.09.2013">07.09.2013</p>
+												</td>
+												<td class="weekday">
+													<p class="weekday" title="zo">zo</p>
+													<p class="day" title="08.09.2013">08.09.2013</p>
+												</td>
+												<td class="weekdaylast"></td>
+											</tr>
+										</tbody>
+									</table>
+									<table class="main_one" cellspacing="0" cellpadding="0">
+										<tbody>
+											<tr>
+												<td class="weekdayfirst"></td>
+												<td class="weekday">
+													<div class="one" title="zwaar bewolkt"><a href="wereldweer/actueel-en-verwacht-weer/stad/31X2902/nijmegen/vandaag.html" title=""><img src="http://img.meteogroup.com/typo3conf/ext/mg_locationweather/res/images/32px/220000.png" alt="zwaar bewolkt" title="zwaar bewolkt" /></a></div>
+													<div class="two" title="zwaar bewolkt"><a href="wereldweer/actueel-en-verwacht-weer/stad/31X2902/nijmegen/vandaag.html" title=""><img src="http://img.meteogroup.com/typo3conf/ext/mg_locationweather/res/images/32px/320000.png" alt="zwaar bewolkt" title="zwaar bewolkt" /></a></div>
+												</td>
+												<td class="weekday">
+													<div class="one" title="licht bewolkt"><a href="wereldweer/actueel-en-verwacht-weer/stad/31X2902/nijmegen/morgen.html" title=""><img src="http://img.meteogroup.com/typo3conf/ext/mg_locationweather/res/images/32px/210000.png" alt="licht bewolkt" title="licht bewolkt" /></a></div>
+													<div class="two" title="zwaar bewolkt"><a href="wereldweer/actueel-en-verwacht-weer/stad/31X2902/nijmegen/morgen.html" title=""><img src="http://img.meteogroup.com/typo3conf/ext/mg_locationweather/res/images/32px/320000.png" alt="zwaar bewolkt" title="zwaar bewolkt" /></a></div>
+												</td>
+												<td class="weekday">
+													<div class="one" title="zwaar bewolkt"><a href="wereldweer/actueel-en-verwacht-weer/stad/31X2902/nijmegen/overmorgen.html" title=""><img src="http://img.meteogroup.com/typo3conf/ext/mg_locationweather/res/images/32px/220000.png" alt="zwaar bewolkt" title="zwaar bewolkt" /></a></div>
+													<div class="two" title="half bewolkt"><a href="wereldweer/actueel-en-verwacht-weer/stad/31X2902/nijmegen/overmorgen.html" title=""><img src="http://img.meteogroup.com/typo3conf/ext/mg_locationweather/res/images/32px/120000.png" alt="half bewolkt" title="half bewolkt" /></a></div>
+												</td>
+												<td class="weekday">
+													<div class="one" title="helder"><img src="http://img.meteogroup.com/typo3conf/ext/mg_locationweather/res/images/32px/200000.png" alt="helder" title="helder" /></div>
+													<div class="two" title="zonnig"><img src="http://img.meteogroup.com/typo3conf/ext/mg_locationweather/res/images/32px/100000.png" alt="zonnig" title="zonnig" /></div>
+												</td>
+												<td class="weekday">
+													<div class="one" title="helder"><img src="http://img.meteogroup.com/typo3conf/ext/mg_locationweather/res/images/32px/200000.png" alt="helder" title="helder" /></div>
+													<div class="two" title="licht bewolkt"><img src="http://img.meteogroup.com/typo3conf/ext/mg_locationweather/res/images/32px/110000.png" alt="licht bewolkt" title="licht bewolkt" /></div>
+												</td>
+												<td class="weekday">
+													<div class="one" title="zwaar bewolkt, onweer"><img src="http://img.meteogroup.com/typo3conf/ext/mg_locationweather/res/images/32px/223001.png" alt="zwaar bewolkt, onweer" title="zwaar bewolkt, onweer" /></div>
+													<div class="two" title="zwaar bewolkt"><img src="http://img.meteogroup.com/typo3conf/ext/mg_locationweather/res/images/32px/120000.png" alt="zwaar bewolkt" title="zwaar bewolkt" /></div>
+												</td>
+												<td class="weekday">
+													<div class="one" title="half bewolkt"><img src="http://img.meteogroup.com/typo3conf/ext/mg_locationweather/res/images/32px/210000.png" alt="half bewolkt" title="half bewolkt" /></div>
+													<div class="two" title="licht bewolkt"><img src="http://img.meteogroup.com/typo3conf/ext/mg_locationweather/res/images/32px/110000.png" alt="licht bewolkt" title="licht bewolkt" /></div>
+												</td>
+												<td class="weekdaylast"></td>
+											</tr>
+										</tbody>
+									</table>
+									<table class="main_three" cellspacing="0" cellpadding="0">
+										<tbody>
+											<tr>
+												<td class="weekdayfirst"></td>
+												<td class="weekday">
+													<p class="one" title="12&deg;C"><a href="wereldweer/actueel-en-verwacht-weer/stad/31X2902/nijmegen/vandaag.html" title="12&deg;C">12</a></p>
+													<p class="two" title="20&deg;C"><a href="wereldweer/actueel-en-verwacht-weer/stad/31X2902/nijmegen/vandaag.html" title="20&deg;C">20</a></p>
+												</td>
+												<td class="weekday">
+													<p class="one" title="13&deg;C"><a href="wereldweer/actueel-en-verwacht-weer/stad/31X2902/nijmegen/morgen.html" title="13&deg;C">13</a></p>
+													<p class="two" title="23&deg;C"><a href="wereldweer/actueel-en-verwacht-weer/stad/31X2902/nijmegen/morgen.html" title="23&deg;C">23</a></p>
+												</td>
+												<td class="weekday">
+													<p class="one" title="14&deg;C"><a href="wereldweer/actueel-en-verwacht-weer/stad/31X2902/nijmegen/overmorgen.html" title="14&deg;C">14</a></p>
+													<p class="two" title="25&deg;C"><a href="wereldweer/actueel-en-verwacht-weer/stad/31X2902/nijmegen/overmorgen.html" title="25&deg;C">25</a></p>
+												</td>
+												<td class="weekday">
+													<p class="one" title="14&deg;C">14</p>
+													<p class="two" title="29&deg;C">29</p>
+												</td>
+												<td class="weekday">
+													<p class="one" title="16&deg;C">16</p>
+													<p class="two" title="27&deg;C">27</p>
+												</td>
+												<td class="weekday">
+													<p class="one" title="16&deg;C">16</p>
+													<p class="two" title="24&deg;C">24</p>
+												</td>
+												<td class="weekday">
+													<p class="one" title="12&deg;C">12</p>
+													<p class="two" title="23&deg;C">23</p>
+												</td>
+												<td class="weekdaylast"></td>
+											</tr>
+										</tbody>
+									</table>
+									<table class="main_two" cellspacing="0" cellpadding="0">
+										<tbody>
+											<tr>
+												<td><img src="http://chart.apis.google.com/chart?cht=ls&amp;chco=FFFFFF,0060AC,FFDF00&amp;chs=555x120&amp;chd=t:-1,20,20.5,20.5,21.3,20,15.5,11.5,18.5,25.5,30.5,35,40,42,45,48.5,49,47,45,43,38.5,33,27.5,24.5,23,22.5,21.5,20.5,19,18,18,22.5,32.5,43,51,56,58.5,61,61,60.3,59.7,55.5,51,45,40,37,33.5,30.5,28.5,28,27.5,27.5,27,36,45,53.5,60.5,65,67.5,69.5,70.5,69.5,67.5,63.5,58,51,44.5,40.5,37.5,35.5,33.5,31.5,29.5,27,25.5,27.5,34,44.5,57,69,78.5,84.5,88.5,91,91,85,79.5,71.5,63.5,57,52.5,49.5,46.5,44,41.5,39,36.5,35,36,39.5,47,56,65,72.5,77.5,80.5,82.5,82.5,78,73,65.5,58,51.5,46.5,43.5,41.5,39,37,35.5,34.5,34,35,38.5,43,48.5,54,59,62.5,65,66,67,66.5,64.5,60,53.5,45.5,38,33,29.5,26.5,23.5,20.5,17.5,14.5,13,13,23,33,43,50.5,55.5,59,61,61,55,50.5,44,38,32.5,28.5,26,-1|10,10,11.5,13,17.5,22,21.3,20.5,25.3,30,30.3,30.5,19.3,8,-1|-1,52,52,61,63.5,70.5,73,91,94,89.8,85.5,77.8,70,67.3,64.5&amp;chm=h,eeeeee,0,0,0.5,-1|h,eeeeee,0,1,0.5,-1|h,d3dfe8,0,0.75,0.5,-1|h,d3dfe8,0,0.5,0.5,-1|h,d3dfe8,0,0.25,0.5,-1&amp;chxt=t,x&amp;chxl=0:|30&deg;C|1:|10&deg;C&amp;chxs=0,FFFFFF,12,-1|1,FFFFFF,12,-1&amp;chxp=0,50|1,50&amp;&amp;chf=bg,ls,0,FFFFFF,0.001,b6d2e8,0.007,FFFFFF,0.001,b8cad9,0.069,FFFFFF,0.001,b6d2e8,0.069,FFFFFF,0.001,b8cad9,0.069,FFFFFF,0.002,b6d2e8,0.069,FFFFFF,0.001,b8cad9,0.069,FFFFFF,0.001,b6d2e8,0.069,FFFFFF,0.002,b8cad9,0.069,FFFFFF,0.001,b6d2e8,0.069,FFFFFF,0.001,b8cad9,0.069,FFFFFF,0.001,b6d2e8,0.069,FFFFFF,0.001,b8cad9,0.069,FFFFFF,0.002,b6d2e8,0.069,FFFFFF,0.001,b8cad9,0.069,FFFFFF,0.001,b6d2e8,0.069,FFFFFF,0.001,b6d2e8,0.007,b6d2e8,0.007" title="temperatuur" alt="temperatuur" />
+													<div style="position:relative; height:0; top:-84px; left:535px;"><a href="wereldweer/actueel-en-verwacht-weer/stad/31X2902/nijmegen.html?tx_mgcityweatherstatic_pi4%5Bp%5D=1" title="Verwachting voor 7 tot 14 dagen vooruit"><img style="height:48px;width:36px;" src="/typo3conf/ext/mg_locationweather/res/images/arrow-next.png" /></a></div>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+									<table class="main_four" cellspacing="0" cellpadding="0">
+										<tbody>
+											<tr>
+												<td class="weekdayfirst"></td>
+												<td class="weekday">
+													<div class="one" title="ZW"><a href="wereldweer/actueel-en-verwacht-weer/stad/31X2902/nijmegen/vandaag.html" title=""><img src="http://img.meteogroup.com/typo3conf/ext/mg_locationweather/res/images/wind32px/10.png" alt="ZW" title="ZW" /></a></div>
+													<div class="two" title="W"><a href="wereldweer/actueel-en-verwacht-weer/stad/31X2902/nijmegen/vandaag.html" title=""><img src="http://img.meteogroup.com/typo3conf/ext/mg_locationweather/res/images/wind32px/12.png" alt="W" title="W" /></a></div>
+												</td>
+												<td class="weekday">
+													<div class="one" title="WZW"><a href="wereldweer/actueel-en-verwacht-weer/stad/31X2902/nijmegen/morgen.html" title=""><img src="http://img.meteogroup.com/typo3conf/ext/mg_locationweather/res/images/wind32px/11.png" alt="WZW" title="WZW" /></a></div>
+													<div class="two" title="W"><a href="wereldweer/actueel-en-verwacht-weer/stad/31X2902/nijmegen/morgen.html" title=""><img src="http://img.meteogroup.com/typo3conf/ext/mg_locationweather/res/images/wind32px/12.png" alt="W" title="W" /></a></div>
+												</td>
+												<td class="weekday">
+													<div class="one" title="ONO"><a href="wereldweer/actueel-en-verwacht-weer/stad/31X2902/nijmegen/overmorgen.html" title=""><img src="http://img.meteogroup.com/typo3conf/ext/mg_locationweather/res/images/wind32px/3.png" alt="ONO" title="ONO" /></a></div>
+													<div class="two" title="ZO"><a href="wereldweer/actueel-en-verwacht-weer/stad/31X2902/nijmegen/overmorgen.html" title=""><img src="http://img.meteogroup.com/typo3conf/ext/mg_locationweather/res/images/wind32px/6.png" alt="ZO" title="ZO" /></a></div>
+												</td>
+												<td class="weekday">
+													<div class="one" title="O"><img src="http://img.meteogroup.com/typo3conf/ext/mg_locationweather/res/images/wind32px/4.png" alt="O" title="O" /></div>
+													<div class="two" title="ZO"><img src="http://img.meteogroup.com/typo3conf/ext/mg_locationweather/res/images/wind32px/6.png" alt="ZO" title="ZO" /></div>
+												</td>
+												<td class="weekday">
+													<div class="one" title="OZO"><img src="http://img.meteogroup.com/typo3conf/ext/mg_locationweather/res/images/wind32px/5.png" alt="OZO" title="OZO" /></div>
+													<div class="two" title="ZZO"><img src="http://img.meteogroup.com/typo3conf/ext/mg_locationweather/res/images/wind32px/7.png" alt="ZZO" title="ZZO" /></div>
+												</td>
+												<td class="weekday">
+													<div class="one" title="ONO"><img src="http://img.meteogroup.com/typo3conf/ext/mg_locationweather/res/images/wind32px/3.png" alt="ONO" title="ONO" /></div>
+													<div class="two" title="ZO"><img src="http://img.meteogroup.com/typo3conf/ext/mg_locationweather/res/images/wind32px/6.png" alt="ZO" title="ZO" /></div>
+												</td>
+												<td class="weekday">
+													<div class="one" title="OZO"><img src="http://img.meteogroup.com/typo3conf/ext/mg_locationweather/res/images/wind32px/5.png" alt="OZO" title="OZO" /></div>
+													<div class="two" title="ZZO"><img src="http://img.meteogroup.com/typo3conf/ext/mg_locationweather/res/images/wind32px/7.png" alt="ZZO" title="ZZO" /></div>
+												</td>
+												<td class="weekdaylast"></td>
+											</tr>
+										</tbody>
+									</table>
+									<table class="main_five" cellspacing="0" cellpadding="0">
+										<tbody>
+											<tr>
+												<td class="weekdayfirst"></td>
+												<td class="weekday">
+													<p class="one" title="3 bft"><a href="wereldweer/actueel-en-verwacht-weer/stad/31X2902/nijmegen/vandaag.html" title="3 bft">3</a></p>
+													<p class="two" title="4 bft"><a href="wereldweer/actueel-en-verwacht-weer/stad/31X2902/nijmegen/vandaag.html" title="4 bft">4</a></p>
+												</td>
+												<td class="weekday">
+													<p class="one" title="2 bft"><a href="wereldweer/actueel-en-verwacht-weer/stad/31X2902/nijmegen/morgen.html" title="2 bft">2</a></p>
+													<p class="two" title="2 bft"><a href="wereldweer/actueel-en-verwacht-weer/stad/31X2902/nijmegen/morgen.html" title="2 bft">2</a></p>
+												</td>
+												<td class="weekday">
+													<p class="one" title="1 bft"><a href="wereldweer/actueel-en-verwacht-weer/stad/31X2902/nijmegen/overmorgen.html" title="1 bft">1</a></p>
+													<p class="two" title="2 bft"><a href="wereldweer/actueel-en-verwacht-weer/stad/31X2902/nijmegen/overmorgen.html" title="2 bft">2</a></p>
+												</td>
+												<td class="weekday">
+													<p class="one" title="1 bft">1</p>
+													<p class="two" title="3 bft">3</p>
+												</td>
+												<td class="weekday">
+													<p class="one" title="1 bft">1</p>
+													<p class="two" title="3 bft">3</p>
+												</td>
+												<td class="weekday">
+													<p class="one" title="2 bft">2</p>
+													<p class="two" title="3 bft">3</p>
+												</td>
+												<td class="weekday">
+													<p class="one" title="2 bft">2</p>
+													<p class="two" title="3 bft">3</p>
+												</td>
+												<td class="weekdaylast"></td>
+											</tr>
+										</tbody>
+									</table>
+									<table class="main_six" cellspacing="0" cellpadding="0">
+										<tbody>
+											<tr>
+												<td class="weekdayfirst"></td>
+												<td class="weekday">
+													<p class="one" title="0mm 3%"><a href="wereldweer/actueel-en-verwacht-weer/stad/31X2902/nijmegen/vandaag.html" title="0mm">0mm</a><br /><a href="wereldweer/actueel-en-verwacht-weer/stad/31X2902/nijmegen/vandaag.html" title="3%">3%</a></p>
+													<p class="two" title="0mm 15%"><a href="wereldweer/actueel-en-verwacht-weer/stad/31X2902/nijmegen/vandaag.html" title="0mm">0mm</a><br /><a href="wereldweer/actueel-en-verwacht-weer/stad/31X2902/nijmegen/vandaag.html" title="15%">15%</a></p>
+												</td>
+												<td class="weekday">
+													<p class="one" title="0mm 10%"><a href="wereldweer/actueel-en-verwacht-weer/stad/31X2902/nijmegen/morgen.html" title="0mm">0mm</a><br /><a href="wereldweer/actueel-en-verwacht-weer/stad/31X2902/nijmegen/morgen.html" title="10%">10%</a></p>
+													<p class="two" title="0mm 15%"><a href="wereldweer/actueel-en-verwacht-weer/stad/31X2902/nijmegen/morgen.html" title="0mm">0mm</a><br /><a href="wereldweer/actueel-en-verwacht-weer/stad/31X2902/nijmegen/morgen.html" title="15%">15%</a></p>
+												</td>
+												<td class="weekday">
+													<p class="one" title="0mm 10%"><a href="wereldweer/actueel-en-verwacht-weer/stad/31X2902/nijmegen/overmorgen.html" title="0mm">0mm</a><br /><a href="wereldweer/actueel-en-verwacht-weer/stad/31X2902/nijmegen/overmorgen.html" title="10%">10%</a></p>
+													<p class="two" title="0mm 5%"><a href="wereldweer/actueel-en-verwacht-weer/stad/31X2902/nijmegen/overmorgen.html" title="0mm">0mm</a><br /><a href="wereldweer/actueel-en-verwacht-weer/stad/31X2902/nijmegen/overmorgen.html" title="5%">5%</a></p>
+												</td>
+												<td class="weekday">
+													<p class="one" title="0mm 5%">0mm<br />5%</p>
+													<p class="two" title="0mm 5%">0mm<br />5%</p>
+												</td>
+												<td class="weekday">
+													<p class="one" title="0mm 15%">0mm<br />15%</p>
+													<p class="two" title="0mm 25%">0mm<br />25%</p>
+												</td>
+												<td class="weekday">
+													<p class="one" title="3mm 65%">3mm<br />65%</p>
+													<p class="two" title="0,2mm 30%">0,2mm<br />30%</p>
+												</td>
+												<td class="weekday">
+													<p class="one" title="0,3mm 30%">0,3mm<br />30%</p>
+													<p class="two" title="0mm 25%">0mm<br />25%</p>
+												</td>
+												<td class="weekdaylast"></td>
+											</tr>
+										</tbody>
+									</table>
+									<table class="main_seven" cellspacing="0" cellpadding="0">
+										<tbody>
+											<tr>
+												<td class="weekdayfirst"></td>
+												<td class="weekday">
+													<p class="one" title="Zonneschijnduur: 2u"><a href="wereldweer/actueel-en-verwacht-weer/stad/31X2902/nijmegen/vandaag.html" title="Zonneschijnduur: 2u"><img src="http://img.meteogroup.com/fileadmin/templates/images/tx-mglocationweather-pi1_icon_sunshine.png" alt="Zonneschijnduur" />2u</a></p>
+													<p class="two" title="zonsopgang: 06:47"><a href="wereldweer/actueel-en-verwacht-weer/stad/31X2902/nijmegen/vandaag.html" title="zonsopgang: 06:47"><img src="http://img.meteogroup.com/fileadmin/templates/images/tx-mglocationweather-pi1_icon_sunrise.png" alt="zonsopgang" />06:47</a></p>
+													<p class="three" title="zonsondergang: 20:25"><a href="wereldweer/actueel-en-verwacht-weer/stad/31X2902/nijmegen/vandaag.html" title="zonsondergang: 20:25"><img src="http://img.meteogroup.com/fileadmin/templates/images/tx-mglocationweather-pi1_icon_sunset.png" alt="zonsondergang" />20:25</a></p>
+												</td>
+												<td class="weekday">
+													<p class="one" title="Zonneschijnduur: 1u"><a href="wereldweer/actueel-en-verwacht-weer/stad/31X2902/nijmegen/morgen.html" title="Zonneschijnduur: 1u"><img src="http://img.meteogroup.com/fileadmin/templates/images/tx-mglocationweather-pi1_icon_sunshine.png" alt="Zonneschijnduur" />1u</a></p>
+													<p class="two" title="zonsopgang: 06:49"><a href="wereldweer/actueel-en-verwacht-weer/stad/31X2902/nijmegen/morgen.html" title="zonsopgang: 06:49"><img src="http://img.meteogroup.com/fileadmin/templates/images/tx-mglocationweather-pi1_icon_sunrise.png" alt="zonsopgang" />06:49</a></p>
+													<p class="three" title="zonsondergang: 20:22"><a href="wereldweer/actueel-en-verwacht-weer/stad/31X2902/nijmegen/morgen.html" title="zonsondergang: 20:22"><img src="http://img.meteogroup.com/fileadmin/templates/images/tx-mglocationweather-pi1_icon_sunset.png" alt="zonsondergang" />20:22</a></p>
+												</td>
+												<td class="weekday">
+													<p class="one" title="Zonneschijnduur: 5u"><a href="wereldweer/actueel-en-verwacht-weer/stad/31X2902/nijmegen/overmorgen.html" title="Zonneschijnduur: 5u"><img src="http://img.meteogroup.com/fileadmin/templates/images/tx-mglocationweather-pi1_icon_sunshine.png" alt="Zonneschijnduur" />5u</a></p>
+													<p class="two" title="zonsopgang: 06:51"><a href="wereldweer/actueel-en-verwacht-weer/stad/31X2902/nijmegen/overmorgen.html" title="zonsopgang: 06:51"><img src="http://img.meteogroup.com/fileadmin/templates/images/tx-mglocationweather-pi1_icon_sunrise.png" alt="zonsopgang" />06:51</a></p>
+													<p class="three" title="zonsondergang: 20:20"><a href="wereldweer/actueel-en-verwacht-weer/stad/31X2902/nijmegen/overmorgen.html" title="zonsondergang: 20:20"><img src="http://img.meteogroup.com/fileadmin/templates/images/tx-mglocationweather-pi1_icon_sunset.png" alt="zonsondergang" />20:20</a></p>
+												</td>
+												<td class="weekday">
+													<p class="one" title="Zonneschijnduur: 12u"><img src="http://img.meteogroup.com/fileadmin/templates/images/tx-mglocationweather-pi1_icon_sunshine.png" alt="Zonneschijnduur" />12u</p>
+													<p class="two" title="zonsopgang: 06:52"><img src="http://img.meteogroup.com/fileadmin/templates/images/tx-mglocationweather-pi1_icon_sunrise.png" alt="zonsopgang" />06:52</p>
+													<p class="three" title="zonsondergang: 20:18"><img src="http://img.meteogroup.com/fileadmin/templates/images/tx-mglocationweather-pi1_icon_sunset.png" alt="zonsondergang" />20:18</p>
+												</td>
+												<td class="weekday">
+													<p class="one" title="Zonneschijnduur: 10u"><img src="http://img.meteogroup.com/fileadmin/templates/images/tx-mglocationweather-pi1_icon_sunshine.png" alt="Zonneschijnduur" />10u</p>
+													<p class="two" title="zonsopgang: 06:54"><img src="http://img.meteogroup.com/fileadmin/templates/images/tx-mglocationweather-pi1_icon_sunrise.png" alt="zonsopgang" />06:54</p>
+													<p class="three" title="zonsondergang: 20:16"><img src="http://img.meteogroup.com/fileadmin/templates/images/tx-mglocationweather-pi1_icon_sunset.png" alt="zonsondergang" />20:16</p>
+												</td>
+												<td class="weekday">
+													<p class="one" title="Zonneschijnduur: 3u"><img src="http://img.meteogroup.com/fileadmin/templates/images/tx-mglocationweather-pi1_icon_sunshine.png" alt="Zonneschijnduur" />3u</p>
+													<p class="two" title="zonsopgang: 06:56"><img src="http://img.meteogroup.com/fileadmin/templates/images/tx-mglocationweather-pi1_icon_sunrise.png" alt="zonsopgang" />06:56</p>
+													<p class="three" title="zonsondergang: 20:13"><img src="http://img.meteogroup.com/fileadmin/templates/images/tx-mglocationweather-pi1_icon_sunset.png" alt="zonsondergang" />20:13</p>
+												</td>
+												<td class="weekday">
+													<p class="one" title="Zonneschijnduur: 9u"><img src="http://img.meteogroup.com/fileadmin/templates/images/tx-mglocationweather-pi1_icon_sunshine.png" alt="Zonneschijnduur" />9u</p>
+													<p class="two" title="zonsopgang: 06:57"><img src="http://img.meteogroup.com/fileadmin/templates/images/tx-mglocationweather-pi1_icon_sunrise.png" alt="zonsopgang" />06:57</p>
+													<p class="three" title="zonsondergang: 20:11"><img src="http://img.meteogroup.com/fileadmin/templates/images/tx-mglocationweather-pi1_icon_sunset.png" alt="zonsondergang" />20:11</p>
+												</td>
+												<td class="weekdaylast"></td>
+											</tr>
+										</tbody>
+									</table>
+									<table cellspacing="0" cellpadding="0">
+										<tr>
+											<td>
+												<div class="footer">
+													<p><a href="wereldweer/actueel-en-verwacht-weer/stad/31X2902/nijmegen.html?tx_mgcityweatherstatic_pi4%5Bp%5D=1" title="Verwachting voor 7 tot 14 dagen vooruit">Verwachting voor 7 tot 14 dagen vooruit</a></p>
+													<p class="footerlast"><a href="#" onclick="document.getElementById('legend').style.display = document.getElementById('legend').style.display == 'inline-block'?'none':'inline-block'; return false;" title="Legende">Legenda</a></p>
+												</div>
+											</td>
+										</tr>
+									</table>
+									<div id="legend">
+										<p class="obs">huidige waarneming</p>
+										<p class="day">Dag van de week</p>
+										<p class="ww">weer</p>
+										<p class="tntx">min/max temperatuur [°C]</p>
+										<p class="tt">maximum temperatuur<br /><br />temperatuurverloop<br /><br />minimum temperatuur</p>
+										<p class="dd">windrichting</p>
+										<p class="ff">windsnelheid [bft]</p>
+										<p class="rr">Neerslag</p>
+										<p class="prr">kans op neerslag</p>
+										<p class="sd">Zonneschijnduur</p>
+										<p class="sunrise">zonsopgang</p>
+										<p class="sunset">zonsondergang</p>
+									</div>
+									<script type="text/javascript">
+    document.getElementById("lower_header_middle_area").innerHTML = "Het weer voor Nijmegen, Nederland";
+    </script>
+								</div>
+							</li>
+							<li class="one_super_big_to_one_small_rows_second">
+								<div class="one_small_row_just_img">
+									<ul class="headerblue">
+										<li class="first"></li>
+										<li class="middle"></li>
+										<li class="last"></li>
+										<li class="header"><a href="neerslagradar/nederland.html?tx_mgradarplayer_pi1[focusCity]=Nijmegen;5.87;51.830002" title="Live Radar Nijmegen" >Live Radar Nijmegen</a></li>
+									</ul>
+									<ul class="content">
+										<li class="picture"><a href="neerslagradar/nederland.html?tx_mgradarplayer_pi1[focusCity]=Nijmegen;5.87;51.830002" title="Live Radar Nijmegen"><img src="/meteo/automatic-gif/radar.teaser/radar_nl_teaser.gif" alt="Live Radar Nijmegen" title="Live Radar Nijmegen" style="height: 126px; width:175px;" /></a> </li>
+										<li class="link"><span class="box_link"><a href="neerslagradar/nederland.html?tx_mgradarplayer_pi1[focusCity]=Nijmegen;5.87;51.830002" title="Live Radar Nijmegen">Live Radar Nijmegen</a></span></li>
+									</ul>
+									<ul class="footer">
+										<li class="first"></li>
+										<li class="middle"></li>
+										<li class="last"></li>
+									</ul>
+								</div>
+								<SCRIPT language='JavaScript1.1' SRC="http://ad-emea.doubleclick.net/adj/N6923.135160.ADLINKNL-WEER/B7699872;sz=170x170;ord=[timestamp]?">
+</SCRIPT>
+								<NOSCRIPT><A HREF="http://ad-emea.doubleclick.net/jump/N6923.135160.ADLINKNL-WEER/B7699872;sz=170x170;ord=[timestamp]?"><IMG SRC="http://ad-emea.doubleclick.net/ad/N6923.135160.ADLINKNL-WEER/B7699872;sz=170x170;ord=[timestamp]?" BORDER=0 WIDTH=170 HEIGHT=170 ALT="Advertisement"></A> </NOSCRIPT>
+								</li>
+							</ul>
+							<ul class="two_big_rows">
+								<li class="two_big_rows_first">
+									<div class="one_big_row_html">
+										<ul class="header">
+											<li class="first"></li>
+											<li class="middle"></li>
+											<li class="last"></li>
+										</ul>
+										<ul class="content">
+											<li class="html"><img src="http://maps.google.com/maps/api/staticmap?center=51.830002,5.87&amp;zoom=8&amp;size=365x350&amp;markers=size:mid|color:yellow|51.65,5.7&amp;markers=size:mid|color:red|51.830002,5.87&amp;sensor=false" alt="Google Maps:Nijmegen" /></li>
+										</ul>
+										<ul class="footer">
+											<li class="first"></li>
+											<li class="middle"></li>
+											<li class="last"></li>
+										</ul>
+									</div>
+								</li>
+								<li class="two_big_rows_second">
+									<div class="one_big_row_html">
+										<ul class="header">
+											<li class="first"></li>
+											<li class="middle"></li>
+											<li class="last"></li>
+										</ul>
+										<ul class="content">
+											<li class="html">
+												<p class="bodytext">Advertentie</p>
+												<div>
+													<script type="text/javascript">adnxs.megatag.load({ size: '336x280', weer: 'GOEDWEER', promoSizes: ['300x250', '300x600']});</script>
+												</div>
+											</li>
+										</ul>
+										<ul class="footer">
+											<li class="first"></li>
+											<li class="middle"></li>
+											<li class="last"></li>
+										</ul>
+									</div>
+								</li>
+							</ul>
+							<center>
+								<script type="text/javascript"><!--
+google_ad_client = "pub-4025972854496857";
+/* 728x90, gemaakt 11-4-11 */
+google_ad_slot = "0068662024";
+google_ad_width = 728;
+google_ad_height = 90;
+//-->
+</script>
+								<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+							</center>
+							<div class="one_small_row_html" style="height: 100%">
+								<ul class="header">
+									<li class="first"></li>
+									<li class="middle"></li>
+									<li class="last"></li>
+								</ul>
+								<ul class="content" style="height: 100%">
+									<li class="html">
+										<div class="tx-timtabtagcloud-pi1"><strong>TOP-25:</strong><br /><a href="wereldweer/actueel-en-verwacht-weer/stad/31X2480/-s-hertogenbosch.html?cityID=31X2480" class="tx-timtabtagcloud-link" title="weer: 's-Hertogenbosch"><span class="tx-timtabtagcloud-tag1">'s-Hertogenbosch</span></a> <a href="wereldweer/actueel-en-verwacht-weer/stad/31X3842/zoetermeer.html?cityID=31X3842" class="tx-timtabtagcloud-link" title="weer: Zoetermeer"><span class="tx-timtabtagcloud-tag1">Zoetermeer</span></a> <a href="wereldweer/actueel-en-verwacht-weer/stad/31X1235/eindhoven.html?cityID=31X1235" class="tx-timtabtagcloud-link" title="weer: Eindhoven"><span class="tx-timtabtagcloud-tag6">Eindhoven</span></a> <a href="wereldweer/actueel-en-verwacht-weer/stad/31X1775/tilburg.html?cityID=31X1775" class="tx-timtabtagcloud-link" title="weer: Tilburg"><span class="tx-timtabtagcloud-tag1">Tilburg</span></a> <a href="wereldweer/actueel-en-verwacht-weer/stad/31X4203/leiden.html?cityID=31X4203" class="tx-timtabtagcloud-link" title="weer: Leiden"><span class="tx-timtabtagcloud-tag1">Leiden</span></a> <a href="wereldweer/actueel-en-verwacht-weer/stad/31X5149/zwolle.html?cityID=31X5149" class="tx-timtabtagcloud-link" title="weer: Zwolle"><span class="tx-timtabtagcloud-tag1">Zwolle</span></a> <a href="wereldweer/actueel-en-verwacht-weer/stad/31X4383/enschede.html?cityID=31X4383" class="tx-timtabtagcloud-link" title="weer: Enschede"><span class="tx-timtabtagcloud-tag1">Enschede</span></a> <a href="wereldweer/actueel-en-verwacht-weer/stad/31X2902/nijmegen.html?cityID=31X2902" class="tx-timtabtagcloud-link" title="weer: Nijmegen"><span class="tx-timtabtagcloud-tag4">Nijmegen</span></a> <a href="wereldweer/actueel-en-verwacht-weer/stad/31X2811/dordrecht.html?cityID=31X2811" class="tx-timtabtagcloud-link" title="weer: Dordrecht"><span class="tx-timtabtagcloud-tag1">Dordrecht</span></a> <a href="wereldweer/actueel-en-verwacht-weer/stad/31X4174/amersfoort.html?cityID=31X4174" class="tx-timtabtagcloud-link" title="weer: Amersfoort"><span class="tx-timtabtagcloud-tag1">Amersfoort</span></a> <a href="wereldweer/actueel-en-verwacht-weer/stad/31X4825/amsterdam.html?cityID=31X4825" class="tx-timtabtagcloud-link" title="weer: Amsterdam"><span class="tx-timtabtagcloud-tag9">Amsterdam</span></a> <a href="wereldweer/actueel-en-verwacht-weer/stad/31X1890/breda.html?cityID=31X1890" class="tx-timtabtagcloud-link" title="weer: Breda"><span class="tx-timtabtagcloud-tag1">Breda</span></a> <a href="wereldweer/actueel-en-verwacht-weer/stad/31X889/venlo.html?cityID=31X889" class="tx-timtabtagcloud-link" title="weer: Venlo"><span class="tx-timtabtagcloud-tag1">Venlo</span></a> <a href="wereldweer/actueel-en-verwacht-weer/stad/31X3306/rotterdam.html?cityID=31X3306" class="tx-timtabtagcloud-link" title="weer: Rotterdam"><span class="tx-timtabtagcloud-tag7">Rotterdam</span></a> <a href="wereldweer/actueel-en-verwacht-weer/stad/31X4403/apeldoorn.html?cityID=31X4403" class="tx-timtabtagcloud-link" title="weer: Apeldoorn"><span class="tx-timtabtagcloud-tag1">Apeldoorn</span></a> <a href="wereldweer/actueel-en-verwacht-weer/stad/31X3927/utrecht.html?cityID=31X3927" class="tx-timtabtagcloud-link" title="weer: Utrecht"><span class="tx-timtabtagcloud-tag5">Utrecht</span></a> <a href="wereldweer/actueel-en-verwacht-weer/stad/31X3681/delft.html?cityID=31X3681" class="tx-timtabtagcloud-link" title="weer: Delft"><span class="tx-timtabtagcloud-tag1">Delft</span></a> <a href="wereldweer/actueel-en-verwacht-weer/stad/31X155/maastricht.html?cityID=31X155" class="tx-timtabtagcloud-link" title="weer: Maastricht"><span class="tx-timtabtagcloud-tag1">Maastricht</span></a> <a href="wereldweer/actueel-en-verwacht-weer/stad/31X4867/haarlem.html?cityID=31X4867" class="tx-timtabtagcloud-link" title="weer: Haarlem"><span class="tx-timtabtagcloud-tag1">Haarlem</span></a> <a href="wereldweer/actueel-en-verwacht-weer/stad/31X3965/den-haag.html?cityID=31X3965" class="tx-timtabtagcloud-link" title="weer: Den Haag"><span class="tx-timtabtagcloud-tag8">Den Haag</span></a> <a href="wereldweer/actueel-en-verwacht-weer/stad/31X7099/groningen.html?cityID=31X7099" class="tx-timtabtagcloud-link" title="weer: Groningen"><span class="tx-timtabtagcloud-tag2">Groningen</span></a> <a href="wereldweer/actueel-en-verwacht-weer/stad/31X6374/assen.html?cityID=31X6374" class="tx-timtabtagcloud-link" title="weer: Assen"><span class="tx-timtabtagcloud-tag1">Assen</span></a> <a href="wereldweer/actueel-en-verwacht-weer/stad/31X3751/ede.html?cityID=31X3751" class="tx-timtabtagcloud-link" title="weer: Ede"><span class="tx-timtabtagcloud-tag1">Ede</span></a> <a href="wereldweer/actueel-en-verwacht-weer/stad/31X3582/arnhem.html?cityID=31X3582" class="tx-timtabtagcloud-link" title="weer: Arnhem"><span class="tx-timtabtagcloud-tag3">Arnhem</span></a> <a href="wereldweer/actueel-en-verwacht-weer/stad/31X1389/helmond.html?cityID=31X1389" class="tx-timtabtagcloud-link" title="weer: Helmond"><span class="tx-timtabtagcloud-tag1">Helmond</span></a> </div>
+									</li>
+								</ul>
+								<ul class="footer">
+									<li class="first"></li>
+									<li class="middle"></li>
+									<li class="last"></li>
+								</ul>
+							</div>
+							<!--TYPO3SEARCH_end-->
+						</div>
+						<div id="content_middle_lower_area" class="content_middle_lower_area">
+							<div style="margin-top:25px"><a href="/stuur-een-pagina-naar-een-vriend.html?hint=aHR0cDovL3d3dy53ZWVyLm5sL3dlcmVsZHdlZXIvYWN0dWVlbC1lbi12ZXJ3YWNodC13ZWVyL3N0YWQvMzFYMjkwMi9uaWptZWdlbi5odG1sNWYwNjg3Nzk3OA==" title="Zend een link naar een vriend">Stuur deze pagina naar een vriend</a></div>
+						</div>
+					</div>
+					<div id="content_right_area">
+						<div id="content_right_area_upper_area">
+							<!--TYPO3SEARCH_begin-->
+							<iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://partnerwebsites.mistermedia.nl/weer/" width="175" height="430"></iframe>
+							<div>
+								<script type="text/javascript">adnxs.megatag.load({ size: '160x600', weer: 'GOEDWEER'});</script>
+							</div>
+							<!--TYPO3SEARCH_end-->
+						</div>
+						<div id="content_right_area_ads"></div>
+					</div>
+					<div style="clear: both"></div>
+				</div>
+				<div id="footer">
+					<div id="footer_upper_footer">
+						<div id="footer_upper_footer_left_area">QUICKLINKS</div>
+						<div id="footer_upper_footer_middle_area"><span>(c) 2006-12 by MeteoGroup</span>
+							<ul>
+								<li><a href="http://www.meteogroup.nl/nl/home/over-meteoconsult/gebruiksvoorwaarden.html" title="Gebruiksvoorwaarden" >Gebruiksvoorwaarden</a></li>
+								<li><a href="http://www.meteogroup.com/index.php?id=18571&amp;L=3&amp;no_cache=1" title="Privacybeleid en Cookies" >Privacybeleid en Cookies</a></li>
+								<li><a href="http://www.meteogroup.nl/contact.html" title="Contact" >Contact</a></li>
+								<li><a href="http://www.weer.nl/adverteren-op-weernl.html" title="Adverteren " >Adverteren </a></li>
+								<li><a href="http://www.weer.nl/rss.xml" title="RSS" >RSS</a></li>
+							</ul>
+						</div>
+						<div id="footer_upper_footer_right_area">Related links</div>
+						<div style="clear: both"></div>
+					</div>
+					<table class="footer_linklist">
+						<tr>
+							<td class="first">
+								<p class="headertext">Actueel</p>
+							</td>
+							<td>
+								<p class="headertext">Verwachting</p>
+							</td>
+							<td>
+								<p class="headertext">Reisweer</p>
+							</td>
+							<td>
+								<p class="headertext">Professioneel</p>
+							</td>
+							<td>
+								<p class="headertext">Activiteiten</p>
+							</td>
+							<td class="last">
+								<p class="headertext">Websites</p>
+							</td>
+						</tr>
+						<tr>
+							<td class="first">
+								<p class="bodytext"><a href="http://www.weer.nl/neerslagradar/nederland.html" title="Neerslagradar" target="_top" class="internal-link" >Neerslagradar</a> </p>
+								<p class="bodytext"><a href="http://www.weer.nl/neerslagradar/europa.html" title="Europese radar" target="_top" class="internal-link" >Europese radar</a> </p>
+								<p class="bodytext"><a href="http://www.weer.nl/satellietbeelden/infrarood.html" title="Satellietbeelden" target="_top" class="internal-link" >Satellietbeelden</a> </p>
+								<p class="bodytext"><a href="http://www.weer.nl/weerpresentatie.html" title="Weervideo" target="_top" class="internal-link" >Weervideo</a> </p>
+								<p class="bodytext"><a href="http://www.weer.nl/verkeersinformatie.html" title="Verkeersinformatie" target="_top" class="internal-link" >Verkeersinformatie</a> </p>
+								<p class="bodytext"><a href="10-minuten-waarnemingen.html" class="internal-link" >10-minuten waarneming</a> </p>
+								<p class="bodytext"><a href="http://www.weer.nl/weer-in-het-nieuws.html" title="Nieuws" target="_top" class="internal-link" >Nieuws</a> </p>
+								<p class="bodytext"><a href="http://www.weer.nl/producten-en-diensten/0900-weerlijnen/telefoon-en-fax.html" title="0900 - 9725" target="_top" class="internal-link" >0900 - 9725</a> </p>
+								<p class="bodytext"><a href="http://www.weer.nl/producten-en-diensten/sms-mobiel-iphone.html" title="iPhone &amp; SMS" target="_top" class="internal-link" >iPhone &amp; SMS</a> </p>
+								<p class="bodytext"><a href="http://www.meteogroup.nl/over-ons/carriere.html" title="Vacatures" target="_blank" class="external-link-new-window" >Vacatures</a> </p>
+								<p class="bodytext">&nbsp;</p>
+							</td>
+							<td>
+								<p class="bodytext"><a href="http://www.weer.nl/wereldweer/actueel-en-verwacht-weer/stad/31X4825/amsterdam.html" title="Weer Amsterdam" target="_top" class="external-link-new-window" >Weer Amsterdam</a> </p>
+								<p class="bodytext"><a href="http://www.weer.nl/wereldweer/actueel-en-verwacht-weer/stad/31X3306/rotterdam.html" title="Weer Rotterdam" target="_top" class="external-link-new-window" >Weer Rotterdam</a> </p>
+								<p class="bodytext"><a href="http://www.weer.nl/wereldweer/actueel-en-verwacht-weer/stad/31X3965/den-haag.html" title="Weer Den Haag" target="_top" class="external-link-new-window" >Weer Den Haag</a> </p>
+								<p class="bodytext"><a href="http://www.weer.nl/wereldweer/actueel-en-verwacht-weer/stad/31X3927/utrecht.html" title="Weer Utrecht" target="_top" class="external-link-new-window" >Weer Utrecht</a> </p>
+								<p class="bodytext"><a href="http://www.weer.nl/wereldweer/actueel_en_verwacht_weer/stad/31X1235/eindhoven.html" title="Weer Eindhoven" target="_top" class="external-link-new-window" >Weer Eindhoven</a> </p>
+								<p class="bodytext"><a href="http://www.weer.nl/wereldweer/actueel-en-verwacht-weer/stad/31X1775/tilburg.html" title="Weer Tilburg" target="_top" class="external-link-new-window" >Weer Tilburg</a> </p>
+								<p class="bodytext"><a href="http://www.weer.nl/wereldweer/actueel-en-verwacht-weer/stad/31X7099/groningen.html" title="Weer Groningen" target="_top" class="external-link-new-window" >Weer Groningen</a> </p>
+								<p class="bodytext"><a href="http://www.weer.nl/wereldweer/actueel-en-verwacht-weer/stad/31X2902/nijmegen.html" title="Weer Nijmegen" target="_top" class="external-link-new-window" >Weer Nijmegen</a> </p>
+								<p class="bodytext"><a href="http://www.weer.nl/wereldweer/actueel-en-verwacht-weer/stad/31X155/maastricht.html" title="Weer Maastricht" target="_top" class="external-link-new-window" >Weer Maastricht</a> </p>
+								<p class="bodytext"><a href="http://www.weer.nl/wereldweer/actueel-en-verwacht-weer/stad/31X5149/zwolle.html" title="Weer Zwolle" target="_top" class="external-link-new-window" >Weer Zwolle</a></p>
+							</td>
+							<td>
+								<p class="bodytext"><a href="http://www.weer.nl/wereldweer/belgie/belgie.html" title="Weer België" target="_top" class="internal-link" >Weer België</a> </p>
+								<p class="bodytext"><a href="http://www.weer.nl/wereldweer/frankrijk/frankrijk.html" title="Weer Frankrijk" target="_top" class="internal-link" >Weer Frankrijk</a> </p>
+								<p class="bodytext"><a href="http://www.weer.nl/wereldweer/duitsland/duitsland.html" title="Weer Duitsland" target="_top" class="internal-link" >Weer Duitsland<br /></a><a href="wereldweer/oostenrijk.html" title="Weer Duitsland" target="_top" class="internal-link" >Weer Oostenrijk/Zwitserland</a> </p>
+								<p class="bodytext"><a href="http://www.weer.nl/wereldweer/britse-eilanden/britse-eilanden.html" title="Weer Groot Brittannië" target="_top" class="internal-link" >Weer Groot Brittannië</a> </p>
+								<p class="bodytext"><a href="http://www.weer.nl/wereldweer/zweden.html" title="Weer Scandinavië" target="_top" class="internal-link" >Weer Scandinavië</a> </p>
+								<p class="bodytext"><a href="http://www.weer.nl/wereldweer/spanje/spanje.html" title="Weer Spanje" target="_top" class="internal-link" >Weer Spanje</a> </p>
+								<p class="bodytext"><a href="http://www.weer.nl/wereldweer/griekenland.html" title="Weer Griekenland" target="_top" class="internal-link" >Weer Griekenland</a> </p>
+								<p class="bodytext"><a href="http://www.weer.nl/wereldweer/italie/italie.html" title="Weer Italië" target="_top" class="internal-link" >Weer Italië</a> </p>
+								<p class="bodytext"><a href="http://www.weer.nl/wereldweer/turkije-cyprus.html" title="Weer Turkije" target="_top" class="internal-link" >Weer Turkije</a> </p>
+								<p class="bodytext"><a href="http://www.weer.nl/wereldweer/afrika.html" title="Weer Marokko" target="_top" class="internal-link" >Weer Marokko</a></p>
+							</td>
+							<td>
+								<p class="bodytext"><a href="nl/global-content/verkeer.html" title="Verkeer" class="internal-link" >Verkeer</a> </p>
+								<p class="bodytext"><a href="nl/global-content/energie.html" title="Energie" class="internal-link" >Energie</a> </p>
+								<p class="bodytext"><a href="http://www.meteogroup-maritime.com/" title="Scheepvaart" target="_blank" >Scheepvaart</a> </p>
+								<p class="bodytext"><a href="http://www.meteogroup-maritime.com/" title="Offshore" target="_blank" >Offshore</a> </p>
+								<p class="bodytext"><a href="nl/global-content/bouw.html" title="Bouw" class="internal-link" >Bouw</a> </p>
+								<p class="bodytext"><a href="nl/global-content/land-en-tuinbouw.html" title="Land- en tuinbouw" class="internal-link" >Land- en tuinbouw</a> </p>
+								<p class="bodytext"><a href="nl/global-content/media.html" title="Media" class="internal-link" >Media</a> </p>
+								<p class="bodytext"><a href="nl/global-content/waterbeheer.html" title="Waterbeheer" class="internal-link" >Waterbeheer</a> </p>
+								<p class="bodytext"><a href="http://www.meteogroup.nl/nl/home/zakelijke-diensten/meteorologisch-onderzoek.html" title="Research" target="_top" class="external-link-new-window" >Research</a> </p>
+								<p class="bodytext"><a href="http://www.meteogroup.nl/nl/home/zakelijke-diensten/gezondheid-en-milieu.html" title="Milieu" target="_top" class="external-link-new-window" >Milieu</a></p>
+							</td>
+							<td>
+								<p class="bodytext"><a href="http://www.weer.nl/producten-en-diensten/cursussen/algemene-meteorologie.html" title="Cursus meteorologie" target="_top" class="internal-link" >Cursus meteorologie</a> </p>
+								<p class="bodytext"><a href="http://www.weer.nl/producten-en-diensten/workshops/wolken-herkennen.html" title="Workshop Wolken herkennen" target="_top" class="internal-link" >Workshop Wolken herkennen</a> </p>
+								<p class="bodytext"><a href="http://www.weer.nl/producten-en-diensten/workshops/klimaatverandering.html" title="Workshop Klimaatverandering" target="_top" class="internal-link" >Workshop Klimaatverandering</a> </p>
+								<p class="bodytext"><a href="producten-en-diensten/workshops/workshop-tornados-jagen.html" class="internal-link" >Tornado's jagen</a> </p>
+								<p class="bodytext"><a href="http://www.weer.nl/producten-en-diensten/weerpresentaties.html" title="Presentatie op lokatie" target="_top" class="internal-link" >Presentatie op lokatie</a> </p>
+								<p class="bodytext"><a href="http://www.weer.nl/producten-en-diensten/bedrijfsuitjes.html" title="Bedrijfsuitjes" target="_top" class="internal-link" >Bedrijfsuitjes</a> </p>
+								<p class="bodytext"><a href="http://www.weer.nl/producten-en-diensten/boeken-en-multimedia.html" title="Boekenshop" target="_top" class="internal-link" >Boekenshop</a> </p>
+								<p class="bodytext"><a href="producten-en-diensten/weer-verkeer-op-uw-site/weer-verkeer-op-uw-site.html" class="internal-link" >Weer op uw site</a> </p>
+								<p class="bodytext"><a href="http://www.weer.nl/adverteren-op-weernl.html" title="Adverteren op weer.nl" target="_top" >Adverteren op weer.nl</a></p>
+							</td>
+							<td class="last">
+								<p class="bodytext"><a href="http://www.gladheid.nl/" title="www.gladheid.nl" target="_blank" class="external-link-new-window" >www.gladheid.nl</a> </p>
+								<p class="bodytext"><a href="http://www.meteogroup-maritime.com/" target="_blank" class="external-link-new-window" >www.meteogroup-maritime.com</a> </p>
+								<p class="bodytext"><a href="http://www.routeguard.eu" title="www.routeguard.eu" target="_blank" class="external-link-new-window" >www.routeguard.eu</a> </p>
+								<p class="bodytext"><a href="http://www.bouwweer.nl" title="www.bouwweer.nl" target="_blank" class="external-link-new-window" >www.bouwweer.nl</a> </p>
+								<p class="bodytext"><a href="http://www.spoorweer.nl" title="www.spoorweer.nl" target="_blank" class="external-link-new-window" >www.spoorweer.nl</a> </p>
+								<p class="bodytext"><a href="http://www.neerslag.nl" title="www.neerslag.nl" target="_blank" class="external-link-new-window" >www.neerslag.nl</a> </p>
+								<p class="bodytext"><a href="http://www.agroweer.nl" title="www.agroweer.nl" target="_blank" class="external-link-new-window" >www.agroweer.nl</a> </p>
+								<p class="bodytext"><a href="http://www.energieweer.nl" title="www.energieweer.nl" target="_blank" class="external-link-new-window" >www.energieweer.nl</a> </p>
+								<p class="bodytext"><a href="http://www.weerenverkeer.tv" title="www.weerenverkeer.tv" target="_blank" class="external-link-new-window" >www.weerenverkeer.tv</a> </p>
+								<p class="bodytext"><a href="http://www.regen.nl" title="www.regen.nl" target="_blank" class="external-link-new-window" >www.regen.nl<br /></a> </p>
+								<p class="bodytext"><a href="http://www.meteogroupoffshore.com" title="external-link-new-window" target="/" >www.meteogroupoffshore.com <br /></a></p>
+							</td>
+						</tr>
+					</table>
+				</div>
+				<div id="more_content">
+					<div id="IR" style="display:block; position:fixed; left:0; bottom:0;z-index: 2147483647;width:100%;">
+						<div style="padding: 13px !important;background: #ffdd00;background: -moz-linear-gradient(top, rgba(238, 238, 238, 1) 0%, rgba(255, 221, 0, 0.75) 100% );background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(255, 221, 0, 0.75) ), color-stop(100%, rgba(238, 238, 238, 1) ) );background: -webkit-linear-gradient(top, rgba(238, 238, 238, 1) 0%, rgba(255, 221, 0, 0.75) 100% );background: -o-linear-gradient(top, rgba(238, 238, 238, 1) 0%, rgba(255, 221, 0, 0.75) 100% );background: -ms-linear-gradient(top, rgba(238, 238, 238, 1) 0%, rgba(255, 221, 0, 0.75) 100% );filter: progid:DXImageTransform.Microsoft.gradient (startColorstr = '#eeeeee', endColorstr = '#ffdd00', GradientType = 0 );background: linear-gradient(top, rgba(238, 238, 238, 1) 0%,rgba(255, 221, 0, 0.75) 100% );">
+							<form action="/wereldweer/actueel-en-verwacht-weer/stad/31X2902/nijmegen.html" name="CookieForm" method="post" style="float:right"><input type="hidden" name="acceptedCookie" value="1"><input type="submit" value="X" style="background: none;border: none;font-weight: bold;color: #0060AC;cursor:pointer"></form>
+							<p class="bodytext" style="width:95%">De websites van MeteoGroup maken gebruik van Cookies. Voor meer informatie klik <a href="http://www.meteogroup.com/nl/privacy-policy-and-cookies.html" title="Cookie information" target="_blank">hier</a>.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-859740-1']);
+
+        _gaq.push(['_trackPageview']);
+        (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+		</body>
+	</html>
