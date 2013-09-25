@@ -1,0 +1,382 @@
+<!--?xml version="1.0" encoding="utf-8"?-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"><head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<!-- <base href="http://www.weer.nl/" /> -->
+		<base href="{Aphaea:root}/media/icons/weather/weekprognoses/" />
+				
+		<!-- weather forcast -->
+		<link rel="stylesheet" type="text/css" href="./stylesheet_1f444c98dd.css" media="all" />
+		
+		<!-- general site -->
+		<link rel="stylesheet" type="text/css" href="./meteogroup-screen-v34.css" media="all" />
+
+
+	</head>
+	<body _onload="T3_onloadWrapper();">
+
+		<div id="body_wrapper">
+
+			<div id="content">
+				<div id="content_middle_area" class="content_middle_area">
+					<div id="content_middle_upper_area" class="content_middle_upper_area">
+						<!--TYPO3SEARCH_begin-->
+						<ul class="one_super_big_to_one_small_rows">
+						
+						
+						
+						
+						
+						
+							<li class="one_super_big_to_one_small_rows_first">
+								<div class="tx-mgflashweathermap-pi1"></div>
+								<div class="tx-mglocationweather-pi1">
+									<table cellspacing="0" cellpadding="0">
+										<tr>
+											<td class="head">
+												<div class="head">
+													<p class="head_city">{city}</p>
+													<p class="head_station">{station}</p>
+												</div>
+												<p class="head_ww"><img src="{Aphaea:root}/tool/get_weather_icon.php?theme={Aphaea:theme}&size=64px&code={weather-code}" alt="{weather-description|}" title="{weather-description}" /></p>
+												<p class="head_tt2" title="{temperature}">{temperature}</p>
+												<div class="head_wind"><img src="{Aphaea:root}/media/icons/compass/{wind-code}.png" alt="{wind-description|}" title="{wind-description|}" />
+													<p class="head_ff2" title="{wind-strength}">{wind-strength}</p>
+												</div>
+												<p class="head_ppp2" title="{airpressure}">{airpressure}</p>
+											</td>
+										</tr>
+									</table>
+									<table class="head" cellspacing="0" cellpadding="0">
+										<tbody>
+											<tr>
+												<td class="weekdayfirst"></td>
+												<td class="weekday">
+													<p class="weekday" title="{1:dayname}">{1:dayname}</p>
+													<p class="day" title="{1:date}">{1:date}</p>
+												</td>
+												<td class="weekday">
+													<p class="weekday" title="{2:dayname}">{2:dayname}</p>
+													<p class="day" title="{2:dayname}">{2:date}</p>
+												</td>
+												<td class="weekday">
+													<p class="weekday" title="{3:dayname}">{3:dayname}</p>
+													<p class="day" title="{3:date}">{3:date}</p>
+												</td>
+												<td class="weekday">
+													<p class="weekday" title="{4:dayname}">{4:dayname}</p>
+													<p class="day" title="{4:date}">{4:date}</p>
+												</td>
+												<td class="weekday">
+													<p class="weekday" title="{5:dayname}">{5:dayname}</p>
+													<p class="day" title="{5:date}">{5:date}</p>
+												</td>
+												<td class="weekday">
+													<p class="weekday" title="{6:dayname}">{6:dayname}</p>
+													<p class="day" title="{6:dayname}">{6:date}</p>
+												</td>
+												<td class="weekday">
+													<p class="weekday" title="{7:dayname}">{7:dayname}</p>
+													<p class="day" title="{7:date}">{7:date}</p>
+												</td>
+												<td class="weekdaylast"></td>
+											</tr>
+										</tbody>
+									</table>
+									<table class="main_one" cellspacing="0" cellpadding="0">
+										<tbody>
+											<tr>
+												<td class="weekdayfirst"></td>
+												<td class="weekday">
+													<div class="one" title="{1:night-phase:weather-description|}"><img src="{Aphaea:root}/tool/get_weather_icon.php?theme={Aphaea:theme}&size=32px&code={1:night-phase:weather-code}" alt="{1:night-phase:weather-description|}" title="{1:night-phase:weather-description|}" /></div>
+													<div class="two" title="{1:day-phase:weather-description|}"><img src="{Aphaea:root}/tool/get_weather_icon.php?theme={Aphaea:theme}&size=32px&code={1:day-phase:weather-code}" alt="{1:day-phase:weather-description|}" title="{1:day-phase:weather-description|}" /></div>
+												</td>
+												<td class="weekday">
+													<div class="one" title="{2:night-phase:weather-description|}"><img src="{Aphaea:root}/tool/get_weather_icon.php?theme={Aphaea:theme}&size=32px&code={2:night-phase:weather-code}" alt="{2:night-phase:weather-description|}" title="{2:night-phase:weather-description|}" /></div>
+													<div class="two" title="{2:day-phase:weather-description|}"><img src="{Aphaea:root}/tool/get_weather_icon.php?theme={Aphaea:theme}&size=32px&code={2:day-phase:weather-code}" alt="{2:day-phase:weather-description|}" title="{2:day-phase:weather-description|}" /></div>
+												</td>
+												<td class="weekday">
+													<div class="one" title="{3:night-phase:weather-description|}"><img src="{Aphaea:root}/tool/get_weather_icon.php?theme={Aphaea:theme}&size=32px&code={3:night-phase:weather-code}" alt="{3:night-phase:weather-description|}" title="{3:night-phase:weather-description|}" /></div>
+													<div class="two" title="{3:day-phase:weather-description|}"><img src="{Aphaea:root}/tool/get_weather_icon.php?theme={Aphaea:theme}&size=32px&code={3:day-phase:weather-code}" alt="{3:day-phase:weather-description|}" title="{3:day-phase:weather-description|}" /></div>
+												</td>
+												<td class="weekday">
+													<div class="one" title="{4:night-phase:weather-description|}"><img src="{Aphaea:root}/tool/get_weather_icon.php?theme={Aphaea:theme}&size=32px&code={4:night-phase:weather-code}" alt="{4:night-phase:weather-description|}" title="{4:night-phase:weather-description|}" /></div>
+													<div class="two" title="{4:day-phase:weather-description|}"><img src="{Aphaea:root}/tool/get_weather_icon.php?theme={Aphaea:theme}&size=32px&code={4:day-phase:weather-code}" alt="{4:day-phase:weather-description|}" title="{4:day-phase:weather-description|}" /></div>
+												</td>
+												<td class="weekday">
+													<div class="one" title="{5:night-phase:weather-description|}"><img src="{Aphaea:root}/tool/get_weather_icon.php?theme={Aphaea:theme}&size=32px&code={5:night-phase:weather-code}" alt="{5:night-phase:weather-description|}" title="{5:night-phase:weather-description|}" /></div>
+													<div class="two" title="{5:day-phase:weather-description|}"><img src="{Aphaea:root}/tool/get_weather_icon.php?theme={Aphaea:theme}&size=32px&code={5:day-phase:weather-code}" alt="{5:day-phase:weather-description|}" title="{5:day-phase:weather-description|}" /></div>
+												</td>
+												<td class="weekday">
+													<div class="one" title="{6:night-phase:weather-description|}"><img src="{Aphaea:root}/tool/get_weather_icon.php?theme={Aphaea:theme}&size=32px&code={6:night-phase:weather-code}" alt="{6:night-phase:weather-description|}" title="{6:night-phase:weather-description|}" /></div>
+													<div class="two" title="{6:day-phase:weather-description|}"><img src="{Aphaea:root}/tool/get_weather_icon.php?theme={Aphaea:theme}&size=32px&code={6:day-phase:weather-code}" alt="{6:day-phase:weather-description|}" title="{6:day-phase:weather-description|}" /></div>
+												</td>
+												<td class="weekday">
+													<div class="one" title="{7:night-phase:weather-description|}"><img src="{Aphaea:root}/tool/get_weather_icon.php?theme={Aphaea:theme}&size=32px&code={7:night-phase:weather-code}" alt="{7:night-phase:weather-description|}" title="{7:night-phase:weather-description|}" /></div>
+													<div class="two" title="{7:day-phase:weather-description|}"><img src="{Aphaea:root}/tool/get_weather_icon.php?theme={Aphaea:theme}&size=32px&code={7:day-phase:weather-code}" alt="{7:day-phase:weather-description|}" title="{7:day-phase:weather-description|}" /></div>
+												</td>
+												<td class="weekdaylast"></td>
+											</tr>
+										</tbody>
+									</table>
+									<table class="main_three" cellspacing="0" cellpadding="0">
+										<tbody>
+											<tr>
+												<td class="weekdayfirst"></td>
+												<td class="weekday">
+													<p class="one" title="{1:night-phase:temperature}&deg;C">{1:night-phase:temperature}</p>
+													<p class="two" title="{1:day-phase:temperature}&deg;C">{1:day-phase:temperature}</p>
+												</td>
+												<td class="weekday">
+													<p class="one" title="{2:night-phase:temperature}&deg;C">{2:night-phase:temperature}</p>
+													<p class="two" title="{2:day-phase:temperature}&deg;C">{2:day-phase:temperature}</p>
+												</td>
+												<td class="weekday">
+													<p class="one" title="{3:night-phase:temperature}&deg;C">{3:night-phase:temperature}</p>
+													<p class="two" title="{3:day-phase:temperature}&deg;C">{3:day-phase:temperature}</p>
+												</td>
+												<td class="weekday">
+													<p class="one" title="{4:night-phase:temperature}&deg;C">{4:night-phase:temperature}</p>
+													<p class="two" title="{4:day-phase:temperature}&deg;C">{4:day-phase:temperature}</p>
+												</td>
+												<td class="weekday">
+													<p class="one" title="{5:night-phase:temperature}&deg;C">{5:night-phase:temperature}</p>
+													<p class="two" title="{5:day-phase:temperature}&deg;C">{5:day-phase:temperature}</p>
+												</td>
+												<td class="weekday">
+													<p class="one" title="{6:night-phase:temperature}&deg;C">{6:night-phase:temperature}</p>
+													<p class="two" title="{6:day-phase:temperature}&deg;C">{6:day-phase:temperature}</p>
+												</td>
+												<td class="weekday">
+													<p class="one" title="{7:night-phase:temperature}&deg;C">{7:night-phase:temperature}</p>
+													<p class="two" title="{7:day-phase:temperature}&deg;C">{7:day-phase:temperature}</p>
+												</td>
+												<td class="weekdaylast"></td>
+											</tr>
+										</tbody>
+									</table>
+									<table class="main_two" cellspacing="0" cellpadding="0">
+										<tbody>
+											<tr>
+												<td><img src="{temperature-graph}" title="temperatuur" alt="temperatuur" />
+													<!-- <div style="position:relative; height:0; top:-84px; left:535px;"><a href="#" title="Verwachting voor 7 tot 14 dagen vooruit"><img style="height:48px;width:36px;" src="./arrow-next.png" /></a></div> -->
+												</td>
+											</tr>
+										</tbody>
+									</table>
+									<table class="main_four" cellspacing="0" cellpadding="0">
+										<tbody>
+											<tr>
+												<td class="weekdayfirst"></td>
+												<td class="weekday">
+													<div class="one" title="{1:night-phase:wind-description|}"><img src="{Aphaea:root}/media/icons/compass/{1:night-phase:wind-code}.png" alt="{1:night-phase:wind-description|}" title="{1:night-phase:wind-description|}" /></div>
+													<div class="two" title="{1:day-phase:wind-description|}"><img src="{Aphaea:root}/media/icons/compass/{1:day-phase:wind-code}.png" alt="{1:day-phase:wind-description|}" title="{1:day-phase:wind-description|}" /></div>
+												</td>
+												<td class="weekday">
+													<div class="one" title="{2:night-phase:wind-description|}"><img src="{Aphaea:root}/media/icons/compass/{2:night-phase:wind-code}.png" alt="{2:night-phase:wind-description|}" title="{2:night-phase:wind-description|}" /></div>
+													<div class="two" title="{2:day-phase:wind-description|}"><img src="{Aphaea:root}/media/icons/compass/{2:day-phase:wind-code}.png" alt="{2:day-phase:wind-description|}" title="{2:day-phase:wind-description|}" /></div>
+												</td>
+												<td class="weekday">
+													<div class="one" title="{3:night-phase:wind-description|}"><img src="{Aphaea:root}/media/icons/compass/{3:night-phase:wind-code}.png" alt="{3:night-phase:wind-description|}" title="{3:night-phase:wind-description|}" /></div>
+													<div class="two" title="{3:day-phase:wind-description|}"><img src="{Aphaea:root}/media/icons/compass/{3:day-phase:wind-code}.png" alt="{3:day-phase:wind-description|}" title="{3:day-phase:wind-description|}" /></div>
+												</td>
+												<td class="weekday">
+													<div class="one" title="{4:night-phase:wind-description|}"><img src="{Aphaea:root}/media/icons/compass/{4:night-phase:wind-code}.png" alt="{4:night-phase:wind-description|}" title="{4:night-phase:wind-description|}" /></div>
+													<div class="two" title="{4:day-phase:wind-description|}"><img src="{Aphaea:root}/media/icons/compass/{4:day-phase:wind-code}.png" alt="{4:day-phase:wind-description|}" title="{4:day-phase:wind-description|}" /></div>
+												</td>
+												<td class="weekday">
+													<div class="one" title="{5:night-phase:wind-description|}"><img src="{Aphaea:root}/media/icons/compass/{5:night-phase:wind-code}.png" alt="{5:night-phase:wind-description|}" title="{5:night-phase:wind-description|}" /></div>
+													<div class="two" title="{5:day-phase:wind-description|}"><img src="{Aphaea:root}/media/icons/compass/{5:day-phase:wind-code}.png" alt="{5:day-phase:wind-description|}" title="{5:day-phase:wind-description|}" /></div>
+												</td>
+												<td class="weekday">
+													<div class="one" title="{6:night-phase:wind-description|}"><img src="{Aphaea:root}/media/icons/compass/{6:night-phase:wind-code}.png" alt="{6:night-phase:wind-description|}" title="{6:night-phase:wind-description|}" /></div>
+													<div class="two" title="{6:day-phase:wind-description|}"><img src="{Aphaea:root}/media/icons/compass/{6:day-phase:wind-code}.png" alt="{6:day-phase:wind-description|}" title="{6:day-phase:wind-description|}" /></div>
+												</td>
+												<td class="weekday">
+													<div class="one" title="{7:night-phase:wind-description|}"><img src="{Aphaea:root}/media/icons/compass/{7:night-phase:wind-code}.png" alt="{7:night-phase:wind-description|}" title="{7:night-phase:wind-description|}" /></div>
+													<div class="two" title="{7:day-phase:wind-description|}"><img src="{Aphaea:root}/media/icons/compass/{7:day-phase:wind-code}.png" alt="{7:day-phase:wind-description|}" title="{7:day-phase:wind-description|}" /></div>
+												</td>
+												<td class="weekdaylast"></td>
+											</tr>
+										</tbody>
+									</table>
+									<table class="main_five" cellspacing="0" cellpadding="0">
+										<tbody>
+											<tr>
+												<td class="weekdayfirst"></td>
+												<td class="weekday">
+													<p class="one" title="{1:night-phase:wind-strength} bft">{1:night-phase:wind-strength}</p>
+													<p class="two" title="{1:day-phase:wind-strength} bft">{1:day-phase:wind-strength}</p>
+												</td>
+												<td class="weekday">
+													<p class="one" title="{2:night-phase:wind-strength} bft">{2:night-phase:wind-strength}</p>
+													<p class="two" title="{2:day-phase:wind-strength} bft">{2:day-phase:wind-strength}</p>
+												</td>
+												<td class="weekday">
+													<p class="one" title="{3:night-phase:wind-strength} bft">{3:night-phase:wind-strength}</p>
+													<p class="two" title="{3:day-phase:wind-strength} bft">{3:day-phase:wind-strength}</p>
+												</td>
+												<td class="weekday">
+													<p class="one" title="{4:night-phase:wind-strength} bft">{4:night-phase:wind-strength}</p>
+													<p class="two" title="{4:day-phase:wind-strength} bft">{4:day-phase:wind-strength}</p>
+												</td>
+												<td class="weekday">
+													<p class="one" title="{5:night-phase:wind-strength} bft">{5:night-phase:wind-strength}</p>
+													<p class="two" title="{5:day-phase:wind-strength} bft">{5:day-phase:wind-strength}</p>
+												</td>
+												<td class="weekday">
+													<p class="one" title="{6:night-phase:wind-strength} bft">{6:night-phase:wind-strength}</p>
+													<p class="two" title="{6:day-phase:wind-strength} bft">{6:day-phase:wind-strength}</p>
+												</td>
+												<td class="weekday">
+													<p class="one" title="{7:night-phase:wind-strength} bft">{7:night-phase:wind-strength}</p>
+													<p class="two" title="{7:day-phase:wind-strength} bft">{7:day-phase:wind-strength}</p>
+												</td>
+												<td class="weekdaylast"></td>
+											</tr>
+										</tbody>
+									</table>
+									<table class="main_six" cellspacing="0" cellpadding="0">
+										<tbody>
+											<tr>
+												<td class="weekdayfirst"></td>
+												<td class="weekday">
+													<p class="one" title="{1:night-phase:wind-strength}mm {1:night-phase:rain-chance}">{1:night-phase:rain-amount}mm<br />{1:night-phase:rain-chance}</p>
+													<p class="two" title="{1:day-phase:wind-strength}mm {1:day-phase:rain-chance}">{1:day-phase:rain-amount}mm<br />{1:day-phase:rain-chance}</p>
+												</td>
+												<td class="weekday">
+													<p class="one" title="{2:night-phase:wind-strength}mm {2:night-phase:rain-chance}">{2:night-phase:rain-amount}mm<br />{2:night-phase:rain-chance}</p>
+													<p class="two" title="{2:day-phase:wind-strength}mm {2:day-phase:rain-chance}">{2:day-phase:rain-amount}mm<br />{2:day-phase:rain-chance}</p>
+												</td>
+												<td class="weekday">
+													<p class="one" title="{3:night-phase:wind-strength}mm {3:night-phase:rain-chance}">{3:night-phase:rain-amount}mm<br />{3:night-phase:rain-chance}</p>
+													<p class="two" title="{3:day-phase:wind-strength}mm {3:day-phase:rain-chance}">{3:day-phase:rain-amount}mm<br />{3:day-phase:rain-chance}</p>
+												</td>
+												<td class="weekday">
+													<p class="one" title="{4:night-phase:wind-strength}mm {4:night-phase:rain-chance}">{4:night-phase:rain-amount}mm<br />{4:night-phase:rain-chance}</p>
+													<p class="two" title="{4:day-phase:wind-strength}mm {4:day-phase:rain-chance}">{4:day-phase:rain-amount}mm<br />{4:day-phase:rain-chance}</p>
+												</td>
+												<td class="weekday">
+													<p class="one" title="{5:night-phase:wind-strength}mm {5:night-phase:rain-chance}">{5:night-phase:rain-amount}mm<br />{5:night-phase:rain-chance}</p>
+													<p class="two" title="{5:day-phase:wind-strength}mm {5:day-phase:rain-chance}">{5:day-phase:rain-amount}mm<br />{5:day-phase:rain-chance}</p>
+												</td>
+												<td class="weekday">
+													<p class="one" title="{6:night-phase:wind-strength}mm {6:night-phase:rain-chance}">{6:night-phase:rain-amount}mm<br />{6:night-phase:rain-chance}</p>
+													<p class="two" title="{6:day-phase:wind-strength}mm {6:day-phase:rain-chance}">{6:day-phase:rain-amount}mm<br />{6:day-phase:rain-chance}</p>
+												</td>
+												<td class="weekday">
+													<p class="one" title="{7:night-phase:wind-strength}mm {7:night-phase:rain-chance}">{7:night-phase:rain-amount}mm<br />{7:night-phase:rain-chance}</p>
+													<p class="two" title="{7:day-phase:wind-strength}mm {7:day-phase:rain-chance}">{7:day-phase:rain-amount}mm<br />{7:day-phase:rain-chance}</p>
+												</td>
+												<td class="weekdaylast"></td>
+											</tr>
+										</tbody>
+									</table>
+									<table class="main_seven" cellspacing="0" cellpadding="0">
+										<tbody>
+											<tr>
+												<td class="weekdayfirst"></td>
+												<td class="weekday">
+													<p class="one" title="Zonneschijnduur: {1:sunshine}"><img src="./tx-mglocationweather-pi1_icon_sunshine.png" alt="Zonneschijnduur" />{1:sunshine}</p>
+													<p class="two" title="zonsopgang: {1:sunrise}"><img src="./tx-mglocationweather-pi1_icon_sunrise.png" alt="zonsopgang" />{1:sunrise}</p>
+													<p class="three" title="zonsondergang: {1:sunset}"><img src="./tx-mglocationweather-pi1_icon_sunset.png" alt="zonsondergang" />{1:sunset}</p>
+												</td>
+												<td class="weekday">
+													<p class="one" title="Zonneschijnduur: {2:sunshine}"><img src="./tx-mglocationweather-pi1_icon_sunshine.png" alt="Zonneschijnduur" />{2:sunshine}</p>
+													<p class="two" title="zonsopgang: {2:sunrise}"><img src="./tx-mglocationweather-pi1_icon_sunrise.png" alt="zonsopgang" />{2:sunrise}</p>
+													<p class="three" title="zonsondergang: {2:sunset}"><img src="./tx-mglocationweather-pi1_icon_sunset.png" alt="zonsondergang" />{2:sunset}</p>
+												</td>
+												<td class="weekday">
+													<p class="one" title="Zonneschijnduur: {3:sunshine}"><img src="./tx-mglocationweather-pi1_icon_sunshine.png" alt="Zonneschijnduur" />{3:sunshine}</p>
+													<p class="two" title="zonsopgang: {3:sunrise}"><img src="./tx-mglocationweather-pi1_icon_sunrise.png" alt="zonsopgang" />{3:sunrise}</p>
+													<p class="three" title="zonsondergang: {3:sunset}"><img src="./tx-mglocationweather-pi1_icon_sunset.png" alt="zonsondergang" />{3:sunset}</p>
+												</td>
+												<td class="weekday">
+													<p class="one" title="Zonneschijnduur: {4:sunshine}"><img src="./tx-mglocationweather-pi1_icon_sunshine.png" alt="Zonneschijnduur" />{4:sunshine}</p>
+													<p class="two" title="zonsopgang: {4:sunrise}"><img src="./tx-mglocationweather-pi1_icon_sunrise.png" alt="zonsopgang" />{4:sunrise}</p>
+													<p class="three" title="zonsondergang: {4:sunset}"><img src="./tx-mglocationweather-pi1_icon_sunset.png" alt="zonsondergang" />{4:sunset}</p>
+												</td>
+												<td class="weekday">
+													<p class="one" title="Zonneschijnduur: {5:sunshine}"><img src="./tx-mglocationweather-pi1_icon_sunshine.png" alt="Zonneschijnduur" />{5:sunshine}</p>
+													<p class="two" title="zonsopgang: {5:sunrise}"><img src="./tx-mglocationweather-pi1_icon_sunrise.png" alt="zonsopgang" />{5:sunrise}</p>
+													<p class="three" title="zonsondergang: {5:sunset}"><img src="./tx-mglocationweather-pi1_icon_sunset.png" alt="zonsondergang" />{5:sunset}</p>
+												</td>
+												<td class="weekday">
+													<p class="one" title="Zonneschijnduur: {6:sunshine}"><img src="./tx-mglocationweather-pi1_icon_sunshine.png" alt="Zonneschijnduur" />{6:sunshine}</p>
+													<p class="two" title="zonsopgang: {6:sunrise}"><img src="./tx-mglocationweather-pi1_icon_sunrise.png" alt="zonsopgang" />{6:sunrise}</p>
+													<p class="three" title="zonsondergang: {6:sunset}"><img src="./tx-mglocationweather-pi1_icon_sunset.png" alt="zonsondergang" />{6:sunset}</p>
+												</td>
+												<td class="weekday">
+													<p class="one" title="Zonneschijnduur: {7:sunshine}"><img src="./tx-mglocationweather-pi1_icon_sunshine.png" alt="Zonneschijnduur" />{7:sunshine}</p>
+													<p class="two" title="zonsopgang: {7:sunrise}"><img src="./tx-mglocationweather-pi1_icon_sunrise.png" alt="zonsopgang" />{7:sunrise}</p>
+													<p class="three" title="zonsondergang: {7:sunset}"><img src="./tx-mglocationweather-pi1_icon_sunset.png" alt="zonsondergang" />{7:sunset}</p>
+												</td>
+												<td class="weekdaylast"></td>
+											</tr>
+										</tbody>
+									</table>
+									<table cellspacing="0" cellpadding="0">
+										<tr>
+											<td>
+												<div class="footer">
+													<!-- <p><a href="wereldweer/actueel-en-verwacht-weer/stad/31X2902/nijmegen.html?tx_mgcityweatherstatic_pi4%5Bp%5D=1" title="Verwachting voor 7 tot 14 dagen vooruit">Verwachting voor 7 tot 14 dagen vooruit</a></p> -->
+													<p class="footerlast"><a href="#" onclick="document.getElementById('legend').style.display = document.getElementById('legend').style.display == 'inline-block'?'none':'inline-block'; return false;" title="Legende">Legenda</a></p>
+												</div>
+											</td>
+										</tr>
+									</table>
+									<div id="legend">
+										<p class="obs">huidige waarneming</p>
+										<p class="day">Dag van de week</p>
+										<p class="ww">weer</p>
+										<p class="tntx">min/max temperatuur [°C]</p>
+										<p class="tt">maximum temperatuur<br /><br />temperatuurverloop<br /><br />minimum temperatuur</p>
+										<p class="dd">windrichting</p>
+										<p class="ff">windsnelheid [bft]</p>
+										<p class="rr">Neerslag</p>
+										<p class="prr">kans op neerslag</p>
+										<p class="sd">Zonneschijnduur</p>
+										<p class="sunrise">zonsopgang</p>
+										<p class="sunset">zonsondergang</p>
+									</div>
+								</div>
+							</li>
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							<li class="one_super_big_to_one_small_rows_second">
+								<div class="one_small_row_just_img">
+									<ul class="headerblue">
+										<li class="first"></li>
+										<li class="middle"></li>
+										<li class="last"></li>
+										<li class="header"><a href="neerslagradar/nederland.html?tx_mgradarplayer_pi1[focusCity]=Nijmegen;5.87;51.830002" title="Live Radar Nijmegen" >Live Radar Nijmegen</a></li>
+									</ul>
+									<ul class="content">
+										<li class="picture"><a href="neerslagradar/nederland.html?tx_mgradarplayer_pi1[focusCity]=Nijmegen;5.87;51.830002" title="Live Radar Nijmegen"><img src="http://weer.nl/meteo/automatic-gif/radar.teaser/radar_nl_teaser.gif" alt="Live Radar Nijmegen" title="Live Radar Nijmegen" style="height: 126px; width:175px;" /></a> </li>
+										<!-- <li class="link"><span class="box_link"><a href="neerslagradar/nederland.html?tx_mgradarplayer_pi1[focusCity]=Nijmegen;5.87;51.830002" title="Live Radar Nijmegen">Live Radar Nijmegen</a></span></li> -->
+									</ul>
+									<ul class="footer">
+										<li class="first"></li>
+										<li class="middle"></li>
+										<li class="last"></li>
+									</ul>
+								</div>
+							</li>
+						</ul>
+						<!--TYPO3SEARCH_end-->
+					</div>
+				</div>
+			</div>
+		</div>
+
+	
+<div style="display: none;"><iframe style="display: none;" name="316.2394883503353" id="316.2394883503353"></iframe></div></body></html>

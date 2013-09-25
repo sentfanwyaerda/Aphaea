@@ -1,0 +1,1335 @@
+/* default styles for extension "tx_newloginbox_pi3" */
+	.tx-newloginbox-pi3-listrow TH { background:#ccc; padding:0 .5em; white-space:nowrap; }
+	.tx-newloginbox-pi3-listrow TD { background:#eee; padding:0 .5em; }
+	.tx-newloginbox-pi3-singleView TH { background:#ccc; padding:0 .5em; text-align:right; white-space:nowrap; }
+	.tx-newloginbox-pi3-singleView TD { background:#eee; padding:0 .5em; }
+/* default styles for extension "tx_mglocationweather_pi1" */
+  .tx-mglocationweather-pi1 div, 
+  .tx-mglocationweather-pi1 p, 
+  .tx-mglocationweather-pi1 a, 
+  .tx-mglocationweather-pi1 img, 
+  .tx-mglocationweather-pi1 table, 
+  .tx-mglocationweather-pi1 tbody, 
+  .tx-mglocationweather-pi1 tfoot, 
+  .tx-mglocationweather-pi1 thead, 
+  .tx-mglocationweather-pi1 tr, 
+  .tx-mglocationweather-pi1 td {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    outline: 0px;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+  } 
+  .tx-mglocationweather-pi1 {
+    margin-bottom: 13px;
+    height: 390px;
+    line-height: 1;
+  }
+  .tx-mglocationweather-pi1 table  {
+    font-size: 11px;
+    font-family: Arial, Verdana, sans-serif;
+    width: 555px;
+  }
+  .tx-mglocationweather-pi1 table td.head {
+    border-bottom: 1px solid white;
+    background-image: url('./tx-mglocationweather-pi1_header.png');
+    background-repeat: no-repeat;
+    background-position: center top;
+    color: #ffffff;
+    height: 48px;
+    background-color: #0060ac;
+  }
+  .tx-mglocationweather-pi1 table td.head2 {
+    color: #ffffff;
+    background-color: #0060ac;
+    border-bottom: 1px solid white;
+    height: 24px;
+  }
+  .tx-mglocationweather-pi1 table td.head2 p {
+    float: left;
+  }
+  .tx-mglocationweather-pi1 table td.head2 p.head_city, table td.head2 p.head_day {
+    border: 0px solid red;
+    padding: 2px 0px 0px 5px;
+    font-size: 1.5em;
+  }
+  .tx-mglocationweather-pi1 table td.head2 p.head_day {
+    padding-left: 15px;
+    color: #FFDF00;
+  }
+  .tx-mglocationweather-pi1 table td.head2 p.next {
+    float: right;
+    width: 23px;
+    height: 23px;
+    border-left: 1px solid white;
+  }
+  .tx-mglocationweather-pi1 table td.head2 p.prev {
+    width: 23px;
+    height: 23px;
+    border-right: 1px solid white;
+  }
+  .tx-mglocationweather-pi1 table td.head a {
+    background: url('./css-sprite-v9.png') no-repeat -1145px -51px;
+    color: #ffffff;
+    text-decoration: none;
+    overflow: hidden;
+    padding-left:10px;
+}
+.tx-mglocationweather-pi1 table td.head div.head {
+  border: 0px solid red;
+  float: left;
+  width: 230px;
+  margin: 10px 0px 0px 5px;
+  height: 10px;
+}
+.tx-mglocationweather-pi1 table td.head div.head p.head_city {
+  border: 0px solid red;
+  font-size: 1.7em;
+}
+.tx-mglocationweather-pi1 table td.head div.head p.head_station {
+  border: 0px solid red;
+}
+.tx-mglocationweather-pi1 table td.head p.head_ww {
+  border: 0px solid red;
+  float: left;
+  width: 75px;
+  height: 5px;
+  text-align: center;
+  margin-right: 2px;
+  margin-left: 5px;
+}
+.tx-mglocationweather-pi1 table td.head p.head_ww img {
+  border: 0px solid red;
+  width: 44px;
+  height: 44px;
+/*  position: relative;
+  top: -10px;*/
+}
+html>body .tx-mglocationweather-pi1 table td.head p.head_ww img {
+  width: 54px;
+  height: 54px;
+}
+.tx-mglocationweather-pi1 table td.head p.head_tt2 {
+  border: 0px solid red;
+  float: left;
+  font-size: 2.5em;
+  font-weight: bold;
+  width: 75px;
+  text-align: center;
+  padding-top: 15px;
+  margin-right: 2px;
+}
+.tx-mglocationweather-pi1 table td.head div.head_wind {
+  border: 0px solid green;
+  float: left;
+  text-align: center;
+  position: relative;
+  top:-1px;
+  height: 5px;
+  width: 75px;
+  margin-right: 4px;
+  margin-left: 3px;
+}
+.tx-mglocationweather-pi1 table td.head div.head_wind p.head_ff2 {
+  border: 0px solid red;
+  font-size: 1.3em;
+  font-weight: bold;
+  color: white; 
+}
+.tx-mglocationweather-pi1 table td.head div.head_wind img {
+  border: 0px solid red;
+  width: 30px;
+  height: 30px;
+}
+html>body .tx-mglocationweather-pi1 table td.head div.head_wind img {
+  width: 32px;
+  height: 32px;
+}
+.tx-mglocationweather-pi1 table td.head p.head_ppp2 {
+  border: 0px solid red;
+  float: left;
+  font-size: 1.3em;
+  font-weight: bold;
+  text-align: center;
+  width: 70px;
+  padding-top: 30px;
+}
+.tx-mglocationweather-pi1 table.head tbody td, table.head2 tbody td {
+  background-color: #004680;
+  border-bottom: 1px solid white;
+}
+.tx-mglocationweather-pi1 table tbody td {
+  font-weight: bold;
+  color: #004680;
+}
+.tx-mglocationweather-pi1 table tbody td a {
+  background: none;
+  color: #004680;
+  padding: 0;
+  text-decoration: none;
+}
+.tx-mglocationweather-pi1 table tbody td a:hover {
+    color: #dbe8f2; 
+}
+.tx-mglocationweather-pi1 table tbody td.weekdayfirst {
+    width: 4px;
+}
+.tx-mglocationweather-pi1 table tbody td.weekday {
+  border-left: 1px solid white;
+  width: 77px;
+}
+.tx-mglocationweather-pi1 table tbody td.weekday p.weekday, table.head2 tbody td.weekdayfirst p.weekday, table.head2 tbody td.weekdaylast p.weekday {
+  color: #FFDF00;
+  margin-left: 10px;
+}
+  .tx-mglocationweather-pi1 table tbody td.weekday p.weekday a {
+    color: #FFDF00;
+    font-weight: bold;
+    padding-left: 10px;
+    text-decoration: none;  
+    background: url('./css-sprite-v9.png') no-repeat -1145px -51px;
+}
+.tx-mglocationweather-pi1 table tbody td.weekday p.weekday a:hover {
+    color: #dbe8f2; 
+}
+.tx-mglocationweather-pi1 table tbody td.weekday p.day, table.head2 tbody td.weekdayfirst p.day, table.head2 tbody td.weekdaylast p.day  {
+  color: white;
+  margin-left: 10px;
+}
+.tx-mglocationweather-pi1 table tbody td.weekday p.day a {
+  color: white;
+}
+.tx-mglocationweather-pi1 table tbody td.weekday p.day a:hover {
+    color: #dbe8f2; 
+}
+.tx-mglocationweather-pi1 table tbody td.weekdaylast {
+  border-left: 1px solid #ffffff;
+}
+.tx-mglocationweather-pi1 table.main_one tbody td, 
+.tx-mglocationweather-pi1 table.main_one2 tbody td, 
+.tx-mglocationweather-pi1 table.main_two tbody td, 
+.tx-mglocationweather-pi1 table.main_three tbody td, 
+.tx-mglocationweather-pi1 table.main_three2 tbody td, 
+.tx-mglocationweather-pi1 table.main_four tbody td,
+.tx-mglocationweather-pi1 table.main_four2 tbody td, 
+.tx-mglocationweather-pi1 table.main_five tbody td, 
+.tx-mglocationweather-pi1 table.main_six tbody td, 
+.tx-mglocationweather-pi1 table.main_seven tbody td {
+  background-color: #b6d2e8;
+}
+.tx-mglocationweather-pi1 table.main_two tbody td img {
+  height: 120px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+.tx-mglocationweather-pi1 table.main_two {
+  line-height: 0.9;
+}
+.tx-mglocationweather-pi1 table.main_two tbody {
+}
+.tx-mglocationweather-pi1 table.main_two tbody td {
+  border: 0px solid red;
+}
+.tx-mglocationweather-pi1 table.main_one tbody td.weekday div.one, 
+.tx-mglocationweather-pi1 table.main_three tbody td.weekday p.one, 
+.tx-mglocationweather-pi1 table.main_four tbody td.weekday div.one, 
+.tx-mglocationweather-pi1 table.main_five tbody td.weekday p.one, 
+.tx-mglocationweather-pi1 table.main_six tbody td.weekday p.one {
+  float: left;
+  border-right: 1px solid white;
+  background-color: #b8cad9;
+  overflow:hidden;
+}
+.tx-mglocationweather-pi1 table.main_one tbody td.weekday div.two, 
+.tx-mglocationweather-pi1 table.main_four tbody td.weekday div.two {
+  float: right;
+  overflow:hidden;
+  width:38px;
+}
+.tx-mglocationweather-pi1 table.main_one tbody td.weekday div.one,
+.tx-mglocationweather-pi1 table.main_four tbody td.weekday div.one,
+.tx-mglocationweather-pi1 table.main_five tbody td.weekday p.one, 
+.tx-mglocationweather-pi1 table.main_six tbody td.weekday p.one {
+  width: 39px;
+  overflow:hidden;
+}
+html>body .tx-mglocationweather-pi1 table.main_one tbody td.weekday div.one, 
+html>body .tx-mglocationweather-pi1 table.main_four tbody td.weekday div.one,
+html>body .tx-mglocationweather-pi1 table.main_five tbody td.weekday p.one, 
+html>body .tx-mglocationweather-pi1 table.main_six tbody td.weekday p.one {
+  width: 38px;
+  overflow:hidden;
+}
+.tx-mglocationweather-pi1 table.main_one tbody td.weekday div.one img, 
+.tx-mglocationweather-pi1 table.main_one tbody td.weekday div.two img { 
+  width: 38px;
+  height: 38px;
+}
+.tx-mglocationweather-pi1 table.main_three tbody td.weekday p.one, 
+.tx-mglocationweather-pi1 table.main_three tbody td.weekday p.two {
+  text-align: center;
+  width: 31px;
+}
+.tx-mglocationweather-pi1 table.main_three tbody td.weekday p.one {
+  margin-left: 4px;
+    background-color: #e5eef6;
+}
+/*.tx-mglocationweather-pi1 table.main_three tbody td.weekday p.two a {
+  color: white;
+}*/
+.tx-mglocationweather-pi1 table.main_three tbody td.weekday p.two {
+/*    background-color: #d93d16;*/
+    background-color: #FFDF00;
+}
+html>body .tx-mglocationweather-pi1 table.main_three tbody td.weekday p.one {
+  margin-left: 7px;
+}
+html>body .tx-mglocationweather-pi1 table.main_three tbody td.weekday p.two {
+  padding-left: 30px;
+}
+*+html>body .tx-mglocationweather-pi1 table.main_three tbody td.weekday p.two {
+  padding-left: 0px;
+  overflow:hidden;
+}
+.tx-mglocationweather-pi1 table.main_four tbody td.weekday div.one, 
+.tx-mglocationweather-pi1 table.main_four tbody td.weekday div.two {
+  text-align: center;
+}
+.tx-mglocationweather-pi1 table.main_four tbody td.weekday div.one img, 
+.tx-mglocationweather-pi1 table.main_four tbody td.weekday div.two img {
+  width: 32px;
+  height: 32px;
+}
+.tx-mglocationweather-pi1 table.main_one tbody td.weekday div.one a:hover img , 
+.tx-mglocationweather-pi1 table.main_one tbody td.weekday div.two a:hover img,
+.tx-mglocationweather-pi1 table.main_four tbody td.weekday div.one a:hover img, 
+.tx-mglocationweather-pi1 table.main_four tbody td.weekday div.two a:hover img {
+  background-color: #dbe8f2;
+} 
+.tx-mglocationweather-pi1 table.main_four tbody td.weekday div.two img {
+  margin-right: 3px;
+  border: 0px solid red;
+}
+.tx-mglocationweather-pi1 table.main_five tbody td.weekday p.one, 
+.tx-mglocationweather-pi1 table.main_five tbody td.weekday p.two, 
+.tx-mglocationweather-pi1 table.main_six tbody td.weekday p.one, 
+.tx-mglocationweather-pi1 table.main_six tbody td.weekday p.two {
+  text-align: center;
+  background-color: #e5eef6;
+  overflow:hidden;
+}
+.tx-mglocationweather-pi1 table.main_three tbody td.weekday p.two, 
+.tx-mglocationweather-pi1 table.main_five tbody td.weekday p.two, 
+.tx-mglocationweather-pi1 table.main_six tbody td.weekday p.two {
+  margin-left: 10px;
+}
+.tx-mglocationweather-pi1 table.main_six tbody td.weekday p.one, 
+.tx-mglocationweather-pi1 table.main_six tbody td.weekday p.two {
+  background: none;
+  text-align: center;
+  padding: 7px 0px 7px 0px;
+}
+.tx-mglocationweather-pi1 table.main_six tbody td.weekday p.one {
+  background-color: #b8cad9;
+}
+.tx-mglocationweather-pi1 table.main_seven tbody td {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.tx-mglocationweather-pi1 table.main_seven tbody td.weekday p.one, 
+.tx-mglocationweather-pi1 table.main_seven tbody td.weekday p.two, 
+.tx-mglocationweather-pi1 table.main_seven tbody td.weekday p.three {
+  text-align: center;
+}
+.tx-mglocationweather-pi1 table.main_seven tbody td.weekday p.one img,
+.tx-mglocationweather-pi1 table.main_seven tbody td.weekday p.two img, 
+.tx-mglocationweather-pi1 table.main_seven tbody td.weekday p.three img {
+  margin-right: 5px;
+  height: 5px;
+  width: 10px;
+}
+.tx-mglocationweather-pi1 table.main_seven tbody td.weekday p.one img {
+  height: 10px;
+}
+.tx-mglocationweather-pi1 table td div.footer, table td div.footer2 {
+  background-color: #0060ac;
+  font-weight: bold;
+  height: 20px;
+}
+.tx-mglocationweather-pi1 table td div.footer { 
+  background-image: url('./tx-mglocationweather-pi1_footer.png');
+  background-repeat: no-repeat;
+  background-position: center top;  
+  height: 24px;
+}
+.tx-mglocationweather-pi1 table td div.footer2 {  
+  border-top: 1px solid white;
+}
+.tx-mglocationweather-pi1 table td div.footer p, table td div.footer2 p {
+  float: left;
+  padding: 5px 10px 0px 15px;
+}
+.tx-mglocationweather-pi1 table td div.footer2 p {
+  padding: 3px 10px 0px 15px;
+}
+.tx-mglocationweather-pi1 table td div.footer p.footerlast, table td div.footer2 p.footerlast {
+  float: right;
+}
+  .tx-mglocationweather-pi1 table td div.footer p a, table td div.footer2 p a {
+    padding-left: 10px;
+    color: #ffffff;
+    text-decoration: none;  
+    background: url('./css-sprite-v9.png') no-repeat -1145px -51px;
+  }
+.tx-mglocationweather-pi1 table.head2 tbody td.weekdayfirst, table.head2 tbody td.weekday, 
+.tx-mglocationweather-pi1 table.main_one2 tbody td.weekdayfirst, table.main_one2 tbody td.weekday,   
+.tx-mglocationweather-pi1 table.main_three2 tbody td.weekdayfirst, table.main_three2 tbody td.weekday,  
+.tx-mglocationweather-pi1 table.main_four2 tbody td.weekdayfirst, table.main_four2 tbody td.weekday {
+  width: 110px;
+}
+.tx-mglocationweather-pi1 table.main_one2 tbody td.weekday div.one, table.main_one2 tbody td.weekdayfirst div.one, table.main_one2 tbody td.weekdaylast div.one,
+.tx-mglocationweather-pi1 table.main_three2 tbody td.weekday div.one, table.main_three2 tbody td.weekdayfirst div.one, table.main_three2 tbody td.weekdaylast div.one,
+.tx-mglocationweather-pi1 table.main_four2 tbody td.weekday div.one, table.main_four2 tbody td.weekdayfirst div.one, table.main_four2 tbody td.weekdaylast div.one {
+  float: left;
+}
+.tx-mglocationweather-pi1 table.main_one2 tbody td.weekday div.one, table.main_one2 tbody td.weekdayfirst div.one, table.main_one2 tbody td.weekdaylast div.one {
+  border: 0px solid red;
+  font-size: 1.7em;
+  color: #0060ac;
+  margin-top: 20px;
+  margin-left: 5px;
+}
+.tx-mglocationweather-pi1 table.main_one2 tbody td.weekday div.two, table.main_one2 tbody td.weekdayfirst div.two, table.main_one2 tbody td.weekdaylast div.two {
+  border: 0px solid red;
+  text-align: right;
+  float: right;
+  width: 55px;
+}
+.tx-mglocationweather-pi1 table.main_one2 tbody td.weekday div.two img, table.main_one2 tbody td.weekdayfirst div.two img, table.main_one2 tbody td.weekdaylast div.two img {
+  border: 0px solid red;
+  position: relative;
+  left: -7px;
+}
+.tx-mglocationweather-pi1 table.main_three2 tbody td.weekday div.one img, table.main_three2 tbody td.weekdayfirst div.one img , table.main_three2 tbody td.weekdaylast div.one img,
+.tx-mglocationweather-pi1 table.main_four2 tbody td.weekday div.one img, table.main_four2 tbody td.weekdayfirst div.one img , table.main_four2 tbody td.weekdaylast div.one img {
+  margin-left: 5px;
+  margin-top: 0px;
+}
+.tx-mglocationweather-pi1 table.main_three2 tbody td.weekday div.two, table.main_three2 tbody td.weekdayfirst div.two, table.main_three2 tbody td.weekdaylast div.two,
+.tx-mglocationweather-pi1 table.main_four2 tbody td.weekday div.two, table.main_four2 tbody td.weekdayfirst div.two, table.main_four2 tbody td.weekdaylast div.two {
+/*  border: 1px solid red;*/
+  font-size: 1.3em;
+  color: #0060ac;
+  text-align: right;
+  margin-right: 5px;
+  margin-top: 0px;
+}
+  table.main_one2 tbody td.weekdayfirst, table.main_one2 tbody td.weekdaylast, 
+  table.main_three2 tbody td.weekdayfirst, table.main_three2 tbody td.weekdaylast,
+  table.main_four2 tbody td.weekdayfirst, table.main_four2 tbody td.weekdaylast { 
+    background-color: #b8cad9;
+  }
+  .tx-mglocationweather-pi1 div#legend, .tx-mglocationweather-pi1 div#legend2 {
+    border: 0px solid red;
+    position: relative;
+    top: -391px;
+    left: 317px;
+    height: 367px;
+    width: 233px;
+    display: none;  
+    background-image: url('./p.png');
+  }
+  .tx-mglocationweather-pi1 div#legend p, .tx-mglocationweather-pi1 div#legend2 p {
+    border: 0px solid red;
+    color: #ffffff;
+    font-weight: bold;
+    padding-left: 5px;
+  }
+  .tx-mglocationweather-pi1 div#legend p.obs {
+    padding-top: 20px;
+    padding-bottom: 14px;
+    border-bottom: 1px solid white;
+  }
+  html>body .tx-mglocationweather-pi1 div#legend p.obs {
+    padding-bottom: 15px;
+  }
+  *+html>body .tx-mglocationweather-pi1 div#legend p.obs {
+    padding-bottom: 14px;
+  }
+  .tx-mglocationweather-pi1 div#legend p.day {
+    padding-top: 10px;
+    border-bottom: 1px solid white;
+  }
+  .tx-mglocationweather-pi1 div#legend p.ww {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid white;
+  }
+  .tx-mglocationweather-pi1 div#legend p.tntx {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid white;
+  }
+  .tx-mglocationweather-pi1 div#legend p.tt {
+    padding-top: 32px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid white;
+  }
+  .tx-mglocationweather-pi1 div#legend p.dd {
+    padding-top: 14px;
+    padding-bottom: 9px;
+    border-bottom: 1px solid white;
+  }
+  .tx-mglocationweather-pi1 div#legend p.ff {
+    padding-top: 0px;
+    padding-bottom: 1px;
+    border-bottom: 1px solid white;
+  }
+  .tx-mglocationweather-pi1 div#legend p.rr {
+    padding-top: 3px;
+  }
+  .tx-mglocationweather-pi1 div#legend p.prr {
+    padding-top: 1px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid white;
+  }
+  .tx-mglocationweather-pi1 div#legend p.sd {
+    padding-top: 5px;
+  }
+  .tx-mglocationweather-pi1 div#legend p.sunrise {
+    padding-top: 0px;
+  }
+  .tx-mglocationweather-pi1 div#legend p.sunset {
+    padding-top: 0px;
+  }
+  .tx-mglocationweather-pi1 div#legend2 {
+    top: -320px;
+    left: 278px;
+    height: 275px;
+    width: 276px;
+  }
+  .tx-mglocationweather-pi1 div#legend2 p.day {
+    padding-top: 0px;
+    border-bottom: 1px solid white;
+  }
+  .tx-mglocationweather-pi1 div#legend2 p.ww {
+    padding-top: 10px;
+    padding-bottom: 5px;
+  }
+  .tx-mglocationweather-pi1 div#legend2 p.tt {
+    padding-top: 1px;
+    padding-left: 40px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid white;
+  }
+  .tx-mglocationweather-pi1 div#legend2 p.tt2 {
+    padding-top: 50px;
+    padding-bottom: 68px;
+    border-bottom: 1px solid white;
+  }
+  .tx-mglocationweather-pi1 div#legend2 p.dd {
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+  .tx-mglocationweather-pi1 div#legend2 p.ff {
+    padding-top: 1px;
+    padding-left: 40px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid white;
+  }
+  .tx-mglocationweather-pi1 div#legend2 p.rr {
+    padding-top: 5px;
+    padding-bottom: 1px;
+  }
+  .tx-mglocationweather-pi1 div#legend2 p.prr {
+    padding-top: 1px;
+    padding-bottom: 5px;
+  }
+
+  .tx-mglocationweather-pi1 .big_image_w_text_register {
+    height: 337px;
+    width: 557px;
+    overflow: hidden;
+    margin-bottom: 13px;
+  } 
+  .tx-mglocationweather-pi1 .big_image_w_text_register ul.register_maps {
+    height: 31px;
+    width: 557px;
+    float: left
+  }
+  .tx-mglocationweather-pi1 .big_image_w_text_register ul.register_maps li#first, .register_maps li#middle, .register_maps li#last {
+    background: transparent url(./css-sprite-v9.png) no-repeat scroll -76px -100px;
+    float: left;
+    height: 31px;
+    overflow: hidden;
+    width: 7px;
+  }
+  .tx-mglocationweather-pi1 .big_image_w_text_register ul.register_maps li#middle {
+    background: transparent url(./css-sprite-v9.png) no-repeat scroll 0px -330px;
+    width: 543px;
+    border: 0;
+  }
+  .tx-mglocationweather-pi1 .big_image_w_text_register ul.register_maps li#last {
+    background: transparent url(./css-sprite-v9.png) no-repeat scroll -86px -100px;
+  }
+  .tx-mglocationweather-pi1 .big_image_w_text_register ul.register_maps li.register_tab {
+    float: left;
+    left: 10px;
+    position: relative;
+    top: -31px;
+  }
+  .tx-mglocationweather-pi1 .big_image_w_text_register ul.register_maps li#register_prev, .tx-mglocationweather-pi1 .big_image_w_text_register ul.register_maps li#register_next {
+    height: 30px;
+    overflow: hidden;
+    width: 29px;
+    border: 0;
+    margin: 0 2px;
+    border-style:none solid none none;
+    border-width:0 1px 0 0;
+    border-color: white;
+    display: inline-block;
+  }
+  .tx-mglocationweather-pi1 .big_image_w_text_register ul.register_maps li#register_next {
+    border-left: 1px solid white;
+    border-right: medium none;
+    float: right;
+    margin-right: 25px;
+  }
+  .tx-mglocationweather-pi1 .big_image_w_text_register ul.register_maps li#register_prev a, .tx-mglocationweather-pi1 .big_image_w_text_register ul.register_maps li#register_next a {
+    background: transparent url(./css-sprite-v9.png) no-repeat scroll -1084px -70px;
+    display: block;
+    height: 30px;
+    width: 29px;
+  }
+  .tx-mglocationweather-pi1 .big_image_w_text_register ul.register_maps li#register_next a {
+    background: transparent url(./css-sprite-v9.png) no-repeat scroll -1110px -70px;
+  }
+  .tx-mglocationweather-pi1 .big_image_w_text_register ul.register_maps li#register_city {
+    color: #FFDF00;
+    font-size: 1.5em;
+    padding: 2px 0 0 5px;
+    top: -28px;
+  }  
+  .tx-mglocationweather-pi1 .big_image_w_text_register ul.register_maps li#register_city p.day {
+    display: inline;
+  }
+  .tx-mglocationweather-pi1 .big_image_w_text_register ul.register_maps li#register_city p.city {
+    color: white;
+    display: inline;
+    padding-left: 5px;
+  }
+  .tx-mglocationweather-pi1 .big_image_w_text_register .content {
+    border-left: 1px solid #89b9e7; 
+    border-right: 1px solid #89b9e7;
+    float: left;
+    height: 274px;
+    width: 555px;
+  }
+  .tx-mglocationweather-pi1 .big_image_w_text_register ul.footer {
+    height: 31px;
+    width: 557px;
+  }
+  .tx-mglocationweather-pi1 .big_image_w_text_register ul.footer li.first, .footer li.middle, .footer li.last {
+    background: transparent url(./css-sprite-v9.png) no-repeat scroll -95px -130px;
+    float: left;
+    height: 31px;
+    overflow: hidden;
+    width: 7px;
+  }
+  .tx-mglocationweather-pi1 .big_image_w_text_register ul.footer li.middle {
+    background: transparent url(./css-sprite-v9.png) no-repeat scroll 0 -330px;
+    border-top: 1px solid white;
+    border-bottom: 1px solid #89b9e7;
+    height: 29px;
+    width: 543px;
+    padding-top: 0px;
+    text-align: center;
+    color: white;
+  }
+  .tx-mglocationweather-pi1 .big_image_w_text_register ul.footer li.date, .tx-mglocationweather-pi1 .big_image_w_text_register ul.footer li.datelast {
+    float: left;
+    height: 30px;
+    left: 11px;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    top: -22px;
+  }
+  .tx-mglocationweather-pi1 .big_image_w_text_register ul.footer li.datelast {
+    float: right;
+    margin-right: 20px;
+  }
+  .tx-mglocationweather-pi1 .big_image_w_text_register ul.footer li.date a, .tx-mglocationweather-pi1 .big_image_w_text_register ul.footer li.datelast a {
+    color: white;
+    font-weight: bold;
+  }
+  .tx-mglocationweather-pi1 .big_image_w_text_register ul.footer li.last {
+    background: transparent url(./css-sprite-v9.png) no-repeat scroll -105px -130px;
+  }
+  
+  
+  
+  /* TIMTAB */
+  .tx-timtabtagcloud-pi1 span.tx-timtabtagcloud-tag1 {
+    font-size:100%;
+  }
+  .tx-timtabtagcloud-pi1 span.tx-timtabtagcloud-tag2 {
+    font-size:120%;
+  }
+  .tx-timtabtagcloud-pi1 span.tx-timtabtagcloud-tag3 {
+    font-size:140%;
+  }
+  .tx-timtabtagcloud-pi1 span.tx-timtabtagcloud-tag4 {
+    font-size:160%;
+  }
+  .tx-timtabtagcloud-pi1 span.tx-timtabtagcloud-tag5 {
+    font-size:180%;
+  }
+  .tx-timtabtagcloud-pi1 span.tx-timtabtagcloud-tag6 {
+    font-size:200%;
+  }
+  .tx-timtabtagcloud-pi1 span.tx-timtabtagcloud-tag7 {
+    font-size:220%;
+  }
+  .tx-timtabtagcloud-pi1 span.tx-timtabtagcloud-tag8 {
+    font-size:240%;
+  }
+  .tx-timtabtagcloud-pi1 span.tx-timtabtagcloud-tag9 {
+    font-size:260%;
+  }
+  
+/* default styles for extension "tx_veguestbook_pi1" */
+
+    .tx-veguestbook-pi1 {
+        font-size:100%;
+    }
+  
+    /* error handling */
+	.tx-veguestbook-pi1 p.tx-guestbook-form-error {
+		font-weight:bold;
+		color:#990000;
+	}
+	
+	/* display of result count */
+	.tx-veguestbook-pi1 .tx-guestbook-result {
+		font-weight:bold;
+		float:left;
+	}
+	
+	/* pagination */
+	.tx-veguestbook-pi1 .tx-guestbook-pagination {
+		font-size:75%;
+		font-weight:bold;
+		float:right;
+	}
+	
+	/* styles for list mode */
+	.tx-veguestbook-pi1 h2.tx-guestbook-header {
+		clear:both;
+		background:#666;
+		color:#FFF;
+		display:block;
+		font-size:100%;
+		font-weight:bold;
+		padding: 1em;
+		width: 35em;
+	}
+	
+	.tx-veguestbook-pi1 .tx-guestbook-left {
+		background:#EFEFEF;
+        display: inline-block;
+        min-height: 4em;
+        padding: 1em;
+        vertical-align: top;
+        width: 20%;
+    }
+	
+	.tx-veguestbook-pi1 .tx-guestbook-left {
+		height:4em;
+	}
+	
+	.tx-veguestbook-pi1 .tx-guestbook-left p {
+		color:#333;
+	}
+ 
+	.tx-veguestbook-pi1 .tx-guestbook-right {
+		background:#FFF;
+        display: inline-block;
+        padding: 1em;
+        width: 70%;
+	}
+	
+	/* styles for latest mode */
+	.tx-veguestbook-pi1 .tx-guestbook-latest p,
+	.tx-veguestbook-pi1 .tx-guestbook-right p {
+		color:#333;
+	}
+	
+	.tx-veguestbook-pi1 .tx-guestbook-latest p.tx-guestbook-date,
+	.tx-veguestbook-pi1 .tx-guestbook-right p.tx-guestbook-date {
+        font-weight: bold;
+	}
+ 
+	.tx-veguestbook-pi1 .tx-guestbook-right h3 {
+		font-size:100%;
+		color:#990000;
+		font-weight:bold;
+		background:none;
+	}
+	
+	.tx-veguestbook-pi1 .tx-guestbook-right .tx-guestbook-comment {
+		font-size:75%;
+		color:#333;
+		font-style: italic;
+	}
+	
+	.tx-veguestbook-pi1 .tx-guestbook-latest {
+		display:block;
+		padding:0.25em;
+		clear:both;
+	}
+	
+	/* form styles */
+	.tx-veguestbook-pi1 .tx-guestbook-field {
+		clear:both;
+		width:100%;
+		display:block;
+		padding: 1em 0;
+	}
+	
+	.tx-veguestbook-pi1 .tx-guestbook-field label {
+		clear: both;
+		display: block;
+		float: left;
+		width: 10em;
+	}
+	
+	.tx-veguestbook-pi1 .tx-guestbook-field input.tx-guestbook-form-inputfield-med {
+		float:left;
+		width:10em;
+	}
+	
+	.tx-veguestbook-pi1 .tx-guestbook-field input.tx-guestbook-form-inputfield-big {
+		float:left;
+		width:20em;
+	}
+	
+	.tx-veguestbook-pi1 .tx-guestbook-field textarea.tx-guestbook-form-textarea {
+		width: 30em;
+		display: block;
+		float: left;
+	}
+	
+	.tx-veguestbook-pi1 .tx-guestbook-field span.tx-guestbook-form-obligationfield {
+		color:#990000;
+	}
+	
+	.tx-veguestbook-pi1 fieldset {
+		border:none;
+	}
+	
+	.tx-veguestbook-pi1 legend {
+		display:none;
+	}
+	
+	.tx-veguestbook-pi1 .tx-guestbook-freecap {
+		float:left;
+		display:block;
+		background:#F7F7F7;
+		border:1px solid #CCC;
+	}
+ 
+	.tx-veguestbook-pi1 .tx-guestbook-freecap {
+		margin-left:2.25em;
+	}
+ 
+	
+	.tx-veguestbook-pi1 .tx-guestbook-freecap img {
+		float:left;
+		display:block;
+		padding-left:0.25em;
+	}
+	
+	.tx-veguestbook-pi1 .tx-guestbook-freecap input {
+		float:left;
+	}
+	
+	.tx-veguestbook-pi1 .tx-guestbook-freecap label {
+		clear:both;
+		display:block;
+		float:none;
+		width:10em;
+		margin-bottom:0.5em;
+	}
+	
+	.tx-veguestbook-pi1 .tx-guestbook-freecap p {
+		font-size:75%;
+		padding:0.25em;
+	}
+	
+	.tx-veguestbook-pi1 .tx-guestbook-freecap h3 {
+		display:none;
+	}
+	
+	.tx-veguestbook-pi1 .tx-guestbook-freecap span.tx-srfreecap-pi2-cant-read {
+		color:#990000;
+	}
+	
+	.tx-veguestbook-pi1 .tx-guestbook-clear {
+		clear:both;
+		display:block;
+	}
+	
+	.tx-veguestbook-pi1 input.tx-guestbook-submit {
+		width:auto;
+		display:block;
+	}
+/* default styles for extension "tx_indexedsearch" */
+		.tx-indexedsearch .tx-indexedsearch-browsebox LI { display:inline; margin-right:5px; }
+		.tx-indexedsearch .tx-indexedsearch-searchbox INPUT.tx-indexedsearch-searchbox-button { width:100px; }
+		.tx-indexedsearch .tx-indexedsearch-searchbox INPUT.tx-indexedsearch-searchbox-sword { width:150px; }
+		.tx-indexedsearch .tx-indexedsearch-whatis { margin-top:10px; margin-bottom:5px; }
+		.tx-indexedsearch .tx-indexedsearch-whatis .tx-indexedsearch-sw { font-weight:bold; font-style:italic; }
+		.tx-indexedsearch .tx-indexedsearch-noresults { text-align:center; font-weight:bold; }
+		.tx-indexedsearch .tx-indexedsearch-res TD.tx-indexedsearch-descr { font-style:italic; }
+		.tx-indexedsearch .tx-indexedsearch-res .tx-indexedsearch-descr .tx-indexedsearch-redMarkup { color:red; }
+		.tx-indexedsearch .tx-indexedsearch-res .tx-indexedsearch-info { background:#eeeeee; }
+		.tx-indexedsearch .tx-indexedsearch-res .tx-indexedsearch-secHead { margin-top:20px; margin-bottom:5px; }
+		.tx-indexedsearch .tx-indexedsearch-res .tx-indexedsearch-secHead H2 { margin-top:0px; margin-bottom:0px; }
+		.tx-indexedsearch .tx-indexedsearch-res .tx-indexedsearch-secHead TD { background:#cccccc; vertical-align:middle; }
+		.tx-indexedsearch .tx-indexedsearch-res .noResume { color:#666666; }
+		.tx-indexedsearch .tx-indexedsearch-category { background:#cccccc; font-size:16px; font-weight:bold; }
+
+		/* Additional styles, needed for the tableless template_css.tmpl (styles don't conflict with the original template) */
+		.tx-indexedsearch .res-tmpl-css { clear:both; margin-bottom:1em; }
+		.tx-indexedsearch .searchbox-tmpl-css LABEL { margin-right:1em; width:10em; float:left; }
+		.tx-indexedsearch .result-count-tmpl-css, .tx-indexedsearch .percent-tmpl-css { letter-spacing:0; font-weight:normal; margin-top:-1.2em; float:right; }
+		.tx-indexedsearch .info-tmpl-css dt, .tx-indexedsearch dl.info-tmpl-css dd { float:left; }
+		.tx-indexedsearch .info-tmpl-css dd.item-mtime { float:none; }
+		.tx-indexedsearch .info-tmpl-css dd.item-path { float:none; }
+/* default styles for extension "tx_cssstyledcontent" */
+	/* Captions */
+	DIV.csc-textpic-caption-c .csc-textpic-caption { text-align: center; }
+	DIV.csc-textpic-caption-r .csc-textpic-caption { text-align: right; }
+	DIV.csc-textpic-caption-l .csc-textpic-caption { text-align: left; }
+
+	/* Needed for noRows setting */
+	DIV.csc-textpic DIV.csc-textpic-imagecolumn { float: left; display: inline; }
+
+	/* Border just around the image */
+	DIV.csc-textpic-border DIV.csc-textpic-imagewrap .csc-textpic-image IMG, DIV.csc-textpic-border DIV.csc-textpic-single-image IMG {
+		border: 2px solid black;
+		padding: 0px 0px;
+	}
+
+	DIV.csc-textpic-imagewrap { padding: 0; }
+
+	DIV.csc-textpic IMG { border: none; }
+
+	/* DIV: This will place the images side by side */
+	DIV.csc-textpic DIV.csc-textpic-imagewrap DIV.csc-textpic-image { float: left; }
+
+	/* UL: This will place the images side by side */
+	DIV.csc-textpic DIV.csc-textpic-imagewrap UL { list-style: none; margin: 0; padding: 0; }
+	DIV.csc-textpic DIV.csc-textpic-imagewrap UL LI { float: left; margin: 0; padding: 0; }
+
+	/* DL: This will place the images side by side */
+	DIV.csc-textpic DIV.csc-textpic-imagewrap DL.csc-textpic-image { float: left; }
+	DIV.csc-textpic DIV.csc-textpic-imagewrap DL.csc-textpic-image DT { float: none; }
+	DIV.csc-textpic DIV.csc-textpic-imagewrap DL.csc-textpic-image DD { float: none; }
+	DIV.csc-textpic DIV.csc-textpic-imagewrap DL.csc-textpic-image DD IMG { border: none; } /* FE-Editing Icons */
+	DL.csc-textpic-image { margin: 0; }
+	DL.csc-textpic-image DT { margin: 0; display: inline; }
+	DL.csc-textpic-image DD { margin: 0; }
+
+	/* Clearer */
+	DIV.csc-textpic-clear { clear: both; }
+
+	/* Margins around images: */
+
+	/* Pictures on left, add margin on right */
+	DIV.csc-textpic-left DIV.csc-textpic-imagewrap .csc-textpic-image,
+	DIV.csc-textpic-intext-left-nowrap DIV.csc-textpic-imagewrap .csc-textpic-image,
+	DIV.csc-textpic-intext-left DIV.csc-textpic-imagewrap .csc-textpic-image {
+		display: inline; /* IE fix for double-margin bug */
+		margin-right: 10px;
+	}
+
+	/* Pictures on right, add margin on left */
+	DIV.csc-textpic-right DIV.csc-textpic-imagewrap .csc-textpic-image,
+	DIV.csc-textpic-intext-right-nowrap DIV.csc-textpic-imagewrap .csc-textpic-image,
+	DIV.csc-textpic-intext-right DIV.csc-textpic-imagewrap .csc-textpic-image {
+		display: inline; /* IE fix for double-margin bug */
+		margin-left: 10px;
+	}
+
+	/* Pictures centered, add margin on left */
+	DIV.csc-textpic-center DIV.csc-textpic-imagewrap .csc-textpic-image {
+		display: inline; /* IE fix for double-margin bug */
+		margin-left: 10px;
+	}
+	DIV.csc-textpic DIV.csc-textpic-imagewrap .csc-textpic-image .csc-textpic-caption { margin: 0; }
+	DIV.csc-textpic DIV.csc-textpic-imagewrap .csc-textpic-image IMG { margin: 0; vertical-align:bottom; }
+
+	/* Space below each image (also in-between rows) */
+	DIV.csc-textpic DIV.csc-textpic-imagewrap .csc-textpic-image { margin-bottom: 10px; }
+	DIV.csc-textpic-equalheight DIV.csc-textpic-imagerow { margin-bottom: 10px; display: block; }
+	DIV.csc-textpic DIV.csc-textpic-imagerow { clear: both; }
+	DIV.csc-textpic DIV.csc-textpic-single-image IMG { margin-bottom: 10px; }
+
+	/* IE7 hack for margin between image rows */	
+	*+html DIV.csc-textpic DIV.csc-textpic-imagerow .csc-textpic-image { margin-bottom: 0; }
+	*+html DIV.csc-textpic DIV.csc-textpic-imagerow { margin-bottom: 10px; }
+
+	/* No margins around the whole image-block */
+	DIV.csc-textpic DIV.csc-textpic-imagewrap .csc-textpic-firstcol { margin-left: 0px !important; }
+	DIV.csc-textpic DIV.csc-textpic-imagewrap .csc-textpic-lastcol { margin-right: 0px !important; }
+
+	/* Add margin from image-block to text (in case of "Text w/ images") */
+	DIV.csc-textpic-intext-left DIV.csc-textpic-imagewrap,
+	DIV.csc-textpic-intext-left-nowrap DIV.csc-textpic-imagewrap {
+		margin-right: 10px !important;
+	}
+	DIV.csc-textpic-intext-right DIV.csc-textpic-imagewrap,
+	DIV.csc-textpic-intext-right-nowrap DIV.csc-textpic-imagewrap {
+		margin-left: 10px !important;
+	}
+
+	/* Positioning of images: */
+
+	/* Above */
+	DIV.csc-textpic-above DIV.csc-textpic-text { clear: both; }
+
+	/* Center (above or below) */
+	DIV.csc-textpic-center { text-align: center; /* IE-hack */ }
+	DIV.csc-textpic-center DIV.csc-textpic-imagewrap { margin: 0 auto; }
+	DIV.csc-textpic-center DIV.csc-textpic-imagewrap .csc-textpic-image { text-align: left; /* Remove IE-hack */ }
+	DIV.csc-textpic-center DIV.csc-textpic-text { text-align: left; /* Remove IE-hack */ }
+
+	/* Right (above or below) */
+	DIV.csc-textpic-right DIV.csc-textpic-imagewrap { float: right; }
+	DIV.csc-textpic-right DIV.csc-textpic-text { clear: right; }
+
+	/* Left (above or below) */
+	DIV.csc-textpic-left DIV.csc-textpic-imagewrap { float: left; }
+	DIV.csc-textpic-left DIV.csc-textpic-text { clear: left; }
+
+	/* Left (in text) */
+	DIV.csc-textpic-intext-left DIV.csc-textpic-imagewrap { float: left; }
+
+	/* Right (in text) */
+	DIV.csc-textpic-intext-right DIV.csc-textpic-imagewrap { float: right; }
+
+	/* Right (in text, no wrap around) */
+	DIV.csc-textpic-intext-right-nowrap DIV.csc-textpic-imagewrap { float: right; clear: both; }
+	/* Hide from IE5-mac. Only IE-win sees this. \*/
+	* html DIV.csc-textpic-intext-right-nowrap .csc-textpic-text { height: 1%; }
+	/* End hide from IE5/mac */
+
+	/* Left (in text, no wrap around) */
+	DIV.csc-textpic-intext-left-nowrap DIV.csc-textpic-imagewrap { float: left; clear: both; }
+	/* Hide from IE5-mac. Only IE-win sees this. \*/
+	* html DIV.csc-textpic-intext-left-nowrap .csc-textpic-text,
+	* html .csc-textpic-intext-left ol,
+	* html .csc-textpic-intext-left ul { height: 1%; }
+	/* End hide from IE5/mac */
+	
+	DIV.csc-textpic DIV.csc-textpic-imagerow-last { margin-bottom: 0; }
+
+	/* Browser fixes: */
+
+	/* Fix for unordered and ordered list with image "In text, left" */
+	.csc-textpic-intext-left ol, .csc-textpic-intext-left ul {padding-left: 40px; overflow: auto; }
+/* default styles for extension "mg_flashweathermap" */
+  
+  .tx-mgflashweathermap-pi1 {
+  }  
+
+  .tx-mgflashweathermap-pi1 .big_image_w_text_register {
+    height: 617px;
+    width: 557px;
+    overflow: hidden;
+    margin-bottom: 13px;
+  } 
+  .tx-mgflashweathermap-pi1 .big_image_w_text_register ul.register_maps {
+    height: 31px;
+    width: 557px;
+    float: left
+  }
+  .tx-mgflashweathermap-pi1 .big_image_w_text_register ul.register_maps li#first, .register_maps li#middle, .register_maps li#last {
+    background: transparent url(./css-sprite-v9.png) no-repeat scroll -76px -100px;
+    float: left;
+    height: 31px;
+    overflow: hidden;
+    width: 7px;
+  }
+  .tx-mgflashweathermap-pi1 .big_image_w_text_register ul.register_maps li#middle {
+    background: transparent url(./css-sprite-v9.png) no-repeat scroll 0px -330px;
+    width: 543px;
+    border: 0;
+  }
+  .tx-mgflashweathermap-pi1 .big_image_w_text_register ul.register_maps li#last {
+    background: transparent url(./css-sprite-v9.png) no-repeat scroll -86px -100px;
+  }
+  .tx-mgflashweathermap-pi1 .big_image_w_text_register ul.register_maps li.register_tab {
+    color: white;
+    float: left;
+    font-size: 180%;
+    font-weight: bold;
+    left: 10px;
+    position: relative;
+    top: -31px;
+  }
+  .tx-mgflashweathermap-pi1 .big_image_w_text_register ul.register_maps li#register_country {
+    border-left: 1px solid white;
+    height: 30px;
+    left: 185px;
+  }
+  .tx-mgflashweathermap-pi1 .big_image_w_text_register ul.register_maps li#register_symb {
+    border-left: 1px solid white;
+    height: 30px;
+  }
+  .tx-mgflashweathermap-pi1 .big_image_w_text_register ul.register_maps li#register_date {
+    display:block;
+    font-size:140%;
+    left: 20px;
+    overflow:hidden;
+    top:-22px;
+    width:130px;  
+  }
+  .tx-mgflashweathermap-pi1 .big_image_w_text_register ul.register_maps li#register_unit {
+    display:block;
+    font-size:140%;
+    left: 20px;
+    overflow:hidden;
+    top:-22px;
+    width:55px;  
+  }
+  .tx-mgflashweathermap-pi1 #registername_symb, .tx-mgflashweathermap-pi1 #registername_wind, .tx-mgflashweathermap-pi1 #registername_country,
+  .tx-mgflashweathermap-pi1 #registername_rrr {
+    background: transparent url(./css-sprite-v9.png) no-repeat scroll -603px -70px;
+    height: 30px;
+    overflow: hidden;
+    width: 29px;
+    border: 0;
+    margin: 0 2px;
+    border-style:none solid none none;
+    border-width:0 1px 0 0;
+    border-color: white;
+    display: inline-block;
+  }
+  .tx-mgflashweathermap-pi1 #registername_symb {
+    background: transparent url(./css-sprite-v9.png) no-repeat scroll -562px -70px;
+  }
+  .tx-mgflashweathermap-pi1 .ui-state-active #registername_symb {
+    background: transparent url(./css-sprite-v9.png) no-repeat scroll -562px -100px;
+  }
+  .tx-mgflashweathermap-pi1 #registername_wind {
+    background: transparent url(./css-sprite-v9.png) no-repeat scroll -804px -70px;
+  }
+  .tx-mgflashweathermap-pi1 .ui-state-active #registername_wind {
+    background: transparent url(./css-sprite-v9.png) no-repeat scroll -804px -100px;
+  }
+  .tx-mgflashweathermap-pi1 #registername_rrr {
+    background: transparent url(./css-sprite-v9.png) no-repeat scroll -883px -70px;
+  }
+  .tx-mgflashweathermap-pi1 .ui-state-active #registername_rrr {
+    background: transparent url(./css-sprite-v9.png) no-repeat scroll -883px -100px;
+  }
+  .tx-mgflashweathermap-pi1 #registername_country {
+    background: transparent url(./css-sprite-v9.png) no-repeat scroll -840px -70px;
+  }
+  
+  .tx-mgflashweathermap-pi1 .big_image_w_text_register .content {
+    border-left: 1px solid #89b9e7; 
+    border-right: 1px solid #89b9e7;
+    float: left;
+    height: 555px;
+    width: 555px;
+  }
+  .tx-mgflashweathermap-pi1 .big_image_w_text_register ul.footer {
+    height: 31px;
+    width: 557px;
+  }
+  .tx-mgflashweathermap-pi1 .big_image_w_text_register ul.footer li.first, .footer li.middle, .footer li.last {
+    background: transparent url(./css-sprite-v9.png) no-repeat scroll -95px -130px;
+    float: left;
+    height: 31px;
+    overflow: hidden;
+    width: 7px;
+  }
+  .tx-mgflashweathermap-pi1 .big_image_w_text_register ul.footer li.middle {
+    background: transparent url(./css-sprite-v9.png) no-repeat scroll 0 -330px;
+    border-top: 1px solid white;
+    border-bottom: 1px solid #89b9e7;
+    height: 29px;
+    width: 543px;
+    padding-top: 0px;
+    text-align: center;
+    color: white;
+  }
+  .tx-mgflashweathermap-pi1 .big_image_w_text_register ul.footer li.date {
+    background: transparent url(./css-sprite-v9.png) no-repeat scroll -726px -136px;
+    border-right:1px solid white;
+    float: left;
+    height: 30px;
+    left: 11px;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    top: -30px;
+    width: 66px;
+  }
+  .tx-mgflashweathermap-pi1 .big_image_w_text_register ul.footer li.date p#day1,
+  .tx-mgflashweathermap-pi1 .big_image_w_text_register ul.footer li.date p#day3,
+  .tx-mgflashweathermap-pi1 .big_image_w_text_register ul.footer li.date p#day5,
+  .tx-mgflashweathermap-pi1 .big_image_w_text_register ul.footer li.date p#day7,
+  .tx-mgflashweathermap-pi1 .big_image_w_text_register ul.footer li.date p#day9,
+  .tx-mgflashweathermap-pi1 .big_image_w_text_register ul.footer li.date p#day11,
+  .tx-mgflashweathermap-pi1 .big_image_w_text_register ul.footer li.date p#day13,
+  .tx-mgflashweathermap-pi1 .big_image_w_text_register ul.footer li.date p#day15 {
+    float:left;
+    height:30px;
+    padding:0;
+    font-size:110%;
+    font-weight:bold;
+    text-align:right;    
+    width:34px;    
+  }
+  .tx-mgflashweathermap-pi1 .big_image_w_text_register ul.footer li.date p#day1 a,
+  .tx-mgflashweathermap-pi1 .big_image_w_text_register ul.footer li.date p#day3 a,
+  .tx-mgflashweathermap-pi1 .big_image_w_text_register ul.footer li.date p#day5 a,
+  .tx-mgflashweathermap-pi1 .big_image_w_text_register ul.footer li.date p#day7 a,
+  .tx-mgflashweathermap-pi1 .big_image_w_text_register ul.footer li.date p#day9 a,
+  .tx-mgflashweathermap-pi1 .big_image_w_text_register ul.footer li.date p#day11 a,
+  .tx-mgflashweathermap-pi1 .big_image_w_text_register ul.footer li.date p#day13 a,
+  .tx-mgflashweathermap-pi1 .big_image_w_text_register ul.footer li.date p#day15 a {
+    background: 0;
+    padding: 0;
+    color:white;
+    position:relative;
+    top:15px;
+  }
+  .tx-mgflashweathermap-pi1 .big_image_w_text_register ul.footer li.date p#day2,
+  .tx-mgflashweathermap-pi1 .big_image_w_text_register ul.footer li.date p#day4,
+  .tx-mgflashweathermap-pi1 .big_image_w_text_register ul.footer li.date p#day6,
+  .tx-mgflashweathermap-pi1 .big_image_w_text_register ul.footer li.date p#day8,
+  .tx-mgflashweathermap-pi1 .big_image_w_text_register ul.footer li.date p#day10,
+  .tx-mgflashweathermap-pi1 .big_image_w_text_register ul.footer li.date p#day12,
+  .tx-mgflashweathermap-pi1 .big_image_w_text_register ul.footer li.date p#day14,
+  .tx-mgflashweathermap-pi1 .big_image_w_text_register ul.footer li.date p#day16 {
+    float:left;
+    height:30px;
+    padding:0;
+    font-size:110%;
+    font-weight:bold;
+    width:30px;    
+  }
+  .tx-mgflashweathermap-pi1 .big_image_w_text_register ul.footer li.date p#day0 {
+    border-left: 1px solid white;
+    float: left;
+    height: 30px;
+    padding: 0;
+    font-size: 110%;
+    font-weight: bold;
+    text-align: center;
+    width:65px;    
+  }
+  .tx-mgflashweathermap-pi1 .big_image_w_text_register ul.footer li.date p#day0 a,
+  .tx-mgflashweathermap-pi1 .big_image_w_text_register ul.footer li.date p#day2 a,
+  .tx-mgflashweathermap-pi1 .big_image_w_text_register ul.footer li.date p#day4 a,
+  .tx-mgflashweathermap-pi1 .big_image_w_text_register ul.footer li.date p#day6 a,
+  .tx-mgflashweathermap-pi1 .big_image_w_text_register ul.footer li.date p#day8 a,
+  .tx-mgflashweathermap-pi1 .big_image_w_text_register ul.footer li.date p#day10 a,
+  .tx-mgflashweathermap-pi1 .big_image_w_text_register ul.footer li.date p#day12 a,
+  .tx-mgflashweathermap-pi1 .big_image_w_text_register ul.footer li.date p#day14 a,
+  .tx-mgflashweathermap-pi1 .big_image_w_text_register ul.footer li.date p#day16 a {
+    background: 0;
+    padding: 0;
+    color:white;
+    position:relative;
+    top:15px;
+  }
+  .tx-mgflashweathermap-pi1 .big_image_w_text_register ul.footer li.date p#day2.active,
+  .tx-mgflashweathermap-pi1 .big_image_w_text_register ul.footer li.date p#day4.active,
+  .tx-mgflashweathermap-pi1 .big_image_w_text_register ul.footer li.date p#day6.active,
+  .tx-mgflashweathermap-pi1 .big_image_w_text_register ul.footer li.date p#day8.active,
+  .tx-mgflashweathermap-pi1 .big_image_w_text_register ul.footer li.date p#day10.active,
+  .tx-mgflashweathermap-pi1 .big_image_w_text_register ul.footer li.date p#day12.active,
+  .tx-mgflashweathermap-pi1 .big_image_w_text_register ul.footer li.date p#day14.active,
+  .tx-mgflashweathermap-pi1 .big_image_w_text_register ul.footer li.date p#day16.active {
+    background: transparent url(./css-sprite-v9.png) no-repeat scroll -840px -136px;
+    width:32px;
+  }
+  .tx-mgflashweathermap-pi1 .big_image_w_text_register ul.footer li.date p#day0.active {
+    background: transparent url(./css-sprite-v9.png) no-repeat scroll -807px -136px;
+    text-align: center;
+    width: 65px;
+  }  
+  .tx-mgflashweathermap-pi1 .big_image_w_text_register ul.footer li.date p#day1.active,
+  .tx-mgflashweathermap-pi1 .big_image_w_text_register ul.footer li.date p#day3.active,
+  .tx-mgflashweathermap-pi1 .big_image_w_text_register ul.footer li.date p#day5.active,
+  .tx-mgflashweathermap-pi1 .big_image_w_text_register ul.footer li.date p#day7.active,
+  .tx-mgflashweathermap-pi1 .big_image_w_text_register ul.footer li.date p#day9.active,
+  .tx-mgflashweathermap-pi1 .big_image_w_text_register ul.footer li.date p#day11.active,
+  .tx-mgflashweathermap-pi1 .big_image_w_text_register ul.footer li.date p#day13.active,
+  .tx-mgflashweathermap-pi1 .big_image_w_text_register ul.footer li.date p#day15.active {
+    background: transparent url(./css-sprite-v9.png) no-repeat scroll -806px -136px;
+    text-align: right;
+    width: 34px;
+  }
+  .tx-mgflashweathermap-pi1 .big_image_w_text_register ul.footer li.last {
+    background: transparent url(./css-sprite-v9.png) no-repeat scroll -105px -130px;
+  }
+
+
+
+/* default styles for extension "mg_cityweatherlist" */
+  
+	.tx_mgcityweatherlist_pi1 div.one_small_row_just_text_fixed_height ul.content li.text {
+		background-color: #E7EEF6;
+		height: 147px;
+		padding: 0; 
+	}
+	.tx_mgcityweatherlist_pi1 div.one_small_row_just_text_fixed_height ul li.city0,
+	.tx_mgcityweatherlist_pi1 div.one_small_row_just_text_fixed_height ul li.value0 {
+		background-color: #E7EEF6;
+	}
+	.tx_mgcityweatherlist_pi1 div.one_small_row_just_text_fixed_height ul li.city1,
+	.tx_mgcityweatherlist_pi1 div.one_small_row_just_text_fixed_height ul li.value1 {
+		background-color: #B6D2E8;
+	}
+	.tx_mgcityweatherlist_pi1 div.one_small_row_just_text_fixed_height ul li.city0,
+	.tx_mgcityweatherlist_pi1 div.one_small_row_just_text_fixed_height ul li.city1 {
+		float: left;
+		height: 16px;
+		width: 115px;
+	}
+	.tx_mgcityweatherlist_pi1 div.one_small_row_just_text_fixed_height ul li.city0 a,
+	.tx_mgcityweatherlist_pi1 div.one_small_row_just_text_fixed_height ul li.city1 a {
+		color: black;
+	}
+	.tx_mgcityweatherlist_pi1 div.one_small_row_just_text_fixed_height ul li.image {
+		background-color: #0060ac;
+		float: left;
+		height:16px;
+		width:25px;
+	}
+  .tx_mgcityweatherlist_pi1 div.one_small_row_just_text_fixed_height ul li.image img {
+    position: relative;
+    top: -3px;  
+  }
+	.tx_mgcityweatherlist_pi1 div.one_small_row_just_text_fixed_height ul li.value0,
+	.tx_mgcityweatherlist_pi1 div.one_small_row_just_text_fixed_height ul li.value1 {
+		float: left;
+		height: 16px;
+		text-align: right;
+		width:35px;
+	}
+	.tx_mgcityweatherlist_pi1 div.one_small_row_just_text_fixed_height ul.footer {
+		background-color: #E7EEF6;
+	}
+
